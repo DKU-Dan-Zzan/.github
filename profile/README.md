@@ -43,8 +43,7 @@
 
 ## 시연 영상
 
-<!-- 유튜브 업로드 후 링크 교체 -->
-[![시연 영상](https://img.shields.io/badge/YouTube-시연영상_보기-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/링크를_여기에)
+[![시연 영상](https://img.shields.io/badge/YouTube-시연영상_보기-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=ZrvDs-fHCjw)
 
 ---
 
@@ -74,19 +73,13 @@
 
 ## 시스템 아키텍처
 
-<!-- 이미지 파일 추가 후 주석 해제 -->
-<!--
-![system-architecture](./architecture/system-architecture.png)
--->
+<img src="./architecture/system-architecture.png" alt="System Architecture" width="800">
 
 ---
 
 ## 서비스 아키텍처 (티켓팅)
 
-<!-- 이미지 파일 추가 후 주석 해제 -->
-<!--
-![service-architecture](./architecture/service-architecture.png)
--->
+<img src="./architecture/service-architecture.png" alt="Service Architecture" width="800">
 
 오픈 순간 수천 명이 동시에 들어오는 상황을 고려해서 설계했습니다.
 
@@ -110,17 +103,37 @@
 | queue_enter 평균 응답속도 | **498ms** |
 | 서버 Overflow | **0건** |
 
+**트래픽 현황**
+
+<img src="./architecture/traffic.png" alt="Traffic" width="800">
+
+---
+
+## 사용자 데이터
+
+> 축제 기간 기능별 실제 사용 현황
+
+<img src="./architecture/user-data.png" alt="User Data" width="800">
+
+| 기능 | 조회수 |
+|---|---|
+| 타임테이블 | 8,146회 |
+| 티켓팅 | 7,356회 |
+| 내 티켓 | 5,897회 |
+| 부스맵 | 4,303회 |
+| 공지사항 | 3,528회 |
+
 ---
 
 ## 사용자 피드백
 
-> *"서버가 안 터짐! 수강신청 서버보다 좋은듯 ㅎ"*
+<img src="./architecture/feedback1.png" width="600">
 
-> *"앱 자체는 예전에도 있었던 적은 있는데 이번에는 부스나 편의시설 위치, 타임테이블 같이 축제 때 필요한 거 다 넣어놨더라"*
+<img src="./architecture/feedback2.png" width="600">
 
-> *"비윤리적인 상황 (양도 및 도용)의 상황을 0%에 수렴할 정도로 큰 도움을 받았음"*
+<img src="./architecture/feedback3.png" width="600">
 
-> *"정보를 한 눈에 볼 수 있다는 점이 접근성 측면과 이용측면 관리 측면에서 편리"*
+<img src="./architecture/feedback4.png" width="600">
 
 ---
 
