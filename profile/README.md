@@ -74,7 +74,14 @@
 <tr>
 <td valign="top" width="55%">
 
-[![시연 영상](https://img.youtube.com/vi/ZrvDs-fHCjw/hqdefault.jpg)](https://www.youtube.com/watch?v=ZrvDs-fHCjw)
+<a href="https://www.youtube.com/watch?v=ZrvDs-fHCjw">
+<table border="3" cellpadding="6" cellspacing="0" width="100%">
+<tr><td align="center">
+<img src="https://img.youtube.com/vi/ZrvDs-fHCjw/hqdefault.jpg" width="380">
+</td></tr>
+<tr><td align="center"><b>▶&nbsp;&nbsp; 클릭하여 시연 영상 보기</b></td></tr>
+</table>
+</a>
 
 </td>
 <td valign="top">
