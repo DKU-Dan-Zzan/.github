@@ -75,12 +75,13 @@
 <td valign="top" width="55%">
 
 <a href="https://www.youtube.com/watch?v=ZrvDs-fHCjw">
-<table border="3" cellpadding="6" cellspacing="0" width="100%">
-<tr><td align="center">
-<img src="https://img.youtube.com/vi/ZrvDs-fHCjw/hqdefault.jpg" width="380">
-</td></tr>
-<tr><td align="center"><b>▶&nbsp;&nbsp; 클릭하여 시연 영상 보기</b></td></tr>
-</table>
+<img src="https://img.youtube.com/vi/ZrvDs-fHCjw/maxresdefault.jpg" alt="DANZZAN 시연 영상" width="100%">
+</a>
+
+<br/>
+
+<a href="https://www.youtube.com/watch?v=ZrvDs-fHCjw">
+<img src="https://img.shields.io/badge/▶_클릭하여_시청하기-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
 </a>
 
 </td>
