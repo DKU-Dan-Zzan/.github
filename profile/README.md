@@ -70,7 +70,38 @@
 
 ## 시연 영상
 
+<table>
+<tr>
+<td>
+
 [![시연 영상](https://img.shields.io/badge/YouTube-시연영상_보기-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=ZrvDs-fHCjw)
+
+</td>
+<td>
+
+| 타임스탬프 | |
+|---|---|
+| `0:00` | 회원가입 |
+| `1:28` | 비밀번호 재설정 |
+| `2:11` | 웹앱(PWA) 설치 |
+| `2:20` | 홈화면 소개 |
+| `3:08` | 부스맵 기능 |
+| `4:23` | 타임테이블 기능 |
+| `4:28` | 공지사항 & 긴급공지 기능 |
+| `5:12` | 로그인 & 티켓팅 |
+| `6:13` | 내정보 기능 |
+| `6:43` | 관리자 — 운영데이터 관리 |
+| `10:16` | 관리자 — 팔찌 배부 |
+
+</td>
+</tr>
+</table>
+
+---
+
+## 최종 보고서
+
+[![보고서](https://img.shields.io/badge/PDF-최종_보고서_보기-003087?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./docs/final-report.pdf)
 
 ---
 
