@@ -151,7 +151,7 @@
 
 ---
 
-## 서비스 아키텍처 (티켓팅)
+## 서비스 아키텍처
 
 <img src="./architecture/service-architecture.png" alt="Service Architecture" width="800">
 
