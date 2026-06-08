@@ -38,12 +38,12 @@
 <tr>
   <td align="center" nowrap>박지우</td>
   <td align="center">32211862</td>
-  <td>Spring Security 기반 JWT 회원 인증 체계 설계, 단국대 포털 크롤링 학번 인증·로그인·회원가입 구현, Redis 대기열 및 Lua Script 원자적 선착순 처리로 티켓 예매 시스템 개발</td>
+  <td>Redis 대기열 및 Lua Script 원자적 선착순 처리로 티켓 예매 시스템 개발, Spring Security 기반 JWT 회원 인증 체계 설계, 로그인·회원가입 구현, </td>
 </tr>
 <tr>
   <td align="center" nowrap>박주희</td>
   <td align="center">32221902</td>
-  <td>Kafka 기반 비동기 티켓 발급 파이프라인 및 대기열 시스템 구현, 팔찌 배부 현황 실시간 조회 및 관리 플랫폼 개발, QR 코드 기반 입장 검증, 회원 탈퇴·비밀번호 재설정 개발</td>
+  <td>Kafka 기반 비동기 티켓 발급 파이프라인 및 대기열 시스템 구현, 팔찌 배부 현황 실시간 조회 및 관리 플랫폼 개발, 회원 탈퇴·비밀번호 재설정 개발</td>
 </tr>
 <tr>
   <td align="center" nowrap>조하은</td>
@@ -148,12 +148,8 @@
 
 <img src="./architecture/service-architecture.png" alt="Service Architecture" width="800">
 
-오픈 순간 수천 명이 동시에 들어오는 상황을 고려해서 설계했습니다.
+오픈 순간 수천 명(최대 10000명까지 테스트)이 동시에 들어오는 상황을 고려해서 설계했습니다.
 
-```
-요청 → Redis 대기열 → Lua Script로 선착순 처리 → Kafka로 티켓 발급
-                                                  → 실패하면 자동 보상
-```
 
 ---
 
