@@ -68,17 +68,9 @@
 
 **관리자 화면**
 
-**공지 관리**
-
-<img src="./screenshots/admin/notice.png" width="800">
-
-**광고 등록**
-
-<img src="./screenshots/admin/advertisement.png" width="800">
-
-**팔찌 배부**
-
-<img src="./screenshots/admin/wristband.png" width="800">
+| 공지 관리 | 광고 등록 | 팔찌 배부 |
+|:---:|:---:|:---:|
+| <img src="./screenshots/admin/notice.png" width="320"> | <img src="./screenshots/admin/advertisement.png" width="320"> | <img src="./screenshots/admin/wristband.png" width="320"> |
 
 ---
 
