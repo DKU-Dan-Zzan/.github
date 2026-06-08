@@ -38,7 +38,7 @@
 <tr>
   <td align="center" nowrap>박지우</td>
   <td align="center">32211862</td>
-  <td>Redis 대기열 및 Lua Script 원자적 선착순 처리로 티켓 예매 시스템 개발, Spring Security 기반 JWT 회원 인증 체계 설계, 로그인·회원가입 구현, </td>
+  <td>Redis 대기열 및 Lua Script 원자적 선착순 처리로 티켓 예매 시스템 개발, Spring Security 기반 JWT 회원 인증 체계 설계, 로그인·회원가입 구현 </td>
 </tr>
 <tr>
   <td align="center" nowrap>박주희</td>
