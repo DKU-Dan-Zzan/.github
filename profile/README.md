@@ -10,9 +10,11 @@
 
 <br />
 
-<img src="./logo.png" alt="DANZZAN" width="160">
-&nbsp;&nbsp;<b>×</b>&nbsp;&nbsp;
-<a href="https://pay.naver.com"><img src="./naverpay-logo.png" alt="NAVER Pay" width="160"></a>
+<table align="center"><tr>
+<td align="center" valign="middle"><img src="./logo.png" alt="DANZZAN" width="140"></td>
+<td align="center" valign="middle"><b>&nbsp;&nbsp;×&nbsp;&nbsp;</b></td>
+<td align="center" valign="middle"><a href="https://pay.naver.com"><img src="./naverpay-logo.png" alt="NAVER Pay" width="140"></a></td>
+</tr></table>
 
 <sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub>
 
