@@ -119,7 +119,9 @@
 
 **회원가입**
 
-<img src="./screenshots/user/signup.png" width="700">
+| 1단계 | 2단계 | 3단계 |
+|:---:|:---:|:---:|
+| <img src="./screenshots/user/signup1.png" width="230"> | <img src="./screenshots/user/signup2.png" width="230"> | <img src="./screenshots/user/signup3.png" width="230"> |
 
 **관리자 화면**
 
