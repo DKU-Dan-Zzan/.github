@@ -19,6 +19,17 @@
 
 ---
 
+## 팀
+
+| 이름 | 학번 | 역할 |
+|:---:|:---:|---|
+| 강하늘 | 32230120 | 팀장 · 관리자 페이지 전반 설계 및 개발, 긴급·일반 공지사항 등록·수정·삭제 기능, 광고 배너 등록 및 노출 순서 관리 |
+| 박주희 | 32221902 | 티켓팅 대기열 시스템, 팔찌 배부 관리 플랫폼, 회원 탈퇴·비밀번호 재설정 개발 |
+| 박지우 | 32211862 | JWT 기반 회원 인증, 로그인·회원가입, Redis 대기열 티켓 예매 시스템 개발 |
+| 조하은 | 32234364 | 축제 메인 홈 화면(포스터·라인업·현재 공연 섹션), 캠퍼스 지도 기반 부스맵(날짜·단과대 필터), 지도 편집 기능, 공연 일정 타임테이블 개발 |
+
+---
+
 ## 어떤 서비스인가요?
 
 총학생회와 직접 미팅하면서 만든 단국대 축제 앱입니다.
@@ -39,22 +50,31 @@
 
 ## 서비스 화면
 
-<!-- 스크린샷 추가 후 주석 해제 -->
-<!--
+**사용자 화면**
+
 | 홈 | 타임테이블 | 부스맵 |
 |:---:|:---:|:---:|
-| ![home](./screenshots/home.png) | ![timetable](./screenshots/timetable.png) | ![boothmap](./screenshots/boothmap.png) |
+| <img src="./screenshots/user/home.png" width="180"> | <img src="./screenshots/user/timetable.png" width="180"> | <img src="./screenshots/user/boothmap.png" width="180"> |
 
-| 티켓팅 | 내 티켓 | 관리자 |
+| 티켓팅 대기열 | 내 티켓 | 공지사항 |
 |:---:|:---:|:---:|
-| ![ticketing](./screenshots/ticketing.png) | ![myticket](./screenshots/myticket.png) | ![admin](./screenshots/admin.png) |
--->
+| <img src="./screenshots/user/ticketing-queue.png" width="180"> | <img src="./screenshots/user/my-ticket.png" width="180"> | <img src="./screenshots/user/notice.png" width="180"> |
+
+**회원가입**
+
+<img src="./screenshots/user/signup.png" width="600">
+
+**관리자 화면**
+
+| 공지 관리 | 광고 등록 | 팔찌 배부 |
+|:---:|:---:|:---:|
+| <img src="./screenshots/admin/notice.png" width="250"> | <img src="./screenshots/admin/advertisement.png" width="250"> | <img src="./screenshots/admin/wristband.png" width="250"> |
 
 ---
 
 ## 시스템 아키텍처
 
-<!-- 이미지 추가 후 주석 해제 -->
+<!-- 이미지 파일 추가 후 주석 해제 -->
 <!--
 ![system-architecture](./architecture/system-architecture.png)
 -->
@@ -63,7 +83,7 @@
 
 ## 서비스 아키텍처 (티켓팅)
 
-<!-- 이미지 추가 후 주석 해제 -->
+<!-- 이미지 파일 추가 후 주석 해제 -->
 <!--
 ![service-architecture](./architecture/service-architecture.png)
 -->
@@ -121,17 +141,6 @@
 | [Danzzan-FE](https://github.com/DKU-Dan-Zzan/Danzzan-FE) | 프론트엔드 |
 | [Danzzan-BE](https://github.com/DKU-Dan-Zzan/Danzzan-BE) | 백엔드 |
 | [Danzzan-Ticket-BE](https://github.com/DKU-Dan-Zzan/Danzzan-Ticket-BE) | 티켓팅 서버 |
-
----
-
-## 팀
-
-| 이름 | 학번 | 역할 |
-|:---:|:---:|---|
-| 강하늘 | 32230120 | 팀장 · 관리자 페이지 전반 설계 및 개발, 긴급·일반 공지사항 등록·수정·삭제 기능, 광고 배너 등록 및 노출 순서 관리 |
-| 박주희 | 32221902 | 티켓팅 대기열 시스템, 팔찌 배부 관리 플랫폼, 회원 탈퇴·비밀번호 재설정 개발 |
-| 박지우 | 32211862 | JWT 기반 회원 인증, 로그인·회원가입, Redis 대기열 티켓 예매 시스템 개발 |
-| 조하은 | 32234364 | 축제 메인 홈 화면(포스터·라인업·현재 공연 섹션), 캠퍼스 지도 기반 부스맵(날짜·단과대 필터), 지도 편집 기능, 공연 일정 타임테이블 개발 |
 
 ---
 
