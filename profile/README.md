@@ -30,19 +30,43 @@
 
 ---
 
-## 뭘 만들었나요?
+## 시연 영상
 
-| | |
-|---|---|
-| 홈 | 공연 라인업, 포스터, 긴급 공지 |
-| 부스맵 | 캠퍼스 지도에서 부스 위치 확인, 단과대·날짜 필터 |
-| 타임테이블 | 공연 일정 한눈에 |
-| 티켓팅 | 선착순 예매 + QR 입장 검증 |
-| 관리자 페이지 | 총학이 직접 티켓·부스·공연 관리 |
+<!-- 유튜브 업로드 후 링크 교체 -->
+[![시연 영상](https://img.shields.io/badge/YouTube-시연영상_보기-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/링크를_여기에)
 
 ---
 
-## 티켓팅은 어떻게 만들었나요?
+## 서비스 화면
+
+<!-- 스크린샷 추가 후 주석 해제 -->
+<!--
+| 홈 | 타임테이블 | 부스맵 |
+|:---:|:---:|:---:|
+| ![home](./screenshots/home.png) | ![timetable](./screenshots/timetable.png) | ![boothmap](./screenshots/boothmap.png) |
+
+| 티켓팅 | 내 티켓 | 관리자 |
+|:---:|:---:|:---:|
+| ![ticketing](./screenshots/ticketing.png) | ![myticket](./screenshots/myticket.png) | ![admin](./screenshots/admin.png) |
+-->
+
+---
+
+## 시스템 아키텍처
+
+<!-- 이미지 추가 후 주석 해제 -->
+<!--
+![system-architecture](./architecture/system-architecture.png)
+-->
+
+---
+
+## 서비스 아키텍처 (티켓팅)
+
+<!-- 이미지 추가 후 주석 해제 -->
+<!--
+![service-architecture](./architecture/service-architecture.png)
+-->
 
 오픈 순간 수천 명이 동시에 들어오는 상황을 고려해서 설계했습니다.
 
@@ -51,7 +75,32 @@
                                                   → 실패하면 자동 보상
 ```
 
-k6로 5,000 / 8,000 / 10,000명 동시접속 시나리오를 직접 테스트했습니다.
+---
+
+## 실제 운영 결과
+
+> 2026년 5월 7일 티켓팅 오픈 기준 실측 데이터
+
+| | |
+|---|---|
+| 동시 접속자 | **4,500명** |
+| 티켓 소진 시간 | **1분 만에 3,500장 전량 매진** |
+| 중복 발급 / 순번 오류 | **ZERO** |
+| CPU 사용률 | **약 40%** (16vCPU, 64GB 기준) |
+| queue_enter 평균 응답속도 | **498ms** |
+| 서버 Overflow | **0건** |
+
+---
+
+## 사용자 피드백
+
+> *"서버가 안 터짐! 수강신청 서버보다 좋은듯 ㅎ"*
+
+> *"앱 자체는 예전에도 있었던 적은 있는데 이번에는 부스나 편의시설 위치, 타임테이블 같이 축제 때 필요한 거 다 넣어놨더라"*
+
+> *"비윤리적인 상황 (양도 및 도용)의 상황을 0%에 수렴할 정도로 큰 도움을 받았음"*
+
+> *"정보를 한 눈에 볼 수 있다는 점이 접근성 측면과 이용측면 관리 측면에서 편리"*
 
 ---
 
@@ -59,9 +108,9 @@ k6로 5,000 / 8,000 / 10,000명 동시접속 시나리오를 직접 테스트했
 
 **Frontend** — React 18, TypeScript, Vite, Tailwind CSS, TanStack Query
 
-**Backend** — Spring Boot 3, Kafka, Redis, MySQL
+**Backend** — Spring Boot 3, Kafka, Redis, MySQL, Prometheus / Grafana
 
-**Infra** — NHN Cloud, Docker, Prometheus, Grafana
+**Infra** — NHN Cloud, Docker, RDS HA, EasyCache
 
 ---
 
@@ -72,6 +121,14 @@ k6로 5,000 / 8,000 / 10,000명 동시접속 시나리오를 직접 테스트했
 | [Danzzan-FE](https://github.com/DKU-Dan-Zzan/Danzzan-FE) | 프론트엔드 |
 | [Danzzan-BE](https://github.com/DKU-Dan-Zzan/Danzzan-BE) | 백엔드 |
 | [Danzzan-Ticket-BE](https://github.com/DKU-Dan-Zzan/Danzzan-Ticket-BE) | 티켓팅 서버 |
+
+---
+
+## 팀
+
+| 강하늘 | 박주희 | 박지우 | 조하은 |
+|:---:|:---:|:---:|:---:|
+| Frontend | Frontend | Backend | Backend |
 
 ---
 
