@@ -32,12 +32,15 @@
 
 ## 어떤 서비스인가요?
 
-총학생회와 직접 미팅하면서 만든 단국대 축제 앱입니다.
+단국대 봄 축제를 운영할 때, 공지는 인스타그램, 티켓은 오픈카톡, 부스 위치는 에브리타임에 따로따로 올라왔습니다.
 
-기존에는 공연 정보는 인스타그램, 티켓은 오픈카톡, 부스 위치는 에브리타임에 올라오다 보니
-학생들이 이리저리 찾아다녀야 했고 운영진도 같은 내용을 여러 곳에 올려야 했습니다.
+학생들은 정보를 찾으러 채널을 옮겨 다녀야 했고, 우천·장소 변경 같은 업데이트도 모든 채널에 동시에 반영되지 않아 혼선이 생겼습니다. 어떤 학생은 예매 공지를 봤는데 티켓 링크를 못 찾고, 어떤 학생은 채널을 안 쓰다 보니 아예 정보를 놓쳤습니다.
 
-그래서 만들었습니다. 공연, 부스, 티켓, 공지 전부 한 앱에서.
+운영진도 마찬가지였습니다. 같은 내용을 여러 곳에 반복해서 올리고, 댓글과 DM으로 일일이 답변해야 했습니다. 엑셀·구글폼으로 관리하다 보니 예매 내역과 실수령 현황이 실시간으로 맞지 않았고, 문제가 생겨도 로그가 흩어져 있어 확인이 느렸습니다.
+
+총학생회와 직접 미팅하며 이 문제들을 파악하고, 하나의 앱으로 해결했습니다.
+
+공연, 부스, 티켓, 공지 전부 한 앱에서.
 
 ---
 
@@ -53,21 +56,29 @@
 
 | 홈 | 타임테이블 | 부스맵 |
 |:---:|:---:|:---:|
-| <img src="./screenshots/user/home.png" width="180"> | <img src="./screenshots/user/timetable.png" width="180"> | <img src="./screenshots/user/boothmap.png" width="180"> |
+| <img src="./screenshots/user/home.png" width="230"> | <img src="./screenshots/user/timetable.png" width="230"> | <img src="./screenshots/user/boothmap.png" width="230"> |
 
 | 티켓팅 대기열 | 내 티켓 | 공지사항 |
 |:---:|:---:|:---:|
-| <img src="./screenshots/user/ticketing-queue.png" width="180"> | <img src="./screenshots/user/my-ticket.png" width="180"> | <img src="./screenshots/user/notice.png" width="180"> |
+| <img src="./screenshots/user/ticketing-queue.png" width="230"> | <img src="./screenshots/user/my-ticket.png" width="230"> | <img src="./screenshots/user/notice.png" width="230"> |
 
 **회원가입**
 
-<img src="./screenshots/user/signup.png" width="600">
+<img src="./screenshots/user/signup.png" width="700">
 
 **관리자 화면**
 
-| 공지 관리 | 광고 등록 | 팔찌 배부 |
-|:---:|:---:|:---:|
-| <img src="./screenshots/admin/notice.png" width="250"> | <img src="./screenshots/admin/advertisement.png" width="250"> | <img src="./screenshots/admin/wristband.png" width="250"> |
+**공지 관리**
+
+<img src="./screenshots/admin/notice.png" width="800">
+
+**광고 등록**
+
+<img src="./screenshots/admin/advertisement.png" width="800">
+
+**팔찌 배부**
+
+<img src="./screenshots/admin/wristband.png" width="800">
 
 ---
 
@@ -134,6 +145,24 @@
 <img src="./architecture/feedback3.png" width="600">
 
 <img src="./architecture/feedback4.png" width="600">
+
+---
+
+## 기대 효과
+
+| | |
+|:---:|---|
+| **운영진 업무 효율화** | 티켓 발급, 팔찌 수령, 공지 수정 등 반복 업무를 단일 플랫폼에서 처리. 채널별 중복 게시와 개별 문의 대응 부담 감소 |
+| **암표·양도 원천 차단** | 네이버 페이스사인 얼굴 인증으로 입장 시 신원 재확인. 대리 입장과 티켓 양도를 구조적으로 차단 |
+| **사용자 편의성 향상** | 공연 정보, 예매, 부스 위치, 공지를 하나의 앱에서 제공. 채널을 옮겨 다니지 않아도 됨 |
+
+## 확장 계획
+
+| | |
+|:---:|---|
+| **챗봇 / RAG 도입** | 공지, 위치, 티켓 수령 방법 등 자주 묻는 질문을 AI가 자동 응답. 운영진 문의 대응 부담 추가 감소 |
+| **네이버 페이스사인 정식 API 연동** | 현장 확인 시간 단축 및 외부인 접근 제한 강화 |
+| **교내 행사 전반으로 확장** | 체육대회, 학과 행사, 동아리 박람회 등으로 적용 범위 확대. 단국대 축제를 시작으로 지속적으로 보완해 교내 행사 전반에 사용 가능한 플랫폼으로 발전 |
 
 ---
 
