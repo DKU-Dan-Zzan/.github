@@ -116,7 +116,7 @@
 
 > 축제 기간 기능별 실제 사용 현황
 
-<img src="./architecture/user-data.png" alt="User Data" width="800">
+<img src="./architecture/user-data.png" alt="User Data" width="500">
 
 | 기능 | 조회수 |
 |---|---|
@@ -130,13 +130,10 @@
 
 ## 사용자 피드백
 
-<img src="./architecture/feedback1.png" width="600">
-
-<img src="./architecture/feedback2.png" width="600">
-
-<img src="./architecture/feedback3.png" width="600">
-
-<img src="./architecture/feedback4.png" width="600">
+| | |
+|:---:|:---:|
+| <img src="./architecture/feedback1.png" width="380"> | <img src="./architecture/feedback2.png" width="380"> |
+| <img src="./architecture/feedback3.png" width="380"> | <img src="./architecture/feedback4.png" width="380"> |
 
 ---
 
