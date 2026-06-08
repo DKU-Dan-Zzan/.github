@@ -10,13 +10,7 @@
 
 <br />
 
-<img src="./logo.png" alt="DANZZAN" width="120">&nbsp;&nbsp;<strong>×</strong>&nbsp;&nbsp;<a href="https://pay.naver.com"><img src="./naverpay-logo.png" alt="NAVER Pay" width="120"></a>
-
-<br/>
-
-<strong>🎓 대학 최초 네이버페이 페이스사인 도입</strong>
-
-<sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub>
+<p><img src="./logo.png" alt="DANZZAN" width="120">&nbsp;&nbsp;<strong>×</strong>&nbsp;&nbsp;<a href="https://pay.naver.com"><img src="./naverpay-logo.png" alt="NAVER Pay" width="120"></a></p><p><strong>🎓 대학 최초 네이버페이 페이스사인 도입</strong></p><p><sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub></p>
 
 <br />
 
