@@ -2,17 +2,15 @@
 
 <img src="./logo.png" alt="DANZZAN" width="260" />
 
-<br /><br />
+<br />
 
 ## 단국 축제, 하나로 즐겨라
 
 **공연 · 부스 · 티켓 · 공지 — 단국대 봄 축제를 위해 직접 만들고, 실제로 운영한 서비스**
 
-<br />
-
 <img src="./collab-logo.jpg" alt="DANZZAN × NAVER Pay" width="480"><p>🎓 $\textcolor{#04c75b}{\textbf{대학 최초 네이버페이 페이스사인 도입}}$<br/><sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub></p>
 
-<br />
+
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
