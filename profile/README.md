@@ -10,7 +10,7 @@
 
 <br />
 
-<img src="./collab-logo.png" alt="DANZZAN × NAVER Pay" width="480"><p>🎓 $\textcolor{#04c75b}{\textbf{대학 최초 네이버페이 페이스사인 도입}}$<br/><sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub></p>
+<img src="./collab-logo.jpg" alt="DANZZAN × NAVER Pay" width="480"><p>🎓 $\textcolor{#04c75b}{\textbf{대학 최초 네이버페이 페이스사인 도입}}$<br/><sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub></p>
 
 <br />
 
