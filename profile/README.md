@@ -1,15 +1,10 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/DKU-Dan-Zzan/Danzzan-FE/main/public/%EB%8B%A8%EC%A7%A5%EB%A7%88%ED%81%AC.png" alt="DANZZAN Logo" width="300" />
+<img src="./logo.png" alt="DANZZAN" width="280" />
 
-<br />
-<br />
+<br /><br />
 
-# DANZZAN
-
-### 단국 축제, 하나로 즐겨라
-
-**Dankook Festival, All in One Bite**
+**단국대 봄 축제를 위해 직접 만들고, 실제로 운영한 서비스입니다.**
 
 <br />
 
@@ -18,93 +13,68 @@
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)](https://kafka.apache.org)
 [![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)](https://redis.io)
-[![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com)
 [![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=flat-square&logo=icloud&logoColor=white)](https://www.nhncloud.com)
-
-<br />
-
-> 단국대학교 봄 축제에 **실제 배포·운영**된 올인원 축제 웹앱 플랫폼
 
 </div>
 
 ---
 
-## 📌 프로젝트 소개
+## 어떤 서비스인가요?
 
-공연·부스·티켓 정보가 인스타그램, 에브리타임, 오픈카톡 등 여러 채널에 분산되는 문제를 해결하기 위해
-총학생회와 직접 협업하여 개발한 단국대학교 축제 올인원 플랫폼입니다.
+총학생회와 직접 미팅하면서 만든 단국대 축제 앱입니다.
+
+기존에는 공연 정보는 인스타그램, 티켓은 오픈카톡, 부스 위치는 에브리타임에 올라오다 보니
+학생들이 이리저리 찾아다녀야 했고 운영진도 같은 내용을 여러 곳에 올려야 했습니다.
+
+그래서 만들었습니다. 공연, 부스, 티켓, 공지 전부 한 앱에서.
 
 ---
 
-## ✨ 주요 기능
+## 뭘 만들었나요?
 
-| 기능 | 설명 |
+| | |
 |---|---|
-| **홈** | 공연 라인업 캐러셀, 메인 포스터, 긴급 공지 |
-| **부스맵** | 캠퍼스 지도 기반 부스 위치, 단과대·날짜 필터 |
-| **타임테이블** | 공연·행사 일정 시각화 |
-| **티켓팅** | Redis 대기열 + Kafka 기반 선착순 예매, QR 입장 검증 |
-| **공지** | 일반 공지 및 긴급 공지 분리 제공 |
-| **마이페이지** | 내 티켓 조회, 회원 정보 관리 |
-| **관리자 페이지** | 티켓 발급 현황, 부스·공연 정보 실시간 관리 |
+| 홈 | 공연 라인업, 포스터, 긴급 공지 |
+| 부스맵 | 캠퍼스 지도에서 부스 위치 확인, 단과대·날짜 필터 |
+| 타임테이블 | 공연 일정 한눈에 |
+| 티켓팅 | 선착순 예매 + QR 입장 검증 |
+| 관리자 페이지 | 총학이 직접 티켓·부스·공연 관리 |
 
 ---
 
-## 🛠 기술 스택
+## 티켓팅은 어떻게 만들었나요?
 
-### Frontend
-![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=flat-square&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white)
-
-### Backend
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-3-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=flat-square&logo=mysql&logoColor=white)
-
-### Infrastructure
-![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=flat-square&logo=icloud&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
-
----
-
-## 🏗 티켓팅 아키텍처
-
-동시접속 8,000명을 안정적으로 처리하기 위한 구조
+오픈 순간 수천 명이 동시에 들어오는 상황을 고려해서 설계했습니다.
 
 ```
-사용자 요청
-    ↓
-Redis 대기열 진입
-    ↓
-Lua Script 원자적 선착순 처리
-    ↓
-Kafka 비동기 티켓 발급 (Outbox Pattern)
-    ↓
-실패 시 보상 트랜잭션 자동 처리
+요청 → Redis 대기열 → Lua Script로 선착순 처리 → Kafka로 티켓 발급
+                                                  → 실패하면 자동 보상
 ```
+
+k6로 5,000 / 8,000 / 10,000명 동시접속 시나리오를 직접 테스트했습니다.
 
 ---
 
-## 📦 레포지토리
+## 기술 스택
 
-| 레포 | 설명 |
+**Frontend** — React 18, TypeScript, Vite, Tailwind CSS, TanStack Query
+
+**Backend** — Spring Boot 3, Kafka, Redis, MySQL
+
+**Infra** — NHN Cloud, Docker, Prometheus, Grafana
+
+---
+
+## 레포지토리
+
+| | |
 |---|---|
-| [Danzzan-FE](https://github.com/DKU-Dan-Zzan/Danzzan-FE) | 프론트엔드 (React + TypeScript) |
-| [Danzzan-BE](https://github.com/DKU-Dan-Zzan/Danzzan-BE) | 백엔드 (Spring Boot) |
-| [Danzzan-Ticket-BE](https://github.com/DKU-Dan-Zzan/Danzzan-Ticket-BE) | 티켓팅 전용 서버 |
+| [Danzzan-FE](https://github.com/DKU-Dan-Zzan/Danzzan-FE) | 프론트엔드 |
+| [Danzzan-BE](https://github.com/DKU-Dan-Zzan/Danzzan-BE) | 백엔드 |
+| [Danzzan-Ticket-BE](https://github.com/DKU-Dan-Zzan/Danzzan-Ticket-BE) | 티켓팅 서버 |
 
 ---
 
 <div align="center">
-
-**단국대학교 컴퓨터공학과 캡스톤디자인 2026**
-
-*Dankook Festival, All in One Bite*
-
+단국대학교 컴퓨터공학과 캡스톤디자인 2026
 </div>
