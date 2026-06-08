@@ -1,10 +1,12 @@
 <div align="center">
 
-<img src="./logo.png" alt="DANZZAN" width="280" />
+<img src="./logo.png" alt="DANZZAN" width="260" />
 
 <br /><br />
 
-**단국대 봄 축제를 위해 직접 만들고, 실제로 운영한 서비스입니다.**
+## 단국 축제, 하나로 즐겨라
+
+**공연 · 부스 · 티켓 · 공지 — 단국대 봄 축제를 위해 직접 만들고, 실제로 운영한 서비스**
 
 <br />
 
@@ -15,18 +17,45 @@
 [![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)](https://redis.io)
 [![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=flat-square&logo=icloud&logoColor=white)](https://www.nhncloud.com)
 
+<br />
+
+![동시접속](https://img.shields.io/badge/동시접속-4%2C500명-0A66C2?style=flat-square)
+![완판](https://img.shields.io/badge/3%2C500장-1분_완판-E8431C?style=flat-square)
+![오류](https://img.shields.io/badge/중복발급·순번오류-ZERO-2DA44E?style=flat-square)
+
 </div>
 
 ---
 
 ## 팀 소개
 
-| 이름 &nbsp;&nbsp;&nbsp; | 학번 | 역할 |
-|:---:|:---:|---|
-| 강하늘 | 32230120 | 팀장 · 관리자 페이지 전반 설계 및 개발, 긴급·일반 공지사항 등록·수정·삭제 기능, 광고 배너 등록 및 노출 순서 관리 |
-| 박주희 | 32221902 | Kafka 기반 비동기 티켓 발급 파이프라인 및 대기열 시스템 구현, 팔찌 배부 현황 실시간 조회 및 관리 플랫폼 개발, 회원 탈퇴·비밀번호 재설정 개발 |
-| 박지우 | 32211862 | Redis 대기열 및 Lua Script 원자적 선착순 처리로 티켓 예매 시스템 개발, Spring Security 기반 JWT 회원 인증 체계 설계, 로그인·회원가입 구현 |
-| 조하은 | 32234364 | 축제 메인 홈 화면(포스터·라인업·현재 공연 섹션), 캠퍼스 지도 기반 부스맵(날짜·단과대 필터), 지도 편집 기능, 공연 일정 타임테이블 개발 |
+<table>
+<tr>
+  <th align="center">이름</th>
+  <th align="center">학번</th>
+  <th>역할</th>
+</tr>
+<tr>
+  <td align="center" nowrap>강하늘</td>
+  <td align="center">32230120</td>
+  <td>팀장 · 관리자 페이지 전반 설계 및 개발, 긴급·일반 공지사항 등록·수정·삭제 기능, 광고 배너 등록 및 노출 순서 관리, 관리자 권한 분리 및 접근 제어 설계</td>
+</tr>
+<tr>
+  <td align="center" nowrap>박주희</td>
+  <td align="center">32221902</td>
+  <td>Kafka 기반 비동기 티켓 발급 파이프라인 및 대기열 시스템 구현, 팔찌 배부 현황 실시간 조회 및 관리 플랫폼 개발, QR 코드 기반 입장 검증, 회원 탈퇴·비밀번호 재설정 개발</td>
+</tr>
+<tr>
+  <td align="center" nowrap>박지우</td>
+  <td align="center">32211862</td>
+  <td>Spring Security 기반 JWT 회원 인증 체계 설계, 단국대 포털 크롤링 학번 인증·로그인·회원가입 구현, Redis 대기열 및 Lua Script 원자적 선착순 처리로 티켓 예매 시스템 개발</td>
+</tr>
+<tr>
+  <td align="center" nowrap>조하은</td>
+  <td align="center">32234364</td>
+  <td>축제 메인 홈 화면(포스터·라인업·현재 공연 섹션), 캠퍼스 지도 기반 부스맵(날짜·단과대 필터), 지도 편집 기능, 공연 일정 타임테이블 개발</td>
+</tr>
+</table>
 
 ---
 
@@ -114,17 +143,26 @@
 
 ## 사용자 데이터
 
-> 축제 기간 기능별 실제 사용 현황
+> 축제 기간 (5/10 – 5/14) 기능별 실제 사용 현황
 
-<img src="./architecture/user-data.png" alt="User Data" width="500">
+<table>
+<tr>
+<td><img src="./architecture/user-data.png" alt="User Data" width="380"></td>
+<td>
 
 | 기능 | 조회수 |
-|---|---|
-| 타임테이블 | 8,146회 |
-| 티켓팅 | 7,356회 |
-| 내 티켓 | 5,897회 |
-| 부스맵 | 4,303회 |
-| 공지사항 | 3,528회 |
+|---|---:|
+| 타임테이블 | **8,146회** |
+| 티켓팅 | **7,356회** |
+| 내 티켓 | **5,897회** |
+| 부스맵 | **4,303회** |
+| 공지사항 | **3,528회** |
+
+총 누적 이벤트 수 (클릭·스크롤 등) **82,000+**
+
+</td>
+</tr>
+</table>
 
 ---
 
