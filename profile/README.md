@@ -10,9 +10,9 @@
 
 <br />
 
-<img src="./logo.png" alt="DANZZAN" height="48">
+<img src="./logo.png" alt="DANZZAN" width="160">
 &nbsp;&nbsp;<b>×</b>&nbsp;&nbsp;
-<a href="https://pay.naver.com"><img src="./naverpay-logo.svg" alt="NAVER Pay" height="48"></a>
+<a href="https://pay.naver.com"><img src="./naverpay-logo.svg" alt="NAVER Pay" width="160"></a>
 
 <sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub>
 
