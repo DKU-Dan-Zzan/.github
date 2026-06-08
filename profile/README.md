@@ -72,12 +72,12 @@
 
 <table>
 <tr>
-<td>
+<td valign="top" width="55%">
 
-[![시연 영상](https://img.shields.io/badge/YouTube-시연영상_보기-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=ZrvDs-fHCjw)
+[![시연 영상](https://img.youtube.com/vi/ZrvDs-fHCjw/hqdefault.jpg)](https://www.youtube.com/watch?v=ZrvDs-fHCjw)
 
 </td>
-<td>
+<td valign="top">
 
 | 타임스탬프 | |
 |---|---|
