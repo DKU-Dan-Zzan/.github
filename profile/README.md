@@ -10,9 +10,9 @@
 
 <br />
 
-<img src="./logo.png" alt="DANZZAN" width="28">
-&nbsp;<b>×</b>&nbsp;
-<a href="https://pay.naver.com"><img src="https://img.shields.io/badge/NAVER_Pay-협업-03C75A?style=flat-square&logo=naver&logoColor=white" height="28"></a>
+<img src="./logo.png" alt="DANZZAN" height="48">
+&nbsp;&nbsp;<b>×</b>&nbsp;&nbsp;
+<a href="https://pay.naver.com"><img src="./naverpay-logo.svg" alt="NAVER Pay" height="48"></a>
 
 <sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub>
 
@@ -70,7 +70,7 @@
 
 학생들은 채널을 옮겨 다니다 티켓 링크를 놓쳤고, 운영진은 같은 내용을 여러 곳에 반복 게시하면서 DM·댓글로 개별 문의까지 대응해야 했습니다. 예매 내역과 실수령 현황이 실시간으로 맞지 않아 현장에서 혼선도 잦았습니다.
 
-여기에 $\color{green}{\textbf{네이버 페이와의 협업}}$이 더해졌습니다. 네이버 페이스사인(얼굴 인증)을 입장 시 신원 확인에 연동해, 티켓 양도나 대리 입장을 구조적으로 차단했습니다. 실제로 비윤리적 양도·도용 사례는 0%에 수렴했습니다.
+여기에 $\textcolor{#04c75b}{\textbf{네이버 페이와의 협업}}$이 더해졌습니다. 네이버 페이스사인(얼굴 인증)을 입장 시 신원 확인에 연동해, 티켓 양도나 대리 입장을 구조적으로 차단했습니다. 실제로 비윤리적 양도·도용 사례는 0%에 수렴했습니다.
 
 총학생회와 직접 미팅하며 요구사항을 수집하고, 하나의 앱으로 해결했습니다.
 
