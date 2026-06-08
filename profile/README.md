@@ -17,11 +17,6 @@
 [![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)](https://redis.io)
 [![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=flat-square&logo=icloud&logoColor=white)](https://www.nhncloud.com)
 
-<br />
-
-![동시접속](https://img.shields.io/badge/동시접속-4%2C500명-0A66C2?style=flat-square)
-![완판](https://img.shields.io/badge/3%2C500장-1분_완판-E8431C?style=flat-square)
-![오류](https://img.shields.io/badge/중복발급·순번오류-ZERO-2DA44E?style=flat-square)
 
 </div>
 
