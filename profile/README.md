@@ -41,14 +41,14 @@
   <td>팀장 · 관리자 페이지 전반 설계 및 개발, 긴급·일반 공지사항 등록·수정·삭제 기능, 광고 배너 등록 및 노출 순서 관리, 관리자 권한 분리 및 접근 제어 설계</td>
 </tr>
 <tr>
-  <td align="center" nowrap>박주희</td>
-  <td align="center">32221902</td>
-  <td>Kafka 기반 비동기 티켓 발급 파이프라인 및 대기열 시스템 구현, 팔찌 배부 현황 실시간 조회 및 관리 플랫폼 개발, QR 코드 기반 입장 검증, 회원 탈퇴·비밀번호 재설정 개발</td>
-</tr>
-<tr>
   <td align="center" nowrap>박지우</td>
   <td align="center">32211862</td>
   <td>Spring Security 기반 JWT 회원 인증 체계 설계, 단국대 포털 크롤링 학번 인증·로그인·회원가입 구현, Redis 대기열 및 Lua Script 원자적 선착순 처리로 티켓 예매 시스템 개발</td>
+</tr>
+<tr>
+  <td align="center" nowrap>박주희</td>
+  <td align="center">32221902</td>
+  <td>Kafka 기반 비동기 티켓 발급 파이프라인 및 대기열 시스템 구현, 팔찌 배부 현황 실시간 조회 및 관리 플랫폼 개발, QR 코드 기반 입장 검증, 회원 탈퇴·비밀번호 재설정 개발</td>
 </tr>
 <tr>
   <td align="center" nowrap>조하은</td>
@@ -218,8 +218,3 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
 
----
-
-<div align="center">
-단국대학교 컴퓨터공학과 캡스톤디자인 2026
-</div>
