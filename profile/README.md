@@ -4,6 +4,18 @@
 
 <br />
 
+### 🔗 Project Links
+
+[**Frontend Repository**](https://github.com/DKU-Dan-Zzan/Danzzan-FE)
+&nbsp;·&nbsp;
+[**Backend Repository**](https://github.com/DKU-Dan-Zzan/Danzzan-BE)
+
+**Production** · `https://danfesta2026.yaaksok.com/`  
+<sub>2026 단국대학교 봄 축제 & 가을 축제 기간 실제 운영 · 현재 서비스 종료</sub>
+
+<br />
+
+
 ## 단국 축제, 하나로 즐겨라
 
 **공연 · 부스 · 티켓 · 공지 — 단국대 봄 축제를 위해 직접 만들고, 실제로 운영한 서비스**
