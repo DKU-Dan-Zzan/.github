@@ -210,17 +210,19 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 가을축제는 공연 규모를 고려한 총학생회의 요청에 따라 티켓팅을 진행하지 않았습니다. 이에 티켓팅과 회원가입 화면에 각각 안내 문구를 표시할 수 있도록 구현했습니다. 안내는 사용자가 선택한 언어에 따라 한국어 또는 영어로 제공됩니다.
 
+
 #### 4.4.1 티켓팅 안내
 
 | 한국어 | 영어 |
 |:---:|:---:|
-| <img src="./screenshots/autumn/ticketing-notice-ko.png" alt="가을축제 티켓팅 미운영 안내 한국어 화면" width="260" /> | <img src="./screenshots/autumn/ticketing-notice-en.png" alt="가을축제 티켓팅 미운영 안내 영어 화면" width="260" /> |
+| <img src="./screenshots/autumn/ticketing-notice-ko.png" alt="가을축제 티켓팅 미운영 안내 한국어 화면" width="260" /> | <img src="https://github.com/user-attachments/assets/400df540-c9cb-4cb5-84f9-35ec0cc944df" alt="가을축제 티켓팅 미운영 안내 영어 화면" width="260" /> |
+
 
 #### 4.4.2 회원가입 안내
 
 | 한국어 | 영어 |
 |:---:|:---:|
-| <img src="./screenshots/autumn/signup-notice-ko.png" alt="가을축제 회원가입 안내 한국어 화면" width="260" /> | <img src="./screenshots/autumn/signup-notice-en.png" alt="가을축제 회원가입 안내 영어 화면" width="260" /> |
+| <img src="./screenshots/autumn/signup-notice-ko.png" alt="가을축제 회원가입 안내 한국어 화면" width="260" /> | <img src="https://github.com/user-attachments/assets/cb7e1801-2503-44b0-adbc-2d1619b4e532" alt="가을축제 회원가입 안내 영어 화면" width="260" /> |
 
 ---
 
