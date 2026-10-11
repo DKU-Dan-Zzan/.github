@@ -170,18 +170,20 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 가을축제 **LEGEND**의 로고와 포스터를 서비스에 반영했습니다. 홈 화면뿐 아니라 타임테이블에서도 축제의 시각적 정체성이 이어지도록 구성했습니다.
 
+
 | 봄축제 홈 | 가을축제 홈 | 가을축제 타임테이블 |
 |:---:|:---:|:---:|
-| <img src="./screenshots/user/home.png" alt="기존 봄축제 홈 화면" width="230" /> | <img src="https://github.com/user-attachments/assets/81ba3251-39e2-4b16-bcd7-f2c2bc1da4cf" alt="LEGEND 브랜딩을 반영한 가을축제 홈 화면" width="270" /> | <img src="https://github.com/user-attachments/assets/b2a582a1-a249-447b-be31-845f289f02e5" alt="가을축제 타임테이블 화면" width="270" /> |
+| <img src="./screenshots/user/home.png" alt="기존 봄축제 홈 화면" width="230" /> | <img src="https://github.com/user-attachments/assets/89c7688c-1b72-4960-be86-b6ee16e5d7c4" alt="LEGEND 브랜딩을 반영한 가을축제 홈 화면" width="250" /> | <img src="https://github.com/user-attachments/assets/b2a582a1-a249-447b-be31-845f289f02e5" alt="가을축제 타임테이블 화면" width="260" /> |
 | 봄축제 운영 버전 | 가을축제 로고·포스터 반영 | 주요 화면에 브랜딩 적용 |
 
 ### 4.2 한국어·영어 전환 및 콘텐츠 번역
 
 한국어와 영어를 선택해 화면을 이용할 수 있도록 언어 전환 기능을 추가했습니다. 메뉴와 버튼 등의 UI 문구뿐 아니라, 공지사항·부스·공연 정보 등 운영진이 등록하는 텍스트에도 영어 번역을 적용했습니다.
 
+
 | 한국어 공지 | 영어 공지 |
 |:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/a7cebf0c-edf2-4fe4-8630-71c113e0246c" alt="가을축제 공지 상세 한국어 화면" width="350" /> | <img src="https://github.com/user-attachments/assets/5ceaa3a8-a8fd-4d2d-bdf9-11a0d79a0abc" alt="동일한 가을축제 공지 상세 영어 화면" width="350" /> |
+| <img src="https://github.com/user-attachments/assets/e3576ab8-2327-47a9-a5cd-e7652c4c1c60" alt="가을축제 공지 상세 한국어 화면" width="350" /> | <img src="https://github.com/user-attachments/assets/04af38cb-3413-403d-8e7c-0d402c92e3de" alt="동일한 가을축제 공지 상세 영어 화면" width="350" /> |
 | 한국어 제목과 본문 | 동일한 공지의 영어 제목과 본문 |
 
 | 구분 | 구현 내용 |
@@ -215,14 +217,15 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 | 한국어 | 영어 |
 |:---:|:---:|
-| <img src="./screenshots/autumn/ticketing-notice-ko.png" alt="가을축제 티켓팅 미운영 안내 한국어 화면" width="260" /> | <img src="https://github.com/user-attachments/assets/400df540-c9cb-4cb5-84f9-35ec0cc944df" alt="가을축제 티켓팅 미운영 안내 영어 화면" width="260" /> |
+| <img src="https://github.com/user-attachments/assets/e27425b1-b006-43af-823b-18ed1b40ec3a" alt="가을축제 티켓팅 미운영 안내 한국어 화면" width="260" /> | <img src="https://github.com/user-attachments/assets/400df540-c9cb-4cb5-84f9-35ec0cc944df" alt="가을축제 티켓팅 미운영 안내 영어 화면" width="260" /> |
 
 
 #### 4.4.2 회원가입 안내
 
+
 | 한국어 | 영어 |
 |:---:|:---:|
-| <img src="./screenshots/autumn/signup-notice-ko.png" alt="가을축제 회원가입 안내 한국어 화면" width="260" /> | <img src="https://github.com/user-attachments/assets/cb7e1801-2503-44b0-adbc-2d1619b4e532" alt="가을축제 회원가입 안내 영어 화면" width="260" /> |
+| <img src="https://github.com/user-attachments/assets/0029a7dc-ef80-4a8d-a430-a23a439e52c7" alt="가을축제 회원가입 안내 한국어 화면" width="250" /> | <img src="https://github.com/user-attachments/assets/cb7e1801-2503-44b0-adbc-2d1619b4e532" alt="가을축제 회원가입 안내 영어 화면" width="260" /> |
 
 ---
 
