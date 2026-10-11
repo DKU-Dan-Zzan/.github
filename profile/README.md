@@ -13,14 +13,11 @@
 
 <br />
 
-
-## 단국 축제, 하나로 즐겨라
+# 단국 축제, 하나로 즐겨라
 
 **공연 · 부스 · 티켓 · 공지 — 단국대 봄 축제를 위해 직접 만들고, 실제로 운영한 서비스**
 
 <img src="./collab-logo.jpg" alt="DANZZAN × NAVER Pay" width="480"><p>🎓 $\textcolor{#04c75b}{\textbf{대학 최초 네이버페이 페이스사인 도입}}$<br/><sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub></p>
-
-
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -28,7 +25,6 @@
 [![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)](https://kafka.apache.org)
 [![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)](https://redis.io)
 [![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=flat-square&logo=icloud&logoColor=white)](https://www.nhncloud.com)
-
 
 </div>
 
@@ -70,19 +66,19 @@
 
 공지는 인스타그램, 티켓은 오픈카톡, 부스 위치는 에브리타임 — 축제 정보는 늘 여러 채널에 흩어져 있었습니다.
 
-기존 축제 앱들도 공지나 타임테이블 정도는 제공했지만, **공지부터 티켓팅까지 하나의 서비스에서 함께 처리하는 경우는 없었습니다.** 
+기존 축제 앱들도 공지나 타임테이블 정도는 제공했지만, **공지부터 티켓팅까지 하나의 서비스에서 함께 처리하는 경우는 없었습니다.**
 예매는 여전히 오픈카톡이나 외부 링크로 빠져나갔고, 운영진은 엑셀·구글폼으로 예매 내역을 따로 관리해야 했습니다.
 
-학생들은 채널을 옮겨 다니다 티켓 링크를 놓쳤고, 운영진은 같은 내용을 여러 곳에 반복 게시하면서 DM·댓글로 개별 문의까지 대응해야 했습니다. 
+학생들은 채널을 옮겨 다니다 티켓 링크를 놓쳤고, 운영진은 같은 내용을 여러 곳에 반복 게시하면서 DM·댓글로 개별 문의까지 대응해야 했습니다.
 예매 내역과 실수령 현황이 실시간으로 맞지 않아 현장에서 혼선도 잦았습니다.
 
-DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, 티켓을 예매·조회하며, 공지사항까지 한 번에 확인할 수 있습니다. 
+DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, 티켓을 예매·조회하며, 공지사항까지 한 번에 확인할 수 있습니다.
 운영진은 관리자 페이지에서 축제 콘텐츠를 관리하고, 예매 내역과 팔찌 배부 현황을 확인하며 현장 수령 처리를 진행할 수 있습니다.
 
-여기에 $\textcolor{#04c75b}{\textbf{네이버 페이와의 협업}}$이 더해졌습니다. 
+여기에 $\textcolor{#04c75b}{\textbf{네이버 페이와의 협업}}$이 더해졌습니다.
 네이버 페이스사인(얼굴 인증)을 입장 시 신원 확인에 연동해, 티켓 양도나 대리 입장을 구조적으로 차단했습니다. 실제로 비윤리적 양도·도용 사례는 0%에 수렴했습니다.
 
-2026년 5월 봄축제에서 실제 운영한 뒤, 같은 해 9월 가을축제에 맞춰 서비스를 개선해 다시 운영했습니다. 
+2026년 5월 봄축제에서 실제 운영한 뒤, 같은 해 9월 가을축제에 맞춰 서비스를 개선해 다시 운영했습니다.
 한국어·영어 전환과 콘텐츠 번역 기능을 추가해 축제 정보를 영어로도 확인할 수 있도록 했으며, 가을축제 고유의 로고·포스터와 브랜딩을 화면에 반영했습니다.
 
 총학생회와 직접 미팅하며 요구사항을 수집하고, 하나의 앱으로 해결했습니다.
@@ -92,6 +88,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 ---
 
 ## 2. 시연 영상 및 보고서 (2026년 상반기 기준)
+
+### 2.1 시연 영상
 
 <table>
 <tr>
@@ -128,8 +126,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </tr>
 </table>
 
-
-### 2026년 상반기 최종 보고서
+### 2.2 2026년 상반기 최종 보고서
 
 [![보고서](https://img.shields.io/badge/PDF-최종_보고서_보기-003087?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./docs/final-report.pdf)
 
@@ -139,7 +136,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 > 봄축제 운영 버전의 화면입니다. 가을축제에서 추가·개선한 화면은 다음 섹션에서 소개합니다.
 
-**사용자 화면**
+### 3.1 사용자 화면
+
+#### 3.1.1 주요 기능
 
 | 홈 | 타임테이블 | 부스맵 |
 |:---:|:---:|:---:|
@@ -149,13 +148,13 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 |:---:|:---:|:---:|
 | <img src="./screenshots/user/ticketing-queue.png" width="230"> | <img src="./screenshots/user/my-ticket.png" width="230"> | <img src="./screenshots/user/notice.png" width="230"> |
 
-**회원가입**
+#### 3.1.2 회원가입
 
 | 1단계 | 2단계 | 3단계 |
 |:---:|:---:|:---:|
 | <img src="./screenshots/user/signup1.png" width="230"> | <img src="./screenshots/user/signup2.png" width="230"> | <img src="./screenshots/user/signup3.png" width="230"> |
 
-**관리자 화면**
+### 3.2 관리자 화면
 
 | 공지 관리 | 광고 등록 | 팔찌 배부 |
 |:---:|:---:|:---:|
@@ -163,7 +162,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 4. 가을축제 — 브랜딩과 번역 기능 확장
+## 4. 가을축제 — 브랜딩·번역·운영 방식 개선
 
 봄축제 운영 이후, 가을축제의 분위기를 담은 화면과 영어로 축제 정보를 확인할 수 있는 기능을 더해 서비스를 다시 운영했습니다.
 
@@ -175,7 +174,6 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 |:---:|:---:|:---:|
 | <img src="./screenshots/user/home.png" alt="기존 봄축제 홈 화면" width="230" /> | <img src="https://github.com/user-attachments/assets/81ba3251-39e2-4b16-bcd7-f2c2bc1da4cf" alt="LEGEND 브랜딩을 반영한 가을축제 홈 화면" width="270" /> | <img src="https://github.com/user-attachments/assets/b2a582a1-a249-447b-be31-845f289f02e5" alt="가을축제 타임테이블 화면" width="270" /> |
 | 봄축제 운영 버전 | 가을축제 로고·포스터 반영 | 주요 화면에 브랜딩 적용 |
-
 
 ### 4.2 한국어·영어 전환 및 콘텐츠 번역
 
@@ -193,8 +191,6 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | **운영진 수정** | 관리자가 영문 내용을 직접 입력하거나 보정할 수 있도록 지원 |
 | **번역 누락 대응** | 영문이 없는 항목은 한국어 원문을 표시 |
 
----
-
 ### 4.3 관리자 번역 관리
 
 운영진이 한국어로 콘텐츠를 입력하면 영어 입력란에 번역 결과가 자동으로 채워지도록 구성했습니다. 자동 번역된 내용을 확인하고, 축제 고유 명칭이나 안내 표현은 직접 수정할 수 있습니다.
@@ -210,41 +206,41 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | **번역 확인·수정** | 한국어 원문과 영문 내용을 함께 확인하고, 필요한 표현을 직접 수정 |
 | **수동 번역 보호** | 관리자가 직접 수정한 영문은 자동 번역으로 덮어쓰지 않도록 처리 |
 
----
-
-### 4.4. 축제 운영 방식에 따른 티켓팅·회원가입 안내
+### 4.4 축제 운영 방식에 따른 티켓팅·회원가입 안내
 
 가을축제는 공연 규모를 고려한 총학생회의 요청에 따라 티켓팅을 진행하지 않았습니다. 이에 티켓팅과 회원가입 화면에 각각 안내 문구를 표시할 수 있도록 구현했습니다. 안내는 사용자가 선택한 언어에 따라 한국어 또는 영어로 제공됩니다.
 
-**티켓팅 안내**
+#### 4.4.1 티켓팅 안내
 
 | 한국어 | 영어 |
 |:---:|:---:|
 | <img src="./screenshots/autumn/ticketing-notice-ko.png" alt="가을축제 티켓팅 미운영 안내 한국어 화면" width="260" /> | <img src="./screenshots/autumn/ticketing-notice-en.png" alt="가을축제 티켓팅 미운영 안내 영어 화면" width="260" /> |
 
-**회원가입 안내**
+#### 4.4.2 회원가입 안내
 
 | 한국어 | 영어 |
 |:---:|:---:|
 | <img src="./screenshots/autumn/signup-notice-ko.png" alt="가을축제 회원가입 안내 한국어 화면" width="260" /> | <img src="./screenshots/autumn/signup-notice-en.png" alt="가을축제 회원가입 안내 영어 화면" width="260" /> |
+
 ---
 
-## 5. 시스템 아키텍처
+## 5. 아키텍처
+
+### 5.1 시스템 아키텍처
 
 <img src="./architecture/system-architecture.png" alt="System Architecture" width="800">
 
----
-
-## 6. 서비스 아키텍처
+### 5.2 서비스 아키텍처
 
 <img src="./architecture/service-architecture.png" alt="Service Architecture" width="800">
 
 오픈 순간 수천 명(최대 10000명까지 테스트)이 동시에 들어오는 상황을 고려해서 설계했습니다.
 
-
 ---
 
-## 7. 실제 운영 결과
+## 6. 실제 운영 결과
+
+### 6.1 티켓팅 운영 지표
 
 > 2026년 5월 7일 티켓팅 오픈 기준 실측 데이터
 
@@ -261,9 +257,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 <img src="./architecture/traffic.png" alt="Traffic" width="800">
 
----
-
-## 사용자 데이터
+### 6.2 사용자 데이터
 
 > 축제 기간 (5/10 – 5/14) 기능별 실제 사용 현황
 
@@ -286,9 +280,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </tr>
 </table>
 
----
-
-## 사용자 피드백
+### 6.3 사용자 피드백
 
 | | |
 |:---:|:---:|
@@ -297,7 +289,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 기대 효과
+## 7. 기대 효과 및 확장 계획
+
+### 7.1 기대 효과
 
 | | |
 |:---:|---|
@@ -305,7 +299,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | **암표·양도 원천 차단** | 네이버 페이스사인 얼굴 인증으로 입장 시 신원 재확인. 대리 입장과 티켓 양도를 구조적으로 차단 |
 | **사용자 편의성 향상** | 공연 정보, 예매, 부스 위치, 공지를 하나의 앱에서 제공. 채널을 옮겨 다니지 않아도 됨 |
 
-## 확장 계획
+### 7.2 확장 계획
 
 | | |
 |:---:|---|
@@ -315,9 +309,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 기술 스택
+## 8. 기술 스택
 
-**Frontend**
+### 8.1 Frontend
 
 ![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -325,7 +319,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
 
-**Backend**
+### 8.2 Backend
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL_8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
@@ -334,9 +328,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
-**Infra**
+### 8.3 Infra
 
 ![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=for-the-badge&logo=icloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
-
