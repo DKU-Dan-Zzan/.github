@@ -442,16 +442,13 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | 프론트엔드 구조·개발 가이드 | [개발 문서](https://github.com/DKU-Dan-Zzan/Danzzan-FE/tree/main/docs/architecture) |
 | 티켓팅 부하 테스트·검증 | [검증 보고서](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/load-test-report.md) · [실행 가이드](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/ticket-queue-load-test-runbook.md) |
 
-<details>
-<summary>기획·설계 자료</summary>
+### 2.4 기획·설계 자료
 
-| 자료 | 파일 |
-|---|---|
-| 기획 발표 | [PDF 보기](./docs/planning-presentation.pdf) |
-| 설계 보고서 | [PDF 보기](./docs/design-report.pdf) |
-| 와이어프레임 | [PDF 보기](./docs/wireframes.pdf) |
-
-</details>
+| 자료 | 와이어프레임 | 설계 보고서 | 기획 발표 |
+|---|:---:|:---:|:---:|
+| **개요** | 타임테이블·부스맵·관리자 화면의 초기 스케치와 화면 이동 흐름 | 요구사항·사용자 흐름·화면 설계, 데이터베이스·API·시스템 구성 | 프로젝트 배경과 문제 정의, 유사 서비스 분석·차별성·주요 기능·개발 계획 |
+| **주요 화면** | <a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes.png" alt="와이어프레임 1쪽: 타임테이블 화면과 이동 흐름 스케치" width="260" /></a><br>타임테이블 스케치 · 1쪽 | <a href="./docs/design-report.pdf"><img src="./docs/previews/design-report.png" alt="설계 보고서 15쪽: 홈·타임테이블 와이어프레임과 구현 화면 비교" width="260" /></a><br>화면 설계·구현 비교 · 15쪽 | <a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation.png" alt="기획 발표 14쪽: 사용자·웹 서비스·백엔드·관리자 서비스 구조도" width="260" /></a><br>서비스 구조도 · 14쪽 |
+| **원본 문서** | [PDF 보기](./docs/wireframes.pdf) | [PDF 보기](./docs/design-report.pdf) | [PDF 보기](./docs/planning-presentation.pdf) |
 
 ---
 
