@@ -37,9 +37,9 @@
 
 ---
 
-## 팀 소개
+## 0. 팀소개
 
-핵심 기여는 아래 표에 요약했습니다. 개인별 토글을 펼치면 **백엔드·프론트엔드·배포**별 상세 구현과 개선 사항, PR·커밋 근거를 확인할 수 있습니다.
+개인별 토글을 펼치면 **백엔드·프론트엔드·배포**별 상세 구현과 개선 사항, PR·커밋 근거를 확인할 수 있습니다.
 
 | 이름 | 핵심 기여 |
 |:---:|---|
@@ -49,10 +49,9 @@
 | [조하은](https://github.com/johaeunn) | 홈·공연·타임테이블·부스맵 API와 화면, 지도 좌표·콘텐츠·운영일 관리 구현 및 조회·편집 개선<br>전화번호 인증 세션 생성·문자 수신 검증 API, 앱·티켓 서비스 통합<br>AI 색상·테마 추천 API와 편집·미리보기·저장·활성화 화면 구현 |
 
 <details>
-<summary><h3>강하늘 — 상세역할 및 PR</h3></summary>
+<summary><strong>강하늘 — 상세역할 및 PR</strong></summary>
 
-[haneul-dev](https://github.com/haneul-dev) · 32230120  
-**참여 영역:** 백엔드 · 프론트엔드
+[haneul-dev](https://github.com/haneul-dev) · 32230120
 
 #### 백엔드
 
@@ -106,10 +105,9 @@
 </details>
 
 <details>
-<summary><h3>박지우 — 상세역할 및 PR</h3></summary>
+<summary><strong>박지우 — 상세역할 및 PR</strong></summary>
 
-[jiwoo1105](https://github.com/jiwoo1105) · 32211862  
-**참여 영역:** 백엔드 · 프론트엔드 · 배포
+[jiwoo1105](https://github.com/jiwoo1105) · 32211862
 
 #### 백엔드
 
@@ -193,10 +191,9 @@
 </details>
 
 <details>
-<summary><h3>박주희 — 상세역할 및 PR</h3></summary>
+<summary><strong>박주희 — 상세역할 및 PR</strong></summary>
 
-[juhee0223](https://github.com/juhee0223) · 32221902  
-**참여 영역:** 백엔드 · 프론트엔드 · 배포
+[juhee0223](https://github.com/juhee0223) · 32221902
 
 #### 백엔드
 
@@ -296,10 +293,9 @@
 </details>
 
 <details>
-<summary><h3>조하은 — 상세역할 및 PR</h3></summary>
+<summary><strong>조하은 — 상세역할 및 PR</strong></summary>
 
-[johaeunn](https://github.com/johaeunn) · 32234364  
-**참여 영역:** 백엔드 · 프론트엔드
+[johaeunn](https://github.com/johaeunn) · 32234364
 
 #### 백엔드
 
@@ -366,15 +362,14 @@
 
 ## 자문부
 
-| 이름 | 참여 영역 | 핵심 기여 |
-|:---:|---|---|
-| [최재민](https://github.com/dku19jam) | 백엔드·배포 | 기술 자문, Kafka·Outbox 발급·Redis 최적화<br>봄 NHN 인스턴스·스토리지·인증서·도메인 구축 |
+| 이름 | 핵심 기여 |
+|:---:|---|
+| [최재민](https://github.com/dku19jam) | 기술 자문, Kafka·Outbox 발급·Redis 최적화<br>봄 NHN 인스턴스·스토리지·인증서·도메인 구축 |
 
 <details>
-<summary><h3>최재민 — 상세역할 및 PR</h3></summary>
+<summary><strong>최재민 — 상세역할 및 PR</strong></summary>
 
-[dku19jam](https://github.com/dku19jam) · 기술 자문·백엔드 개발·봄축제 인프라 구축  
-**참여 영역:** 백엔드 · 배포
+[dku19jam](https://github.com/dku19jam) · 기술 자문·백엔드 개발·봄축제 인프라 구축
 
 #### 백엔드
 
@@ -451,7 +446,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 | 자료 | 파일 |
 |---|---|
-| 프로젝트 결과보고서 | [PDF 보기](./docs/final-report.pdf) · [Word 원본](./docs/final-report.docx) |
+| 프로젝트 결과보고서 | [PDF 보기](./docs/final-report.pdf) |
 | 졸업작품 포스터 | [PDF 보기](./docs/poster.pdf) · [이미지 보기](./docs/poster.png) |
 
 <p align="center">
