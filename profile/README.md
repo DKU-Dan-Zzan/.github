@@ -8,8 +8,7 @@
 &nbsp;·&nbsp;
 [**Backend Repository**](https://github.com/DKU-Dan-Zzan/Danzzan-BE)
 
-**졸업작품 시연용 · 최신 배포본**  
-[https://danzzan.koreacentral.cloudapp.azure.com/](https://danzzan.koreacentral.cloudapp.azure.com/)
+**졸업작품 시연용 :** [https://danzzan.koreacentral.cloudapp.azure.com/](https://danzzan.koreacentral.cloudapp.azure.com/)
 
 **축제 운영 당시 주소** · `https://danfesta2026.yaaksok.com/`  
 <sub>2026 단국대학교 봄 축제 & 가을 축제 기간 실제 운영 · 축제 서비스 종료</sub>
@@ -38,8 +37,6 @@
 ---
 
 ## 0. 팀소개
-
-개인별 토글을 펼치면 **백엔드·프론트엔드·배포**별 상세 구현과 개선 사항, PR·커밋 근거를 확인할 수 있습니다.
 
 | 이름 | 핵심 기여 |
 |:---:|---|
@@ -360,56 +357,7 @@
 
 </details>
 
-## 자문부
-
-| 이름 | 핵심 기여 |
-|:---:|---|
-| [최재민](https://github.com/dku19jam) | 기술 자문, Kafka·Outbox 발급·Redis 최적화<br>봄 NHN 인스턴스·스토리지·인증서·도메인 구축 |
-
-<details>
-<summary><strong>최재민 — 상세역할 및 PR</strong></summary>
-
-[dku19jam](https://github.com/dku19jam) · 기술 자문·백엔드 개발·봄축제 인프라 구축
-
-#### 백엔드
-
-| 기능 | 상세 기여 |
-|---|---|
-| **비동기 발급 도입** | 기존 예매 흐름에 Kafka·Transactional Outbox를 도입하고 접수·발급 처리, 요청 상태 및 발급 이벤트 구조 구현. |
-| **실패·중복 처리** | Outbox publisher·consumer와 재시도·보상 처리, PROCESSING·FAILED 상태 응답과 발급 요청 상태 캐시 보완. |
-| **Redis 배치 승격·Pipeline·상태 캐시** | 이벤트 상태 캐시, Lua 일괄 승격, Pipeline 상태 조회, 직접 입장 경로와 조건부 조회를 적용해 DB·Redis 왕복 비용 개선. |
-| **공통 인증 응답 개선** | 중복 인증 필터를 정리하고 미인증 응답의 401 처리를 보완. |
-| **테스트·병목 분석** | Kafka·Redis 단위·회귀 테스트, 로컬 검증 도구와 부하 시나리오 및 병목 분석 지원. |
-
-#### 배포
-
-| 기능 | 상세 기여 |
-|---|---|
-| **봄축제 NHN 인프라·스토리지·HTTPS·도메인** | 봄축제의 NHN 프론트엔드·백엔드 인스턴스 구성과 배포, Object Storage 구성·연동, 인증서 인증·적용, 도메인 발급 및 서비스 연동까지 배포 환경 전반을 담당. 팀 기술 자문도 지원. |
-
-<details>
-<summary>최재민의 PR·커밋 근거</summary>
-
-**백엔드**
-
-- **비동기 발급 도입:** [BE #44](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/44)
-- **실패·중복 처리:** [9182194](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/9182194) · [6a5c7e4](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/6a5c7e4) · [572eea7](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/572eea7)
-- **Redis 배치 승격·Pipeline·상태 캐시:** [4789692](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/4789692) · [1aacc21](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/1aacc21) · [435df04](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/435df04) · [396b1d4](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/396b1d4)
-- **공통 인증 응답 개선:** [BE #44](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/44) · [8e7f8af](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/8e7f8af) · [d0508d0](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/d0508d0)
-- **테스트·병목 분석:** [BE #44](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/44)
-
-**배포**
-
-- **봄축제 NHN 인프라·스토리지·HTTPS·도메인:** 팀원 확인 내용에 근거.
-
-</details>
-
-</details>
-
-
----
-
-## 1. 어떤 서비스인가요?
+## 1. 개발 배경 & 프로젝트 소개
 
 공지는 인스타그램, 티켓은 오픈카톡, 부스 위치는 에브리타임 — 축제 정보는 늘 여러 채널에 흩어져 있었습니다.
 
@@ -449,12 +397,6 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | 프로젝트 결과보고서 | [PDF 보기](./docs/final-report.pdf) |
 | 졸업작품 포스터 | [PDF 보기](./docs/poster.pdf) · [이미지 보기](./docs/poster.png) |
 
-<p align="center">
-  <a href="./docs/poster.pdf">
-    <img src="./docs/poster.png" alt="DANZZAN 졸업작품 포스터 — 서비스 소개, 아키텍처, 주요 기능 및 운영 성과" width="640" />
-  </a>
-</p>
-
 ### 2.3 소스 코드 및 개발 문서
 
 | 자료 | 링크 |
@@ -463,7 +405,6 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | 백엔드 소스 코드 | [Danzzan-BE](https://github.com/DKU-Dan-Zzan/Danzzan-BE) |
 | 프론트엔드 구조·개발 가이드 | [개발 문서](https://github.com/DKU-Dan-Zzan/Danzzan-FE/tree/main/docs/architecture) |
 | 티켓팅 부하 테스트·검증 | [검증 보고서](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/load-test-report.md) · [실행 가이드](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/ticket-queue-load-test-runbook.md) |
-
 
 <details>
 <summary>기획·설계 자료</summary>
@@ -516,16 +457,14 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 가을축제 **LEGEND**의 로고와 포스터를 서비스에 반영했습니다. 홈 화면뿐 아니라 타임테이블에서도 축제의 시각적 정체성이 이어지도록 구성했습니다.
 
-
 | 봄축제 홈 | 가을축제 홈 | 가을축제 타임테이블 |
 |:---:|:---:|:---:|
 | <img src="./screenshots/user/home.png" alt="기존 봄축제 홈 화면" width="230" /> | <img src="https://github.com/user-attachments/assets/89c7688c-1b72-4960-be86-b6ee16e5d7c4" alt="LEGEND 브랜딩을 반영한 가을축제 홈 화면" width="250" /> | <img src="https://github.com/user-attachments/assets/b2a582a1-a249-447b-be31-845f289f02e5" alt="가을축제 타임테이블 화면" width="260" /> |
 | 봄축제 운영 버전 | 가을축제 로고·포스터 반영 | 주요 화면에 브랜딩 적용 |
 
-### 4.2 한국어·영어 전환 및 콘텐츠 번역
+### 4.2 한국어·영어 전환 및 관리자 번역 관리
 
 한국어와 영어를 선택해 화면을 이용할 수 있도록 언어 전환 기능을 추가했습니다. 메뉴와 버튼 등의 UI 문구뿐 아니라, 공지사항·부스·공연 정보 등 운영진이 등록하는 텍스트에도 영어 번역을 적용했습니다.
-
 
 | 한국어 공지 | 영어 공지 |
 |:---:|:---:|
@@ -538,8 +477,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | **콘텐츠 번역** | DeepL을 연동해 운영 콘텐츠의 한국어 텍스트를 영어로 번역 |
 | **운영진 수정** | 관리자가 영문 내용을 직접 입력하거나 보정할 수 있도록 지원 |
 | **번역 누락 대응** | 영문이 없는 항목은 한국어 원문을 표시 |
+| **수동 번역 보호** | 관리자가 직접 수정한 영문은 자동 번역으로 덮어쓰지 않도록 처리 |
 
-### 4.3 관리자 번역 관리
+#### 운영진의 번역 확인·수정
 
 운영진이 한국어로 콘텐츠를 입력하면 영어 입력란에 번역 결과가 자동으로 채워지도록 구성했습니다. 자동 번역된 내용을 확인하고, 축제 고유 명칭이나 안내 표현은 직접 수정할 수 있습니다.
 
@@ -548,32 +488,19 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | <img src="https://github.com/user-attachments/assets/f34e37c8-f589-47b5-b911-e459c68a7611" alt="관리자 페이지의 한국어 콘텐츠 입력란" width="400" /> | <img src="https://github.com/user-attachments/assets/c2ef91c2-d3bb-498a-ace3-037c127f274b" alt="번역 결과가 자동으로 채워진 영어 입력란" width="400" /> |
 | 운영진이 한국어 제목과 본문 입력 | 자동 번역된 영문 확인 및 수정 |
 
-| 기능 | 내용 |
-|:---|:---|
-| **자동 번역** | 한국어로 등록한 운영 콘텐츠에 DeepL 기반 영어 번역 적용 |
-| **번역 확인·수정** | 한국어 원문과 영문 내용을 함께 확인하고, 필요한 표현을 직접 수정 |
-| **수동 번역 보호** | 관리자가 직접 수정한 영문은 자동 번역으로 덮어쓰지 않도록 처리 |
-
-### 4.4 축제 운영 방식에 따른 티켓팅·회원가입 안내
+### 4.3 축제 운영 방식에 따른 티켓팅·회원가입 안내
 
 가을축제는 공연 규모를 고려한 총학생회의 요청에 따라 티켓팅을 진행하지 않았습니다. 이에 티켓팅과 회원가입 화면에 각각 안내 문구를 표시할 수 있도록 구현했습니다. 안내는 사용자가 선택한 언어에 따라 한국어 또는 영어로 제공됩니다.
 
+| 티켓팅 안내 · 한국어 | 티켓팅 안내 · 영어 | 회원가입 안내 · 한국어 | 회원가입 안내 · 영어 |
+|:---:|:---:|:---:|:---:|
+| <img src="https://github.com/user-attachments/assets/e27425b1-b006-43af-823b-18ed1b40ec3a" alt="가을축제 티켓팅 미운영 안내 한국어 화면" width="180" /> | <img src="https://github.com/user-attachments/assets/400df540-c9cb-4cb5-84f9-35ec0cc944df" alt="가을축제 티켓팅 미운영 안내 영어 화면" width="180" /> | <img src="https://github.com/user-attachments/assets/0029a7dc-ef80-4a8d-a430-a23a439e52c7" alt="가을축제 회원가입 안내 한국어 화면" width="180" /> | <img src="https://github.com/user-attachments/assets/cb7e1801-2503-44b0-adbc-2d1619b4e532" alt="가을축제 회원가입 안내 영어 화면" width="180" /> |
 
-#### 4.4.1 티켓팅 안내
+### 4.4 축제 기본정보와 티켓 운영 설정
 
-| 한국어 | 영어 |
-|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/e27425b1-b006-43af-823b-18ed1b40ec3a" alt="가을축제 티켓팅 미운영 안내 한국어 화면" width="260" /> | <img src="https://github.com/user-attachments/assets/400df540-c9cb-4cb5-84f9-35ec0cc944df" alt="가을축제 티켓팅 미운영 안내 영어 화면" width="260" /> |
+<img src="./screenshots/admin/features/01-festival-settings.jpg" alt="축제 기본정보" width="760" />
 
-
-#### 4.4.2 회원가입 안내
-
-
-| 한국어 | 영어 |
-|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/0029a7dc-ef80-4a8d-a430-a23a439e52c7" alt="가을축제 회원가입 안내 한국어 화면" width="250" /> | <img src="https://github.com/user-attachments/assets/cb7e1801-2503-44b0-adbc-2d1619b4e532" alt="가을축제 회원가입 안내 영어 화면" width="260" /> |
-
-### 4.5 축제 기본정보와 티켓 운영 설정
+<img src="./screenshots/admin/features/03-ticket-edit-full.jpg" alt="티켓 회차 설정" width="760" />
 
 하반기에는 축제마다 바뀌는 운영 정보와 화면 구성을 관리자가 직접 설정할 수 있도록 기능을 확장했습니다. 축제 이름·운영 기간·로고·포스터를 관리하고, 공연일별 티켓 회차와 예매 시작 시각·발급 수량을 설정할 수 있습니다.
 
@@ -587,7 +514,11 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 티켓팅을 꺼도 기존 회차와 발급 기록을 보존하며, 로그인·회원가입 등 계정 기능과 신규 예매 허용 여부를 분리했습니다.
 
-### 4.6 운영진 지정 및 권한 관리
+### 4.5 운영진 지정 및 권한 관리
+
+<img src="./screenshots/admin/features/staff-permissions.png" alt="운영진 역할별 권한과 매니저 목록 관리 화면" width="760" />
+
+<sub>실제 관리자 화면을 예시 계정 데이터로 캡처했습니다.</sub>
 
 최고 관리자가 가입된 사용자를 조회해 운영진으로 지정하고 권한을 부여·회수할 수 있도록 구현했습니다. 일반 운영 관리와 티켓팅 관리 권한을 분리해 담당 업무에 필요한 메뉴를 이용하도록 구성했습니다.
 
@@ -599,7 +530,11 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 화면의 메뉴 노출뿐 아니라 서버에서도 권한을 확인하고, 권한 변경 이력과 기존 세션의 무효화를 함께 처리합니다. 마지막 최고 관리자나 자기 자신의 권한을 잘못 회수하는 상황도 제한했습니다.
 
-### 4.7 포스터 기반 AI 테마 및 배경 추천
+### 4.6 포스터 기반 AI 테마 및 배경 추천
+
+<img src="./screenshots/admin/features/03-select-palette.jpg" alt="AI 테마 추천" width="760" />
+
+<img src="./screenshots/admin/features/04-review-apply.jpg" alt="미리보기와 적용" width="760" />
 
 축제 포스터와 로고를 등록한 뒤 대표색을 추출하고, 이를 바탕으로 AI가 추천한 색상 시안을 선택할 수 있도록 구현했습니다. 관리자는 홈·티켓·안내 화면의 미리보기를 확인하고 선택한 테마와 배경을 함께 적용할 수 있습니다.
 
@@ -613,7 +548,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 배경 추천은 등록한 포스터를 분석·가공하는 흐름입니다. 배경 이미지가 없거나 로딩에 실패하면 공식 포스터·기본 이미지로 대체하며, 화면 배경에 맞춰 로고와 글자의 가독성을 조정했습니다.
 
-### 4.8 공지·광고 통합 관리
+### 4.7 공지·광고 통합 관리
+
+<img src="./screenshots/admin/features/13-notice-ad-unified.jpg" alt="공지·광고 통합 관리" width="760" />
 
 관리자가 긴급 공지, 일반 공지, 광고 배너를 한 페이지에서 관리할 수 있도록 화면을 통합했습니다. 한영 콘텐츠 확인·수정과 배너 관리를 같은 운영 흐름에서 처리할 수 있습니다.
 
@@ -621,23 +558,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 5. 아키텍처
+## 5. 실제 운영 결과
 
-### 5.1 시스템 아키텍처
-
-<img src="./architecture/system-architecture.png" alt="System Architecture" width="800">
-
-### 5.2 서비스 아키텍처
-
-<img src="./architecture/service-architecture.png" alt="Service Architecture" width="800">
-
-오픈 순간 수천 명(최대 10000명까지 테스트)이 동시에 들어오는 상황을 고려해서 설계했습니다.
-
----
-
-## 6. 실제 운영 결과
-
-### 6.1 티켓팅 운영 지표
+### 5.1 티켓팅 운영 지표
 
 > 2026년 5월 7일 티켓팅 오픈 기준 실측 데이터
 
@@ -654,30 +577,25 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 <img src="./architecture/traffic.png" alt="Traffic" width="800">
 
-### 6.2 사용자 데이터
+### 5.2 사용자 데이터
 
-> 축제 기간 (5/10 – 5/14) 기능별 실제 사용 현황
+봄축제와 가을축제의 핵심 기능별 조회수입니다. 막대는 두 축제의 조회수를 누적해 표시했습니다.
 
-<table>
-<tr>
-<td><img src="./architecture/user-data.png" alt="User Data" width="380"></td>
-<td>
+<img src="./architecture/spring-autumn-views.png" alt="봄·가을축제 핵심 기능별 조회수 비교" width="800" />
 
-| 기능 | 조회수 |
-|---|---:|
-| 타임테이블 | **8,146회** |
-| 티켓팅 | **7,356회** |
-| 내 티켓 | **5,897회** |
-| 부스맵 | **4,303회** |
-| 공지사항 | **3,528회** |
+| 기능 | 봄 축제 | 가을 축제 | 합계 |
+|:---|---:|---:|---:|
+| 타임테이블 | 8,146회 | 1,893회 | 10,039회 |
+| 티켓 예매 | 7,356회 | 0회 | 7,356회 |
+| 내 티켓 | 5,997회 | 0회 | 5,997회 |
+| 부스맵 | 4,303회 | 1,555회 | 5,858회 |
+| 공지사항 | 3,528회 | 1,249회 | 4,777회 |
 
-총 누적 이벤트 수 (클릭·스크롤 등) **82,000+**
+가을축제는 티켓팅을 운영하지 않아 티켓 예매·내 티켓 조회수가 0회입니다.
 
-</td>
-</tr>
-</table>
+봄축제 기간(5/10–5/14) 총 누적 이벤트 수(클릭·스크롤 등): **82,000+**
 
-### 6.3 사용자 피드백
+### 5.3 사용자 피드백
 
 | | |
 |:---:|:---:|
@@ -686,9 +604,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 7. 기대 효과 및 확장 계획
+## 6. 기대 효과 및 확장 계획
 
-### 7.1 기대 효과
+### 6.1 기대 효과
 
 | | |
 |:---:|---|
@@ -696,7 +614,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | **암표·양도 원천 차단** | 네이버 페이스사인 얼굴 인증으로 입장 시 신원 재확인. 대리 입장과 티켓 양도를 구조적으로 차단 |
 | **사용자 편의성 향상** | 공연 정보, 예매, 부스 위치, 공지를 하나의 앱에서 제공. 채널을 옮겨 다니지 않아도 됨 |
 
-### 7.2 확장 계획
+### 6.2 확장 계획
 
 | | |
 |:---:|---|
@@ -706,9 +624,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 8. 기술 스택
+## 7. 기술 스택
 
-### 8.1 Frontend
+### 7.1 Frontend
 
 ![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -716,7 +634,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
 
-### 8.2 Backend
+### 7.2 Backend
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL_8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
@@ -725,8 +643,24 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
-### 8.3 Infra
+### 7.3 Infra
 
 ![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=for-the-badge&logo=icloud&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
+
+---
+
+## 8. 아키텍처
+
+### 8.1 시스템 아키텍처
+
+<img src="./architecture/system-architecture.png" alt="System Architecture" width="800">
+
+### 8.2 서비스 아키텍처
+
+<img src="./architecture/service-architecture.png" alt="Service Architecture" width="800">
+
+오픈 순간 수천 명(최대 10000명까지 테스트)이 동시에 들어오는 상황을 고려해서 설계했습니다.
+
+---
