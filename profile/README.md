@@ -464,29 +464,16 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ### 4.2 한국어·영어 전환 및 관리자 번역 관리
 
-한국어와 영어를 선택해 화면을 이용할 수 있도록 언어 전환 기능을 추가했습니다. 메뉴와 버튼 등의 UI 문구뿐 아니라, 공지사항·부스·공연 정보 등 운영진이 등록하는 텍스트에도 영어 번역을 적용했습니다.
-
-| 한국어 공지 | 영어 공지 |
-|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/e3576ab8-2327-47a9-a5cd-e7652c4c1c60" alt="가을축제 공지 상세 한국어 화면" width="350" /> | <img src="https://github.com/user-attachments/assets/04af38cb-3413-403d-8e7c-0d402c92e3de" alt="동일한 가을축제 공지 상세 영어 화면" width="350" /> |
-| 한국어 제목과 본문 | 동일한 공지의 영어 제목과 본문 |
-
-| 구분 | 구현 내용 |
-|:---|:---|
-| **UI 언어 전환** | 한국어·영어 문자열 사전을 분리해 선택한 언어의 문구 표시 |
-| **콘텐츠 번역** | DeepL을 연동해 운영 콘텐츠의 한국어 텍스트를 영어로 번역 |
-| **운영진 수정** | 관리자가 영문 내용을 직접 입력하거나 보정할 수 있도록 지원 |
-| **번역 누락 대응** | 영문이 없는 항목은 한국어 원문을 표시 |
-| **수동 번역 보호** | 관리자가 직접 수정한 영문은 자동 번역으로 덮어쓰지 않도록 처리 |
-
-#### 운영진의 번역 확인·수정
-
-운영진이 한국어로 콘텐츠를 입력하면 영어 입력란에 번역 결과가 자동으로 채워지도록 구성했습니다. 자동 번역된 내용을 확인하고, 축제 고유 명칭이나 안내 표현은 직접 수정할 수 있습니다.
-
-| 한국어 콘텐츠 입력 | 영어 번역 자동 입력 |
-|:---:|:---:|
-| <img src="https://github.com/user-attachments/assets/f34e37c8-f589-47b5-b911-e459c68a7611" alt="관리자 페이지의 한국어 콘텐츠 입력란" width="400" /> | <img src="https://github.com/user-attachments/assets/c2ef91c2-d3bb-498a-ace3-037c127f274b" alt="번역 결과가 자동으로 채워진 영어 입력란" width="400" /> |
-| 운영진이 한국어 제목과 본문 입력 | 자동 번역된 영문 확인 및 수정 |
+<table>
+<tr>
+<td width="60%" valign="middle">
+<table><tr><th>한국어</th><th>영어</th></tr><tr><td align="center"><a href="https://github.com/user-attachments/assets/e3576ab8-2327-47a9-a5cd-e7652c4c1c60"><img src="https://github.com/user-attachments/assets/e3576ab8-2327-47a9-a5cd-e7652c4c1c60" alt="가을축제 공지 상세 한국어 화면" width="180" /></a><br /><sub>사용자 화면</sub></td><td align="center"><a href="https://github.com/user-attachments/assets/04af38cb-3413-403d-8e7c-0d402c92e3de"><img src="https://github.com/user-attachments/assets/04af38cb-3413-403d-8e7c-0d402c92e3de" alt="동일한 가을축제 공지 상세 영어 화면" width="180" /></a><br /><sub>사용자 화면</sub></td></tr><tr><td align="center"><a href="https://github.com/user-attachments/assets/f34e37c8-f589-47b5-b911-e459c68a7611"><img src="https://github.com/user-attachments/assets/f34e37c8-f589-47b5-b911-e459c68a7611" alt="관리자 페이지의 한국어 콘텐츠 입력란" width="230" /></a><br /><sub>관리자 화면</sub></td><td align="center"><a href="https://github.com/user-attachments/assets/c2ef91c2-d3bb-498a-ace3-037c127f274b"><img src="https://github.com/user-attachments/assets/c2ef91c2-d3bb-498a-ace3-037c127f274b" alt="번역 결과가 자동으로 채워진 영어 입력란" width="230" /></a><br /><sub>관리자 화면</sub></td></tr></table>
+</td>
+<td width="40%" valign="middle">
+<p>사용자는 한국어·영어로 축제 정보를 확인하고, 운영진은 자동 번역된 내용을 확인·수정합니다.</p><table><tr><th>구분</th><th>구현 내용</th></tr><tr><td><strong>UI 언어 전환</strong></td><td>한국어·영어 문자열 사전을 분리해 선택한 언어의 문구 표시</td></tr><tr><td><strong>콘텐츠 번역</strong></td><td>DeepL을 연동해 운영 콘텐츠의 한국어 텍스트를 영어로 번역</td></tr><tr><td><strong>운영진 수정</strong></td><td>관리자가 영문 내용을 직접 입력하거나 보정할 수 있도록 지원</td></tr><tr><td><strong>번역 누락 대응</strong></td><td>영문이 없는 항목은 한국어 원문을 표시</td></tr><tr><td><strong>수동 번역 보호</strong></td><td>관리자가 직접 수정한 영문은 자동 번역으로 덮어쓰지 않도록 처리</td></tr></table>
+</td>
+</tr>
+</table>
 
 ### 4.3 축제 운영 방식에 따른 티켓팅·회원가입 안내
 
@@ -498,61 +485,68 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ### 4.4 축제 기본정보와 티켓 운영 설정
 
-<img src="./screenshots/admin/features/01-festival-settings.jpg" alt="축제 기본정보" width="760" />
-
-<img src="./screenshots/admin/features/03-ticket-edit-full.jpg" alt="티켓 회차 설정" width="760" />
-
-하반기에는 축제마다 바뀌는 운영 정보와 화면 구성을 관리자가 직접 설정할 수 있도록 기능을 확장했습니다. 축제 이름·운영 기간·로고·포스터를 관리하고, 공연일별 티켓 회차와 예매 시작 시각·발급 수량을 설정할 수 있습니다.
-
-| 기능 | 구현 내용 |
-|:---|:---|
-| **축제 기본정보** | 축제 이름·운영 기간·브랜딩 이미지와 홈 대표 이미지 관리 |
-| **티켓 운영 설정** | 티켓팅 ON/OFF, 회차별 공연일·예매 시작 시각·발급 수량 설정 |
-| **일정 연동** | 사용자 티켓 목록과 관리자 팔찌 배부 화면에 동일한 회차 정보 반영 |
-| **변경 보호** | 시작된 회차의 주요 정보 수정 제한, 발급 티켓이 있는 회차 삭제 시 영향 안내 |
-| **안내 화면 관리** | 티켓팅 미운영 안내와 발급 티켓의 배경 이미지 설정·미리보기·기본값 복원 |
-
-티켓팅을 꺼도 기존 회차와 발급 기록을 보존하며, 로그인·회원가입 등 계정 기능과 신규 예매 허용 여부를 분리했습니다.
+<table>
+<tr>
+<td width="30%" valign="middle">
+<a href="./screenshots/admin/features/01-festival-settings.jpg"><img src="./screenshots/admin/features/01-festival-settings.jpg" alt="축제 기본정보" width="300" /></a>
+</td>
+<td width="30%" valign="middle">
+<a href="./screenshots/admin/features/03-ticket-edit-full.jpg"><img src="./screenshots/admin/features/03-ticket-edit-full.jpg" alt="티켓 회차 설정" width="300" /></a>
+</td>
+<td width="40%" valign="middle">
+<p>하반기에는 축제마다 바뀌는 운영 정보와 화면 구성을 관리자가 직접 설정할 수 있도록 기능을 확장했습니다. 축제 이름·운영 기간·로고·포스터를 관리하고, 공연일별 티켓 회차와 예매 시작 시각·발급 수량을 설정할 수 있습니다.</p>
+<table><tr><th>기능</th><th>구현 내용</th></tr><tr><td><strong>축제 기본정보</strong></td><td>축제 이름·운영 기간·브랜딩 이미지와 홈 대표 이미지 관리</td></tr><tr><td><strong>티켓 운영 설정</strong></td><td>티켓팅 ON/OFF, 회차별 공연일·예매 시작 시각·발급 수량 설정</td></tr><tr><td><strong>일정 연동</strong></td><td>사용자 티켓 목록과 관리자 팔찌 배부 화면에 동일한 회차 정보 반영</td></tr><tr><td><strong>변경 보호</strong></td><td>시작된 회차의 주요 정보 수정 제한, 발급 티켓이 있는 회차 삭제 시 영향 안내</td></tr><tr><td><strong>안내 화면 관리</strong></td><td>티켓팅 미운영 안내와 발급 티켓의 배경 이미지 설정·미리보기·기본값 복원</td></tr></table>
+<p>티켓팅을 꺼도 기존 회차와 발급 기록을 보존하며, 로그인·회원가입 등 계정 기능과 신규 예매 허용 여부를 분리했습니다.</p>
+</td>
+</tr>
+</table>
 
 ### 4.5 운영진 지정 및 권한 관리
 
-<img src="./screenshots/admin/features/staff-permissions.png" alt="운영진 역할별 권한과 매니저 목록 관리 화면" width="760" />
-
-<sub>실제 관리자 화면을 예시 계정 데이터로 캡처했습니다.</sub>
-
-최고 관리자가 가입된 사용자를 조회해 운영진으로 지정하고 권한을 부여·회수할 수 있도록 구현했습니다. 일반 운영 관리와 티켓팅 관리 권한을 분리해 담당 업무에 필요한 메뉴를 이용하도록 구성했습니다.
-
-| 권한 | 관리 범위 |
-|:---|:---|
-| **일반 운영** | 축제 기본정보·테마·공지·광고·부스맵·타임테이블·번역 |
-| **티켓팅 운영** | 티켓 설정·회차·발급 및 취소·팔찌 배부·통계 |
-| **최고 관리자** | 전체 운영 기능과 운영진 권한 지정·회수, 최고 관리자 승격·강등 |
-
-화면의 메뉴 노출뿐 아니라 서버에서도 권한을 확인하고, 권한 변경 이력과 기존 세션의 무효화를 함께 처리합니다. 마지막 최고 관리자나 자기 자신의 권한을 잘못 회수하는 상황도 제한했습니다.
+<table>
+<tr>
+<td width="50%" valign="middle">
+<a href="./screenshots/admin/features/staff-permissions.png"><img src="./screenshots/admin/features/staff-permissions.png" alt="운영진 역할별 권한과 매니저 목록 관리 화면" width="440" /></a>
+</td>
+<td width="50%" valign="middle">
+<p><sub>실제 관리자 화면을 예시 계정 데이터로 캡처했습니다.</sub></p>
+<p>최고 관리자가 가입된 사용자를 조회해 운영진으로 지정하고 권한을 부여·회수할 수 있도록 구현했습니다. 일반 운영 관리와 티켓팅 관리 권한을 분리해 담당 업무에 필요한 메뉴를 이용하도록 구성했습니다.</p>
+<table><tr><th>권한</th><th>관리 범위</th></tr><tr><td><strong>일반 운영</strong></td><td>축제 기본정보·테마·공지·광고·부스맵·타임테이블·번역</td></tr><tr><td><strong>티켓팅 운영</strong></td><td>티켓 설정·회차·발급 및 취소·팔찌 배부·통계</td></tr><tr><td><strong>최고 관리자</strong></td><td>전체 운영 기능과 운영진 권한 지정·회수, 최고 관리자 승격·강등</td></tr></table>
+<p>화면의 메뉴 노출뿐 아니라 서버에서도 권한을 확인하고, 권한 변경 이력과 기존 세션의 무효화를 함께 처리합니다. 마지막 최고 관리자나 자기 자신의 권한을 잘못 회수하는 상황도 제한했습니다.</p>
+</td>
+</tr>
+</table>
 
 ### 4.6 포스터 기반 AI 테마 및 배경 추천
 
-<img src="./screenshots/admin/features/03-select-palette.jpg" alt="AI 테마 추천" width="760" />
-
-<img src="./screenshots/admin/features/04-review-apply.jpg" alt="미리보기와 적용" width="760" />
-
-축제 포스터와 로고를 등록한 뒤 대표색을 추출하고, 이를 바탕으로 AI가 추천한 색상 시안을 선택할 수 있도록 구현했습니다. 관리자는 홈·티켓·안내 화면의 미리보기를 확인하고 선택한 테마와 배경을 함께 적용할 수 있습니다.
-
-| 단계 | 기능 |
-|:---|:---|
-| **이미지 준비** | 공식 포스터·로고 등록, 기존 이미지 또는 포스터를 활용한 홈 대표 이미지 준비 |
-| **테마 추천** | 포스터 대표색 추출, 기준색 선택, 색상 시안 추천 및 팔레트 보정 |
-| **배경 추천** | 포스터에서 화면 용도에 맞는 가로·세로 영역을 추천하고 포스터를 잘라 배경 이미지 구성 |
-| **미리보기** | 사용자 화면에 적용될 테마, 티켓 카드, 티켓팅 안내, 내 정보 화면 확인 |
-| **전체 적용** | 선택한 테마·배경·홈 이미지 초안을 함께 반영하고, 충돌·실패 시 부분 적용 방지 |
-
-배경 추천은 등록한 포스터를 분석·가공하는 흐름입니다. 배경 이미지가 없거나 로딩에 실패하면 공식 포스터·기본 이미지로 대체하며, 화면 배경에 맞춰 로고와 글자의 가독성을 조정했습니다.
+<table>
+<tr>
+<td width="30%" valign="middle">
+<a href="./screenshots/admin/features/03-select-palette.jpg"><img src="./screenshots/admin/features/03-select-palette.jpg" alt="AI 테마 추천" width="300" /></a>
+</td>
+<td width="30%" valign="middle">
+<a href="./screenshots/admin/features/04-review-apply.jpg"><img src="./screenshots/admin/features/04-review-apply.jpg" alt="미리보기와 적용" width="300" /></a>
+</td>
+<td width="40%" valign="middle">
+<p>축제 포스터와 로고를 등록한 뒤 대표색을 추출하고, 이를 바탕으로 AI가 추천한 색상 시안을 선택할 수 있도록 구현했습니다. 관리자는 홈·티켓·안내 화면의 미리보기를 확인하고 선택한 테마와 배경을 함께 적용할 수 있습니다.</p>
+<table><tr><th>단계</th><th>기능</th></tr><tr><td><strong>이미지 준비</strong></td><td>공식 포스터·로고 등록, 기존 이미지 또는 포스터를 활용한 홈 대표 이미지 준비</td></tr><tr><td><strong>테마 추천</strong></td><td>포스터 대표색 추출, 기준색 선택, 색상 시안 추천 및 팔레트 보정</td></tr><tr><td><strong>배경 추천</strong></td><td>포스터에서 화면 용도에 맞는 가로·세로 영역을 추천하고 포스터를 잘라 배경 이미지 구성</td></tr><tr><td><strong>미리보기</strong></td><td>사용자 화면에 적용될 테마, 티켓 카드, 티켓팅 안내, 내 정보 화면 확인</td></tr><tr><td><strong>전체 적용</strong></td><td>선택한 테마·배경·홈 이미지 초안을 함께 반영하고, 충돌·실패 시 부분 적용 방지</td></tr></table>
+<p>배경 추천은 등록한 포스터를 분석·가공하는 흐름입니다. 배경 이미지가 없거나 로딩에 실패하면 공식 포스터·기본 이미지로 대체하며, 화면 배경에 맞춰 로고와 글자의 가독성을 조정했습니다.</p>
+</td>
+</tr>
+</table>
 
 ### 4.7 공지·광고 통합 관리
 
-<img src="./screenshots/admin/features/13-notice-ad-unified.jpg" alt="공지·광고 통합 관리" width="760" />
-
-관리자가 긴급 공지, 일반 공지, 광고 배너를 한 페이지에서 관리할 수 있도록 화면을 통합했습니다. 한영 콘텐츠 확인·수정과 배너 관리를 같은 운영 흐름에서 처리할 수 있습니다.
+<table>
+<tr>
+<td width="50%" valign="middle">
+<a href="./screenshots/admin/features/13-notice-ad-unified.jpg"><img src="./screenshots/admin/features/13-notice-ad-unified.jpg" alt="공지·광고 통합 관리" width="440" /></a>
+</td>
+<td width="50%" valign="middle">
+<p>관리자가 긴급 공지, 일반 공지, 광고 배너를 한 페이지에서 관리할 수 있도록 화면을 통합했습니다. 한영 콘텐츠 확인·수정과 배너 관리를 같은 운영 흐름에서 처리할 수 있습니다.</p>
+</td>
+</tr>
+</table>
 
 하반기 기능의 화면과 구현 기록: [티켓 설정](https://github.com/DKU-Dan-Zzan/Danzzan-FE/blob/01be4bedad63a321d13943724e06d45a124ba97e/docs/pr/danz-368/README.md) · [운영진 권한 관리](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/e5517ed2c89d1bb824aaf6e95d0448f8ea118729/docs/admin-staff-management.md) · [AI 테마·배경 및 통합 관리 화면](https://github.com/DKU-Dan-Zzan/Danzzan-FE/blob/01be4bedad63a321d13943724e06d45a124ba97e/docs/pr/DANZ-374/README.md).
 
@@ -579,21 +573,19 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ### 5.2 사용자 데이터
 
-봄축제와 가을축제의 핵심 기능별 조회수입니다. 막대는 두 축제의 조회수를 누적해 표시했습니다.
-
-<img src="./architecture/spring-autumn-views.png" alt="봄·가을축제 핵심 기능별 조회수 비교" width="800" />
-
-| 기능 | 봄 축제 | 가을 축제 | 합계 |
-|:---|---:|---:|---:|
-| 타임테이블 | 8,146회 | 1,893회 | 10,039회 |
-| 티켓 예매 | 7,356회 | 0회 | 7,356회 |
-| 내 티켓 | 5,997회 | 0회 | 5,997회 |
-| 부스맵 | 4,303회 | 1,555회 | 5,858회 |
-| 공지사항 | 3,528회 | 1,249회 | 4,777회 |
-
-가을축제는 티켓팅을 운영하지 않아 티켓 예매·내 티켓 조회수가 0회입니다.
-
-봄축제 기간(5/10–5/14) 총 누적 이벤트 수(클릭·스크롤 등): **82,000+**
+<table>
+<tr>
+<td width="52%" valign="middle">
+<a href="./architecture/spring-autumn-views.png"><img src="./architecture/spring-autumn-views.png" alt="봄·가을축제 핵심 기능별 조회수 비교" width="440" /></a>
+</td>
+<td width="48%" valign="middle">
+<p>봄축제와 가을축제의 핵심 기능별 조회수입니다. 막대는 두 축제의 조회수를 누적해 표시했습니다.</p>
+<table><tr><th>기능</th><th>봄 축제</th><th>가을 축제</th><th>합계</th></tr><tr><td>타임테이블</td><td>8,146회</td><td>1,893회</td><td>10,039회</td></tr><tr><td>티켓 예매</td><td>7,356회</td><td>0회</td><td>7,356회</td></tr><tr><td>내 티켓</td><td>5,997회</td><td>0회</td><td>5,997회</td></tr><tr><td>부스맵</td><td>4,303회</td><td>1,555회</td><td>5,858회</td></tr><tr><td>공지사항</td><td>3,528회</td><td>1,249회</td><td>4,777회</td></tr></table>
+<p>가을축제는 티켓팅을 운영하지 않아 티켓 예매·내 티켓 조회수가 0회입니다.</p>
+<p>봄축제 기간(5/10–5/14) 총 누적 이벤트 수(클릭·스크롤 등): <strong>82,000+</strong></p>
+</td>
+</tr>
+</table>
 
 ### 5.3 사용자 피드백
 
