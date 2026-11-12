@@ -8,8 +8,11 @@
 &nbsp;·&nbsp;
 [**Backend Repository**](https://github.com/DKU-Dan-Zzan/Danzzan-BE)
 
-**Production** · `https://danfesta2026.yaaksok.com/`  
-<sub>2026 단국대학교 봄 축제 & 가을 축제 기간 실제 운영 · 현재 서비스 종료</sub>
+**졸업작품 시연용 · 최신 배포본**  
+[https://danzzan.koreacentral.cloudapp.azure.com/](https://danzzan.koreacentral.cloudapp.azure.com/)
+
+**축제 운영 당시 주소** · `https://danfesta2026.yaaksok.com/`  
+<sub>2026 단국대학교 봄 축제 & 가을 축제 기간 실제 운영 · 축제 서비스 종료</sub>
 
 <br />
 
@@ -17,7 +20,11 @@
 
 **공연 · 부스 · 티켓 · 공지 — 단국대 봄 축제를 위해 직접 만들고, 실제로 운영한 서비스**
 
-<img src="./collab-logo.jpg" alt="DANZZAN × NAVER Pay" width="480"><p>🎓 $\textcolor{#04c75b}{\textbf{대학 최초 네이버페이 페이스사인 도입}}$<br/><sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub></p>
+<p>
+  <img src="./facesign-highlight.svg" alt="대학 최초 네이버페이 페이스사인 도입" width="540" />
+  <br />
+  <sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub>
+</p>
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -32,33 +39,333 @@
 
 ## 팀 소개
 
-<table>
-<tr>
-  <th align="center">이름</th>
-  <th align="center">학번</th>
-  <th>역할</th>
-</tr>
-<tr>
-  <td align="center" nowrap>강하늘</td>
-  <td align="center">32230120</td>
-  <td>관리자 페이지 전반 설계 및 개발, 긴급·일반 공지사항 등록·수정·삭제 기능, 광고 배너 등록 및 노출 순서 관리, 관리자 권한 분리 및 접근 제어 설계</td>
-</tr>
-<tr>
-  <td align="center" nowrap>박지우</td>
-  <td align="center">32211862</td>
-  <td>Redis 대기열 및 Lua Script 원자적 선착순 처리로 티켓 예매 시스템 개발, Spring Security 기반 JWT 회원 인증 체계 설계, 로그인·회원가입 구현 </td>
-</tr>
-<tr>
-  <td align="center" nowrap>박주희</td>
-  <td align="center">32221902</td>
-  <td>Kafka 기반 비동기 티켓 발급 파이프라인 및 대기열 시스템 구현, 팔찌 배부 현황 실시간 조회 및 관리 플랫폼 개발, 회원 탈퇴·비밀번호 재설정 개발</td>
-</tr>
-<tr>
-  <td align="center" nowrap>조하은</td>
-  <td align="center">32234364</td>
-  <td>축제 메인 홈 화면(포스터·라인업·현재 공연 섹션), 캠퍼스 지도 기반 부스맵(날짜·단과대 필터), 지도 편집 기능, 공연 일정 타임테이블 개발</td>
-</tr>
-</table>
+핵심 기여는 아래 표에 요약했습니다. 개인별 토글을 펼치면 **백엔드·프론트엔드·배포**별 상세 구현과 개선 사항, PR·커밋 근거를 확인할 수 있습니다.
+
+| 이름 | 참여 영역 | 핵심 기여 |
+|:---:|---|---|
+| [강하늘](https://github.com/haneul-dev) | 백엔드·프론트엔드 | 공지·광고 관리 API와 화면, 전화 인증 화면<br>축제 정보·예매 회차 관리 |
+| [박지우](https://github.com/jiwoo1105) | 백엔드·프론트엔드·배포 | 회원 인증·대기열, 다국어·티켓 설정·AI 배경 연동<br>가을 NHN 공동 배포 |
+| [박주희](https://github.com/juhee0223) | 백엔드·프론트엔드·배포 | 티켓 선점·팔찌 운영·인증/권한, 프론트 공통 구조·화면 개선<br>가을 NHN 공동 배포·Azure 배포 |
+| [조하은](https://github.com/johaeunn) | 백엔드·프론트엔드 | 홈·공연·부스맵 및 콘텐츠 관리, 전화 인증 API<br>AI 테마 추천·편집 |
+
+<details>
+<summary><strong>강하늘</strong> — 상세 역할 및 PR·커밋 근거</summary>
+
+[haneul-dev](https://github.com/haneul-dev) · 32230120  
+**참여 영역:** 백엔드 · 프론트엔드
+
+| 영역 | 상세 기여 |
+|:---:|---|
+| **백엔드** | **공지·광고 CRUD API**<br>일반·긴급 공지와 광고 배너의 관리 API, 이미지 업로드, 등록·수정·삭제 및 활성화 기능 구현. |
+| **백엔드** | **광고 조회·삭제·캐러셀 응답**<br>광고 목록·ID별 삭제·공개 캐러셀과 기존 광고 동시 노출 방식 보완. |
+| **백엔드** | **JWT 필터·CORS 및 운영 API 응답**<br>공지 관리자 인증과 광고 경로의 JWT 필터·OPTIONS·CORS 처리 보완, 오픈 전 티켓 재고 표시와 주점이 없는 날짜의 빈 목록 응답 수정. |
+| **백엔드** | **축제 정보·예매 회차 API**<br>학교·축제 이름, 운영 기간, 티켓팅 사용 여부와 회차 설정 API 구현. |
+| **백엔드** | **회차·이벤트 연동과 편집 제어**<br>설정 회차를 실제 예매 이벤트와 연결하고 삭제 처리·설정 기반 개폐를 추가. |
+| **백엔드** | **Object Storage 연동·컨테이너 실행·CI 테스트**<br>NHN Object Storage 연동, Docker·CI 실행 명령과 테스트 Redis 설정 수정. |
+| **프론트엔드** | **공지·광고 관리 화면·API 연동**<br>일반·긴급 공지 및 광고 배너의 관리자 화면과 API 연동 구현. |
+| **프론트엔드** | **배너 슬라이딩·공지 상태 표시**<br>광고 노출 위치·배너 슬라이딩과 관리자 광고 UI, 공지 상태 아이콘 및 모바일 가로 스크롤 보완. |
+| **프론트엔드** | **전화 인증 세션·SMS 딥링크·검증 UI**<br>회원가입에서 인증 세션 생성 API를 호출하고, 서버가 반환한 수신번호·인증 문구를 표시했습니다. 문구 복사와 iOS·Android SMS 딥링크를 연결하고, expiresAt을 기준으로 남은 시간을 표시했습니다. 세션 재발급·전화번호 입력 검증, 확인 버튼의 검증 API 호출과 완료 세션 ID 전달을 구현했습니다. |
+| **프론트엔드** | **타임테이블·프로필·공연 정보 표시**<br>타임테이블 재디자인과 상단 배너 표시 조건 수정, 내 정보 프로필 표시 개선, 가을 운영일에 맞춘 타임테이블 및 현재 공연 아티스트명 하드코딩 제거. |
+| **프론트엔드** | **PWA·인앱 브라우저**<br>카카오 인앱 브라우저 전환과 Android 아이콘·스플래시 수정, 이후 커스텀 스플래시 제거. |
+| **프론트엔드** | **브랜딩 자산·관리자 콘솔·축제 정보 입력**<br>LEGEND 포스터·로고·색상 반영, 관리자 콘솔 메뉴와 축제 이름·운영 기간·티켓 회차 설정 화면 구현. |
+| **프론트엔드** | **회차·이벤트 연동과 편집 제어**<br>시작된 회차 편집 제한, 발급된 회차 삭제 확인, 내 정보 상시 개방과 설정 화면 연동. |
+| **프론트엔드** | **GitHub Actions·스토리지 업로드·빌드 환경변수**<br>GitHub Actions 빌드·배포 workflow, NHN 업로드 체크섬 호환성과 지도 환경변수 주입 수정. |
+
+<details>
+<summary>강하늘의 PR·커밋 근거</summary>
+
+**백엔드**
+
+- **공지·광고 CRUD API:** [BE #20](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/20) · [BE #26](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/26)
+- **광고 조회·삭제·캐러셀 응답:** [BE #31](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/31) · [BE #33](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/33)
+- **JWT 필터·CORS 및 운영 API 응답:** [BE #33](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/33) · [BE #39](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/39) · [BE #73](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/73)
+- **축제 정보·예매 회차 API:** [BE #73](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/73)
+- **회차·이벤트 연동과 편집 제어:** [BE #73](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/73)
+- **Object Storage 연동·컨테이너 실행·CI 테스트:** [BE #48](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/48) · [BE #51](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/51) · [BE #54](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/54) · [BE #55](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/55) · [BE #56](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/56)
+
+**프론트엔드**
+
+- **공지·광고 관리 화면·API 연동:** [FE #16](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/16) · [FE #19](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/19)
+- **배너 슬라이딩·공지 상태 표시:** [FE #27](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/27) · [FE #31](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/31) · [FE #32](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/32) · [FE #60](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/60) · [FE #82](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/82)
+- **전화 인증 세션·SMS 딥링크·검증 UI:** [FE #53](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/53)
+- **타임테이블·프로필·공연 정보 표시:** [FE #38](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/38) · [FE #46](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/46) · [FE #62](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/62) · [FE #66](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/66) · [FE #105](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/105) · [FE #106](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/106)
+- **PWA·인앱 브라우저:** [FE #72](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/72) · [FE #83](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/83) · [FE #87](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/87) · [FE #88](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/88) · [FE #91](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/91)
+- **브랜딩 자산·관리자 콘솔·축제 정보 입력:** [FE #113](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/113) · [FE #119](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/119)
+- **회차·이벤트 연동과 편집 제어:** [FE #119](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/119)
+- **GitHub Actions·스토리지 업로드·빌드 환경변수:** [FE #74](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/74) · [FE #77](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/77) · [FE #78](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/78)
+
+</details>
+
+</details>
+
+<details>
+<summary><strong>박지우</strong> — 상세 역할 및 PR·커밋 근거</summary>
+
+[jiwoo1105](https://github.com/jiwoo1105) · 32211862  
+**참여 영역:** 백엔드 · 프론트엔드 · 배포
+
+| 영역 | 상세 기여 |
+|:---:|---|
+| **백엔드** | **단국대 인증·가입 자격·JWT**<br>단국대 인증·학생 정보 확인, 회원가입·로그인·JWT 인증 구현. 만료 토큰으로 로그인·재발급이 실패하는 문제와 학적·캠퍼스별 가입 조건 보완. |
+| **백엔드** | **전화 인증 결과·회원가입 토큰 연결**<br>VERIFIED 세션의 잘못된 만료를 방지하고 인증 성공 시 세션을 사용 완료 처리. 인증된 전화번호·시각을 signupToken별 JVM 메모리 캐시에 연결하여 최종 가입에 사용하고, 재인증 시작·가입 완료 시 임시 데이터를 정리. |
+| **백엔드** | **Redis ZSet·Lua 대기열 상태 전이**<br>Redis ZSet·Lua 상태머신을 구현하고 입장 자격·만료·재고·순번 경쟁 조건, 자동 오픈과 대기열 이탈 처리 구현. |
+| **백엔드** | **Micrometer·Prometheus·Grafana 관측 지표**<br>대기열·발급 지표와 Prometheus·Grafana 연계, k6 시나리오 및 테스트 도구 보완. |
+| **백엔드** | **공지 조회·수동 번역 보호**<br>긴급공지 미등록 시 읽기 전용 트랜잭션에서 저장을 호출하던 오류를 수정하고, 일부 영문 수정 시 다른 필드가 사라지거나 이전 영문이 재번역을 덮는 문제 보완. 빈 원문으로 누락 번역 처리가 멈추는 조건도 수정. |
+| **백엔드** | **로그인 세션·재설정 처리**<br>관리자 refreshToken 응답과 쿠키/본문 전달, 로그인·로그아웃 토큰 버전 캐시를 보완하고 미등록 학번의 비밀번호 재설정 오류 처리 수정. |
+| **백엔드** | **팔찌 지급 취소 API**<br>기존 팔찌 지급 흐름에 지급 취소 API 구현. |
+| **백엔드** | **이미지 업로드·일정 오류 보완**<br>presign CORS 문제에 대응하는 서버 직접 이미지 업로드 API, NHN 전송·URL 호환 처리와 자정을 넘는 부스·공연 운영시간 로직 보완. |
+| **백엔드** | **콘텐츠 번역·티켓팅 차단**<br>DeepL 콘텐츠 번역, 영문 필드·수동 보정·원문 대체·누락 번역 처리와 티켓팅 미운영 API 제어 구현. |
+| **백엔드** | **티켓 설정 연동·예외 처리**<br>회차·예매 이벤트 동기화, ON/OFF·배경 설정 저장, 기존 회차 잠금 정책의 서버 검증 연동, 입장 만료·발급 상태·빈 큐 정보 예외 보완. |
+| **백엔드** | **테마·홈·티켓 배경 통합**<br>포스터 초점·크롭 추천과 홈 이미지 초안 생성, 테마·티켓 배경·홈 이미지 원자적 적용 및 동시 수정 충돌 방어 구현. |
+| **백엔드** | **AI 이미지 생성·가입 정보 처리**<br>포스터 크롭 추천에서 포스터 참고 AI 이미지 생성으로 전환하고 회원가입 네이버 ID 검증·저장 복구. |
+| **프론트엔드** | **인증·가입 화면 연동**<br>회원가입·로그인 API와 화면 연동, 로그인 요청에서 만료 토큰 제외, 가입 자격별 오류 안내 수정. |
+| **프론트엔드** | **티켓팅 화면 안정화**<br>대기열 진입부터 발급까지 API 흐름 통합, 응답 정규화, 새로고침·뒤로가기·토큰 처리, 대기 순번별 적응형 폴링과 조회 간격 조정. |
+| **프론트엔드** | **내 정보·내 티켓·공지 재디자인**<br>각 화면의 레이아웃·표현을 재구성하고 티켓팅 헤더·하단 내비게이션, 공지 URL 자동 링크 처리 및 디자인 요청사항 반영. |
+| **프론트엔드** | **공지·광고 운영 화면 통합**<br>기존 공지와 광고 관리 페이지를 한 화면으로 합치고 기존 광고 경로의 이동 처리, 중복된 티켓 설정 추천 버튼 정리. |
+| **프론트엔드** | **세션 유지·재설정·가입 UI 보완**<br>관리자 토큰 갱신 계약 연동, 비밀번호 재설정 오류코드별 안내, 개인정보 필수 동의·팝업 접근성·비밀번호 보기/불일치 및 가입 완료 UI 개선. |
+| **프론트엔드** | **팔찌 조회·지급·취소 API 연동**<br>팔찌 화면에서 행사별 조회·통계·검색·지급·취소 흐름과 응답 매핑 연동. |
+| **프론트엔드** | **이미지 업로드·일정 오류 보완**<br>이미지 전송을 BE 직접 업로드로 전환하고 부스맵 좌표·시간, 타임테이블 및 축제 DAY 날짜 매핑 수정. |
+| **프론트엔드** | **가을 다국어·미운영 안내**<br>언어 저장소를 useSyncExternalStore로 구독하고 브라우저 언어·저장된 선택을 반영. 한영 사전·원문 대체, 영어 GET 요청의 lang=en 및 언어별 Query 캐시 키, 관리자 영문 편집폼을 연결. 언어별 티켓팅 미운영 안내·관련 페이지 오류 처리 구현. |
+| **프론트엔드** | **티켓 설정 연동·예외 처리**<br>별도 티켓 설정 화면과 회차·예매 시각·수량·공연일·배경·ON/OFF의 사용자 및 팔찌 화면 연동. 기존 잠금 정책 표시, 저장/취소, 비동기 발급 완료 확인·만료 복구·오류 안내 보완. |
+| **프론트엔드** | **테마·홈·티켓 배경 통합**<br>테마 관리 화면에서 색상·가로/세로 배경 추천·홈 이미지 준비·화면 미리보기·전체 적용을 연결. 취소·오래된 응답 방어·실패 재시도·배경 대비와 로고 가독성 보완. |
+| **프론트엔드** | **AI 이미지 생성·가입 정보 처리**<br>AI 배경 생성 대기·전체 적용 흐름, 모바일 미운영 안내 배경 밝기와 회원가입 마지막 단계 네이버 ID 입력 복구. |
+| **배포** | **배포 구성·검증 보완**<br>FE Docker·nginx 프록시 구성과 정적 파일 권한 403 수정, NHN 업로드 전송 방식·응답 URL 호환성 보완, 로컬 통합 환경 및 PR 테스트·빌드 CI 구성. |
+| **배포** | **가을축제 배포**<br>박주희와 함께 NHN 환경 배포 담당. |
+
+<details>
+<summary>박지우의 PR·커밋 근거</summary>
+
+**백엔드**
+
+- **단국대 인증·가입 자격·JWT:** [BE #4](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/4) · [BE #35](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/35) · [BE #36](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/36) · [BE #40](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/40) · [BE #58](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/58) · [BE #62](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/62) · [BE #63](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/63)
+- **전화 인증 결과·회원가입 토큰 연결:** [BE #43](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/43)
+- **Redis ZSet·Lua 대기열 상태 전이:** [BE #7](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/7) · [BE #9](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/9) · [BE #16](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/16) · [BE #24](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/24) · [BE #30](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/30)
+- **Micrometer·Prometheus·Grafana 관측 지표:** [BE #29](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/29)
+- **공지 조회·수동 번역 보호:** [BE #69](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/69) · [1e80b00](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/1e80b00) · [bde25fc](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/bde25fc) · [79821d7](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/79821d7)
+- **로그인 세션·재설정 처리:** [BE #8](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/8) · [BE #62](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/62)
+- **팔찌 지급 취소 API:** [21c013c](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/21c013c)
+- **이미지 업로드·일정 오류 보완:** [BE #60](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/60) · [BE #61](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/61)
+- **콘텐츠 번역·티켓팅 차단:** [BE #69](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/69)
+- **티켓 설정 연동·예외 처리:** [BE #75](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/75)
+- **테마·홈·티켓 배경 통합:** [BE #77](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/77)
+- **AI 이미지 생성·가입 정보 처리:** [BE #78](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/78) · [c54896e7](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/c54896e7) · [e16c05a5](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/e16c05a5)
+
+**프론트엔드**
+
+- **인증·가입 화면 연동:** [FE #43](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/43) · [FE #52](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/52)
+- **티켓팅 화면 안정화:** [FE #7](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/7) · [FE #12](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/12) · [FE #20](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/20) · [FE #26](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/26) · [FE #33](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/33) · [FE #34](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/34) · [FE #67](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/67)
+- **내 정보·내 티켓·공지 재디자인:** [FE #39](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/39) · [FE #40](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/40) · [FE #41](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/41) · [FE #44](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/44) · [FE #45](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/45) · [FE #48](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/48) · [FE #54](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/54) · [FE #70](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/70) · [FE #71](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/71) · [FE #97](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/97)
+- **공지·광고 운영 화면 통합:** [ec2706d7](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/ec2706d7) · [FE #123](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/123)
+- **세션 유지·재설정·가입 UI 보완:** [FE #6](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/6) · [FE #57](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/57) · [FE #58](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/58) · [FE #61](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/61) · [FE #75](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/75)
+- **팔찌 조회·지급·취소 API 연동:** [2de6837e](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/2de6837e) · [97905210](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/97905210) · [231464af](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/231464af)
+- **이미지 업로드·일정 오류 보완:** [FE #80](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/80) · [FE #81](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/81) · [FE #99](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/99)
+- **가을 다국어·미운영 안내:** [FE #109](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/109) · [FE #110](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/110) · [FE #112](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/112)
+- **티켓 설정 연동·예외 처리:** [FE #121](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/121)
+- **테마·홈·티켓 배경 통합:** [FE #123](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/123)
+- **AI 이미지 생성·가입 정보 처리:** [FE #124](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/124) · [d4834848](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/d4834848) · [f989540d](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/f989540d) · [f1e0839d](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/f1e0839d)
+
+**배포**
+
+- **배포 구성·검증 보완:** [FE #109](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/109) · [fbda1b4b](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/fbda1b4b) · [BE #60](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/60) · [BE #69](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/69) · [BE #77](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/77)
+- **가을축제 배포:** 팀원 확인 내용에 근거.
+
+</details>
+
+</details>
+
+<details>
+<summary><strong>박주희</strong> — 상세 역할 및 PR·커밋 근거</summary>
+
+[juhee0223](https://github.com/juhee0223) · 32221902  
+**참여 영역:** 백엔드 · 프론트엔드 · 배포
+
+| 영역 | 상세 기여 |
+|:---:|---|
+| **백엔드** | **티켓팅·팔찌 지급·통계**<br>관리자 티켓 검색·팔찌 지급·행사별 발급/수령 통계 API 구현. |
+| **백엔드** | **팔찌 지급·권리 포기 상태 처리**<br>탈퇴·권리 포기를 팔찌 지급 차단뿐 아니라 발급/수령 통계·재고·자동 오픈 흐름에 반영. |
+| **백엔드** | **Redis·Lua 원자적 선점·부하 검증**<br>Redis 키·상태 계약과 입장/선점 분리, Lua 중복 방지·재고 차감·상태 저장 구현. 통합 테스트와 k6 부하 시나리오, 결과 집계 및 판정 도구 작성. |
+| **백엔드** | **번역 결과 저장·트랜잭션 분리**<br>영문 컬럼 길이를 확장하고 외부 번역 호출과 DB 저장을 분리. 행별 저장으로 한 항목 실패가 전체 롤백·성공 항목 재번역으로 이어지던 흐름을 보완해 반복 호출 문제 수정. |
+| **백엔드** | **비밀번호 재설정·회원 탈퇴**<br>학교 이메일로 인증코드를 요청·검증하고 비밀번호를 변경하는 API를 구현했습니다. Redis에 요청 상태와 인증코드·검증 토큰의 해시를 저장하고, 유효기간과 검증 시도 횟수를 관리했습니다. Lua로 검증 토큰을 한 번만 사용할 수 있도록 처리하고 재발송 대기 시간과 요청 횟수를 제한했습니다. 비밀번호 변경 시 토큰 버전을 갱신하고, 회원 탈퇴·권리 포기 및 비동기 티켓 발급 중 탈퇴가 겹치는 상황을 처리했습니다. |
+| **백엔드** | **대기열 순번 응답 보완**<br>대기열 진입 응답의 순번 처리 보완. |
+| **백엔드** | **광고 랜딩 연동**<br>광고 랜딩 URL 필드와 수정 API·검증 추가. |
+| **백엔드** | **광고 저장·업로드·링크 보완**<br>광고 ID 수정 API와 업로드 호환 경로, 랜딩 URL 검증 및 테스트 추가. |
+| **백엔드** | **회원가입 정책·응답 보완**<br>가입 제한 403 응답 문구 수정, 가을 가입·로그인 API에서 네이버 ID 수집·노출 제거. |
+| **백엔드** | **관리자 인증·권한 재구성**<br>관리자 인증을 공통 JWT·tokenVersion으로 통합. 운영진 지정·회수·최고관리자 관리와 일반 운영/티켓팅 API 권한, 권한 이력·세션 무효화·마지막 관리자 보호 구현. |
+| **백엔드** | **테마 선택·홈 이미지·추천 요청 처리**<br>기본 테마 복구·의미 색상 고정, 홈 이미지 비율 보존 및 독립 저장·충돌 방어, AI 색상 요청 제한·설정 보완. |
+| **백엔드** | **축제 정보 저장·실행 환경·화면 접근성**<br>축제 설정의 누락 테이블 생성 SQL, 로컬 Compose 및 전화번호 인증 환경변수 전달 보완. |
+| **백엔드** | **Azure 이미지·외부 서비스 연동**<br>Blob 이미지 참조와 응답 URL 경계, 외부 서비스 설정·자동 번역 가드·진단 로직 구현. |
+| **프론트엔드** | **티켓팅·팔찌 지급·통계**<br>티켓팅·관리자 플랫폼, 인증 라우팅·API 연동, 학생 티켓팅 및 팔찌 운영 화면 구현. |
+| **프론트엔드** | **팔찌 지급·권리 포기 상태 처리**<br>팔찌 조회표·상태 배지·지급 확인 모달·안내, 검색 결과 없음과 탈퇴·권리포기 티켓 제외 처리 보완. |
+| **프론트엔드** | **대기열 UI 보완**<br>Waiting Room, 응답 스키마 검사, 지터·오프라인 대응, 진행률 표시 및 상태 복원 처리. |
+| **프론트엔드** | **API 계약·서버 상태·디자인 토큰·품질 검사**<br>기존 기능을 유지하며 API 계약·서버 상태 관리, 폴더·의존성 구조, Tailwind·디자인 토큰과 품질 검사 체계 정비. |
+| **프론트엔드** | **홈 캐러셀·헤더·모바일 레이아웃**<br>기존 홈의 포스터·라인업 캐러셀, 헤더 그라데이션·내비게이션·모바일 비율과 레이아웃 개선, 캐러셀 스와이프·인디케이터·이미지 캐시 갱신·긴급공지 고정 및 로그아웃 확인 흐름 추가. |
+| **프론트엔드** | **지도 조회·선택 상태·타임테이블 스크롤**<br>기존 지도 필터·조회 상태를 Query/selector로 정리하고 접근성·탭 사전 로딩·지도 영역 계산 및 관리자 편집/사이드바 구조 보완. 타임테이블의 중첩 스크롤·좌우 스와이프·자동 스크롤·시간 정렬·종료 미정 표시 개선. |
+| **프론트엔드** | **공지 조회·관리 안정화**<br>공지 목록·상세와 관리자 조회를 TanStack Query 훅으로 분리하고 검색어·페이지·상태별 캐시를 구성. 검색 debounce·로딩·오류·재시도와 모달 포커스 처리를 구현하고 폼·업로드 액션·응답 계약 검증·긴급공지 payload를 화면 코드에서 분리. |
+| **프론트엔드** | **GA4 이벤트·앱 아이콘·공유 메타데이터**<br>GA4 page_view 전송 복구와 언어 선택·영어 사용 추적, 앱 아이콘 캐시 갱신, OG 이미지·카카오톡 공유 썸네일 비율 및 호환성 수정. |
+| **프론트엔드** | **비밀번호 재설정·회원 탈퇴**<br>학교 이메일로 인증코드를 요청·검증하고 비밀번호를 변경하는 API를 구현했습니다. Redis에 요청 상태와 인증코드·검증 토큰의 해시를 저장하고, 유효기간과 검증 시도 횟수를 관리했습니다. Lua로 검증 토큰을 한 번만 사용할 수 있도록 처리하고 재발송 대기 시간과 요청 횟수를 제한했습니다. 비밀번호 변경 시 토큰 버전을 갱신하고, 회원 탈퇴·권리 포기 및 비동기 티켓 발급 중 탈퇴가 겹치는 상황을 처리했습니다. |
+| **프론트엔드** | **인증 세션·재발급·대기열 복원**<br>JWT 역할·만료 판독과 관리자 접근 제어, 같은 키의 동시 토큰 재발급 요청을 Promise로 공유하는 로직 구현. 401 재발급·재시도와 403/만료를 구분하고 복귀 URL 검증·대기열 복원 조회를 처리. 이전 세션 응답 차단·재발급 토큰 보존·계정별 티켓 캐시 분리. |
+| **프론트엔드** | **공지·광고 상태 관리·링크 연동**<br>공지·광고 Query·API 계약과 UI 처리 정비, 광고 배치·개인정보 안내 및 클릭 랜딩 연동. |
+| **프론트엔드** | **광고 저장·업로드·링크 보완**<br>광고 gateway·업로드 응답 검사·관리 훅, 저장 중/실패 표시·수정 액션·URL 입력 및 외부 이동, 공통 광고 슬롯·이미지 규격 개선. |
+| **프론트엔드** | **동의·가입 오류·전화 인증·운영 안내**<br>개인정보·티켓팅 동의 흐름과 문구, 가입 제한 오류·전화번호 인증 안내·종료 시각 미정 표시 보완. 가을 네이버 ID 입력·내 정보 노출 및 관련 정책 제거. |
+| **프론트엔드** | **관리자 인증·권한 재구성**<br>운영진 검색·지정·회수·승격/강등 화면, 권한별 메뉴·직접 URL·설정 저장, 세션 동기화·이전 응답 방어와 계정 식별에 따른 조작 제한 구현. |
+| **프론트엔드** | **테마 선택·홈 이미지·추천 요청 처리**<br>기본·5월 프리셋과 테마 선택, 상태·지도 색상 고정, 홈 전체 비율·세로 미리보기·독립 저장 UI 구현. 내 정보 배경 분리와 AI 추천 브라우저·프록시 대기 시간 보완. |
+| **프론트엔드** | **축제 정보 저장·실행 환경·화면 접근성**<br>권한별 기본정보/티켓 설정 저장과 부분 실패·재시도 처리. 모바일 safe-area·하단 내비 점유 높이·iOS 상태바·manifest 및 접근성 정비. |
+| **프론트엔드** | **Azure 이미지 연동**<br>이미지 SAS 갱신과 관리자·광고·사용자 화면 연동. |
+| **배포** | **Azure VM·Docker·DB 이관·HTTPS**<br>VM·Docker·DB 이관, HTTPS·CORS·외부 서비스 구성, 운영·진단·복구 문서 작성. |
+| **배포** | **가을 NHN 배포**<br>박지우와 함께 가을축제 NHN 환경 배포 담당. |
+| **배포** | **Azure 배포**<br>Azure 환경 배포 담당. |
+
+<details>
+<summary>박주희의 PR·커밋 근거</summary>
+
+**백엔드**
+
+- **티켓팅·팔찌 지급·통계:** [fa99dd5](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/fa99dd5) · [2d46922](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/2d46922)
+- **팔찌 지급·권리 포기 상태 처리:** [BE #46](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/46) · [b8d3aac](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/b8d3aac) · [fe98948](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/fe98948)
+- **Redis·Lua 원자적 선점·부하 검증:** [23f0ff9](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/23f0ff9) · [ad55384](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/ad55384) · [569e409](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/569e409) · [d82e073](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/d82e073)
+- **번역 결과 저장·트랜잭션 분리:** [BE #70](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/70)
+- **비밀번호 재설정·회원 탈퇴:** [BE #6](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/6) · [BE #11](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/11) · [BE #46](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/46)
+- **대기열 순번 응답 보완:** [e3d34d6](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/e3d34d6)
+- **광고 랜딩 연동:** [BE #50](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/50)
+- **광고 저장·업로드·링크 보완:** [BE #27](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/27) · [BE #50](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/50) · [03264a7](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/03264a7)
+- **회원가입 정책·응답 보완:** [BE #59](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/59) · [BE #65](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/65)
+- **관리자 인증·권한 재구성:** [BE #27](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/27) · [BE #74](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/74)
+- **테마 선택·홈 이미지·추천 요청 처리:** [BE #78](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/78)
+- **축제 정보 저장·실행 환경·화면 접근성:** [BE #18](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/18) · [BE #65](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/65) · [BE #73](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/73) · [3e56856](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/3e56856)
+- **Azure 이미지·외부 서비스 연동:** [BE #78](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/78)
+
+**프론트엔드**
+
+- **티켓팅·팔찌 지급·통계:** [32716ad9](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/32716ad9) · [d00eb76f](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/d00eb76f)
+- **팔찌 지급·권리 포기 상태 처리:** [FE #13](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/13) · [FE #22](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/22) · [FE #68](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/68)
+- **대기열 UI 보완:** [5c430437](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/5c430437) · [d720a31e](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/d720a31e) · [0965f033](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/0965f033)
+- **API 계약·서버 상태·디자인 토큰·품질 검사:** [FE #22](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/22) · [FE #28](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/28)
+- **홈 캐러셀·헤더·모바일 레이아웃:** [FE #37](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/37) · [FE #49](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/49) · [FE #51](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/51) · [FE #55](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/55)
+- **지도 조회·선택 상태·타임테이블 스크롤:** [FE #22](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/22) · [FE #28](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/28) · [FE #94](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/94) · [FE #95](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/95) · [FE #96](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/96) · [125cca98](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/125cca98)
+- **공지 조회·관리 안정화:** [FE #22](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/22) · [FE #28](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/28) · [9f132ff0](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/9f132ff0) · [49dd6c63](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/49dd6c63)
+- **GA4 이벤트·앱 아이콘·공유 메타데이터:** [FE #84](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/84) · [FE #85](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/85) · [FE #86](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/86) · [FE #89](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/89) · [FE #115](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/115) · [FE #116](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/116) · [FE #117](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/117) · [2f2416e2](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/2f2416e2)
+- **비밀번호 재설정·회원 탈퇴:** [FE #5](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/5) · [FE #68](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/68)
+- **인증 세션·재발급·대기열 복원:** [FE #22](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/22) · [FE #68](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/68) · [FE #120](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/120) · [e9e4c1cb](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/e9e4c1cb) · [0ccbc1e5](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/0ccbc1e5)
+- **공지·광고 상태 관리·링크 연동:** [FE #22](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/22) · [FE #56](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/56) · [FE #73](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/73)
+- **광고 저장·업로드·링크 보완:** [FE #22](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/22) · [FE #56](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/56) · [FE #73](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/73) · [533abe06](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/533abe06)
+- **동의·가입 오류·전화 인증·운영 안내:** [FE #8](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/8) · [FE #59](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/59) · [FE #63](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/63) · [FE #65](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/65) · [FE #79](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/79) · [FE #84](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/84) · [FE #90](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/90) · [FE #94](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/94) · [FE #95](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/95) · [FE #104](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/104)
+- **관리자 인증·권한 재구성:** [FE #120](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/120)
+- **테마 선택·홈 이미지·추천 요청 처리:** [FE #124](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/124)
+- **축제 정보 저장·실행 환경·화면 접근성:** [FE #8](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/8) · [FE #22](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/22) · [FE #120](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/120)
+- **Azure 이미지 연동:** [FE #124](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/124)
+
+**배포**
+
+- **Azure VM·Docker·DB 이관·HTTPS:** [FE #124](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/124) · [BE #78](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/78)
+- **가을 NHN 배포:** 팀원 확인 내용에 근거.
+- **Azure 배포:** 팀원 확인 내용에 근거.
+
+</details>
+
+</details>
+
+<details>
+<summary><strong>조하은</strong> — 상세 역할 및 PR·커밋 근거</summary>
+
+[johaeunn](https://github.com/johaeunn) · 32234364  
+**참여 영역:** 백엔드 · 프론트엔드
+
+| 영역 | 상세 기여 |
+|:---:|---|
+| **백엔드** | **홈·공연·부스맵**<br>홈 포스터·라인업·현재 공연·타임테이블, 부스·주점 조회·날짜/단과대 필터·상세·운영시간 API 구현. |
+| **백엔드** | **쉼터 데이터 확장**<br>부스 타입에 쉼터를 추가하고 조회 API에 반영. |
+| **백엔드** | **관리자 지도·콘텐츠 확장**<br>지도 좌표와 부스·주점·공연·아티스트 CRUD, 이미지 업로드·순서, 날짜별 운영 정보 및 주점 노출 관리 API 구현. |
+| **백엔드** | **가을 운영일 구조 정비**<br>부스·주점 운영일 모델과 관리 API, 미배치 부스 생성·운영일 변경 구조 보완. |
+| **백엔드** | **지도·콘텐츠 조회 안정화**<br>조회 N+1, 대표 이미지 누락·순서, 날짜 필터·주점 노출일 중복 제약과 운영 데이터 처리 보완. |
+| **백엔드** | **타임테이블 공개 여부·공연 표시**<br>타임테이블 표시 설정 분리 및 미사용 분실물 기능 제거. |
+| **백엔드** | **긴급공지 조회 보완**<br>홈 긴급공지 조회 기준·미등록 응답 정리. |
+| **백엔드** | **전화번호 인증**<br>OCTOMO를 이용한 전화번호 점유 인증의 세션 생성·검증·상태 조회 API를 구현했습니다. 세션을 MySQL에 저장하고 인증코드 암호화, 유효기간과 검증 시도 횟수를 관리했습니다. 사용자가 인증 문구를 수신번호로 전송하면 외부 문자 수신 확인 API로 전화번호·문자 조합을 검증하여 회원가입에 연결했습니다. |
+| **백엔드** | **서비스 통합**<br>분리된 App-BE·Ticket-BE를 단일 서비스로 통합. |
+| **백엔드** | **AI 테마 추천·팔레트 검증·이미지 관리**<br>테마 저장·활성화, 포스터·로고·홈 이미지 관리, 색상 분석·AI 시안 추천 API 구현. 추천 안정성·팔레트 검증/보정, 저장소 추상화·업로드 용량 정책·SQL 마이그레이션 보완. |
+| **프론트엔드** | **홈·공연·부스맵**<br>홈 포스터·라인업·현재 공연·타임테이블, 지도·날짜/단과대 필터·부스/주점 상세·운영시간 화면 구현. |
+| **프론트엔드** | **부스맵 재디자인·예외 개선**<br>지도·마커·상세 패널 재디자인, 편의시설·쉼터와 선택·노출 동작·부스 데이터 처리 보완. 지도 표시를 단순화하며 3D 기능 제거. |
+| **프론트엔드** | **관리자 지도·콘텐츠 확장**<br>지도 좌표 편집, 부스·주점·공연·아티스트 관리 및 이미지 업로드·날짜별 운영 정보·주점 노출 관리 화면 구현. |
+| **프론트엔드** | **가을 운영일 구조 정비**<br>관리자 날짜 선택과 새 주점·부스 입력, 운영 정보 관리 흐름 통합·개선. |
+| **프론트엔드** | **지도·콘텐츠 조회 안정화**<br>조회 응답 순서·썸네일 대체·선택/확대·바텀시트 동작 및 미배치 부스·운영일 편집 UX 개선. |
+| **프론트엔드** | **타임테이블 공개 여부·공연 표시**<br>공개 전 안내·관리자 토글, 날짜별 표시와 현재 공연 종료 시각 예외 처리 보완. |
+| **프론트엔드** | **팔찌 날짜·쉼터 문구 보완**<br>팔찌 배부 화면 날짜 매핑과 쉼터 한영 문구 추가. |
+| **프론트엔드** | **인증 화면·저장 정책·광고 동작**<br>로그인·회원가입·비밀번호 재설정 배치와 학번 단계 저장 정책, 공지 상세 여백 개선. 광고 자동 전환·정지, 배너 폭·오버레이 위치 수정. |
+| **프론트엔드** | **앱 통합·GA4 이벤트 수집**<br>기존 앱·티켓 코드·라우팅 통합, GA4 연동과 빌드 환경변수·페이지뷰 수집 보완. |
+| **프론트엔드** | **AI 테마 추천·팔레트 검증·이미지 관리**<br>앱 구동 시 활성 테마를 조회하고 ThemeData의 HEX 색상을 검증하여 문서 루트 CSS 변수에 적용. 기본 테마 대체, 테마 편집·추천 시안 비교·저장·활성화·사용자 화면 미리보기와 포스터·로고·홈 이미지 관리 구현. 추천 요청과 기준색 동기화, 미리보기 로고·업로드 UX 개선. |
+
+<details>
+<summary>조하은의 PR·커밋 근거</summary>
+
+**백엔드**
+
+- **홈·공연·부스맵:** [BE #3](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/3) · [BE #5](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/5) · [BE #12](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/12) · [BE #19](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/19)
+- **쉼터 데이터 확장:** [BE #72](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/72)
+- **관리자 지도·콘텐츠 확장:** [BE #25](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/25) · [BE #28](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/28) · [BE #47](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/47) · [BE #64](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/64)
+- **가을 운영일 구조 정비:** [BE #67](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/67)
+- **지도·콘텐츠 조회 안정화:** [BE #13](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/13) · [BE #47](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/47) · [BE #64](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/64) · [BE #67](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/67)
+- **타임테이블 공개 여부·공연 표시:** [BE #42](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/42)
+- **긴급공지 조회 보완:** [BE #3](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/3) · [BE #13](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/13) · [0f7c0fc](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/0f7c0fc)
+- **전화번호 인증:** [BE #38](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/38)
+- **서비스 통합:** [BE #1](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/1)
+- **AI 테마 추천·팔레트 검증·이미지 관리:** [BE #76](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/76)
+
+**프론트엔드**
+
+- **홈·공연·부스맵:** [FE #3](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/3) · [FE #4](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/4) · [FE #10](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/10) · [FE #14](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/14) · [FE #17](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/17)
+- **부스맵 재디자인·예외 개선:** [FE #23](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/23) · [FE #29](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/29) · [FE #42](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/42) · [FE #76](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/76) · [FE #92](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/92) · [FE #93](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/93) · [FE #98](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/98) · [FE #118](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/118) · [a7a969b3](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/a7a969b3)
+- **관리자 지도·콘텐츠 확장:** [FE #21](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/21) · [FE #69](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/69) · [FE #102](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/102)
+- **가을 운영일 구조 정비:** [FE #107](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/107)
+- **지도·콘텐츠 조회 안정화:** [FE #69](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/69) · [FE #92](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/92) · [FE #93](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/93) · [FE #98](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/98) · [FE #102](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/102) · [FE #107](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/107)
+- **타임테이블 공개 여부·공연 표시:** [FE #64](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/64) · [FE #103](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/103)
+- **팔찌 날짜·쉼터 문구 보완:** [FE #100](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/100) · [FE #118](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/118)
+- **인증 화면·저장 정책·광고 동작:** [FE #47](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/47) · [FE #50](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/50) · [FE #76](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/76)
+- **앱 통합·GA4 이벤트 수집:** [5aa5ee94](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/5aa5ee94) · [FE #100](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/100) · [FE #101](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/101)
+- **AI 테마 추천·팔레트 검증·이미지 관리:** [FE #122](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/122)
+
+</details>
+
+</details>
+
+## 자문부
+
+| 이름 | 참여 영역 | 핵심 기여 |
+|:---:|---|---|
+| [최재민](https://github.com/dku19jam) | 백엔드·배포 | 기술 자문, Kafka·Outbox 발급·Redis 최적화<br>봄 NHN 인스턴스·스토리지·인증서·도메인 구축 |
+
+<details>
+<summary><strong>최재민</strong> — 상세 역할 및 PR·커밋 근거</summary>
+
+[dku19jam](https://github.com/dku19jam) · 기술 자문·백엔드 개발·봄축제 인프라 구축  
+**참여 영역:** 백엔드 · 배포
+
+| 영역 | 상세 기여 |
+|:---:|---|
+| **백엔드** | **비동기 발급 도입**<br>기존 예매 흐름에 Kafka·Transactional Outbox를 도입하고 접수·발급 처리, 요청 상태 및 발급 이벤트 구조 구현. |
+| **백엔드** | **실패·중복 처리**<br>Outbox publisher·consumer와 재시도·보상 처리, PROCESSING·FAILED 상태 응답과 발급 요청 상태 캐시 보완. |
+| **백엔드** | **Redis 배치 승격·Pipeline·상태 캐시**<br>이벤트 상태 캐시, Lua 일괄 승격, Pipeline 상태 조회, 직접 입장 경로와 조건부 조회를 적용해 DB·Redis 왕복 비용 개선. |
+| **백엔드** | **공통 인증 응답 개선**<br>중복 인증 필터를 정리하고 미인증 응답의 401 처리를 보완. |
+| **백엔드** | **테스트·병목 분석**<br>Kafka·Redis 단위·회귀 테스트, 로컬 검증 도구와 부하 시나리오 및 병목 분석 지원. |
+| **배포** | **봄축제 NHN 인프라·스토리지·HTTPS·도메인**<br>봄축제의 NHN 프론트엔드·백엔드 인스턴스 구성과 배포, Object Storage 구성·연동, 인증서 인증·적용, 도메인 발급 및 서비스 연동까지 배포 환경 전반을 담당. 팀 기술 자문도 지원. |
+
+<details>
+<summary>최재민의 PR·커밋 근거</summary>
+
+**백엔드**
+
+- **비동기 발급 도입:** [BE #44](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/44)
+- **실패·중복 처리:** [9182194](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/9182194) · [6a5c7e4](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/6a5c7e4) · [572eea7](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/572eea7)
+- **Redis 배치 승격·Pipeline·상태 캐시:** [4789692](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/4789692) · [1aacc21](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/1aacc21) · [435df04](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/435df04) · [396b1d4](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/396b1d4)
+- **공통 인증 응답 개선:** [BE #44](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/44) · [8e7f8af](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/8e7f8af) · [d0508d0](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/d0508d0)
+- **테스트·병목 분석:** [BE #44](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/44)
+
+**배포**
+
+- **봄축제 NHN 인프라·스토리지·HTTPS·도메인:** 팀원 확인 내용에 근거.
+
+</details>
+
+</details>
+
 
 ---
 
@@ -75,7 +382,7 @@
 DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, 티켓을 예매·조회하며, 공지사항까지 한 번에 확인할 수 있습니다.
 운영진은 관리자 페이지에서 축제 콘텐츠를 관리하고, 예매 내역과 팔찌 배부 현황을 확인하며 현장 수령 처리를 진행할 수 있습니다.
 
-여기에 $\textcolor{#04c75b}{\textbf{네이버 페이와의 협업}}$이 더해졌습니다.
+여기에 **네이버페이와의 협업**이 더해졌습니다.
 네이버 페이스사인(얼굴 인증)을 입장 시 신원 확인에 연동해, 티켓 양도나 대리 입장을 구조적으로 차단했습니다. 실제로 비윤리적 양도·도용 사례는 0%에 수렴했습니다.
 
 2026년 5월 봄축제에서 실제 운영한 뒤, 같은 해 9월 가을축제에 맞춰 서비스를 개선해 다시 운영했습니다.
@@ -87,48 +394,47 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 2. 시연 영상 및 보고서 (2026년 상반기 기준)
+## 2. 시연 영상 및 프로젝트 자료
 
-### 2.1 시연 영상
+### 2.1 졸업작품 시연 영상
 
-<table>
-<tr>
-<td valign="top" width="55%">
+[![DANZZAN 졸업작품 시연 영상](https://img.youtube.com/vi/SN-cncHBgns/hqdefault.jpg)](https://youtu.be/SN-cncHBgns)
 
-<a href="https://www.youtube.com/watch?v=ZrvDs-fHCjw">
-<img src="https://img.youtube.com/vi/ZrvDs-fHCjw/maxresdefault.jpg" alt="DANZZAN 시연 영상" width="100%">
-</a>
+[▶ 졸업작품 시연 영상 보기](https://youtu.be/SN-cncHBgns)
 
-<br/>
+### 2.2 프로젝트 결과보고서 및 포스터
 
-<a href="https://www.youtube.com/watch?v=ZrvDs-fHCjw">
-<img src="https://img.shields.io/badge/▶_클릭하여_시청하기-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
-</a>
-
-</td>
-<td valign="top">
-
-| 타임스탬프 | |
+| 자료 | 파일 |
 |---|---|
-| `0:00` | 회원가입 |
-| `1:28` | 비밀번호 재설정 |
-| `2:11` | 웹앱(PWA) 설치 |
-| `2:20` | 홈화면 소개 |
-| `3:08` | 부스맵 기능 |
-| `4:23` | 타임테이블 기능 |
-| `4:28` | 공지사항 & 긴급공지 기능 |
-| `5:12` | 로그인 & 티켓팅 |
-| `6:13` | 내정보 기능 |
-| `6:43` | 관리자 — 운영데이터 관리 |
-| `10:16` | 관리자 — 팔찌 배부 |
+| 프로젝트 결과보고서 | [PDF 보기](./docs/final-report.pdf) · [Word 원본](./docs/final-report.docx) |
+| 졸업작품 포스터 | [PDF 보기](./docs/poster.pdf) · [이미지 보기](./docs/poster.png) |
 
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="./docs/poster.pdf">
+    <img src="./docs/poster.png" alt="DANZZAN 졸업작품 포스터 — 서비스 소개, 아키텍처, 주요 기능 및 운영 성과" width="640" />
+  </a>
+</p>
 
-### 2.2 2026년 상반기 최종 보고서
+### 2.3 소스 코드 및 개발 문서
 
-[![보고서](https://img.shields.io/badge/PDF-최종_보고서_보기-003087?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./docs/final-report.pdf)
+| 자료 | 링크 |
+|---|---|
+| 프론트엔드 소스 코드·실행 안내 | [Danzzan-FE](https://github.com/DKU-Dan-Zzan/Danzzan-FE) |
+| 백엔드 소스 코드 | [Danzzan-BE](https://github.com/DKU-Dan-Zzan/Danzzan-BE) |
+| 프론트엔드 구조·개발 가이드 | [개발 문서](https://github.com/DKU-Dan-Zzan/Danzzan-FE/tree/main/docs/architecture) |
+| 티켓팅 부하 테스트·검증 | [검증 보고서](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/load-test-report.md) · [실행 가이드](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/ticket-queue-load-test-runbook.md) |
+
+
+<details>
+<summary>기획·설계 자료</summary>
+
+| 자료 | 파일 |
+|---|---|
+| 기획 발표 | [PDF 보기](./docs/planning-presentation.pdf) |
+| 설계 보고서 | [PDF 보기](./docs/design-report.pdf) |
+| 와이어프레임 | [PDF 보기](./docs/wireframes.pdf) |
+
+</details>
 
 ---
 
@@ -162,7 +468,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 4. 가을축제 — 브랜딩·번역·운영 방식 개선
+## 4. 가을축제 — 브랜딩·번역·운영 관리 및 AI 테마
 
 봄축제 운영 이후, 가을축제의 분위기를 담은 화면과 영어로 축제 정보를 확인할 수 있는 기능을 더해 서비스를 다시 운영했습니다.
 
@@ -226,6 +532,52 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | 한국어 | 영어 |
 |:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/0029a7dc-ef80-4a8d-a430-a23a439e52c7" alt="가을축제 회원가입 안내 한국어 화면" width="250" /> | <img src="https://github.com/user-attachments/assets/cb7e1801-2503-44b0-adbc-2d1619b4e532" alt="가을축제 회원가입 안내 영어 화면" width="260" /> |
+
+### 4.5 축제 기본정보와 티켓 운영 설정
+
+하반기에는 축제마다 바뀌는 운영 정보와 화면 구성을 관리자가 직접 설정할 수 있도록 기능을 확장했습니다. 축제 이름·운영 기간·로고·포스터를 관리하고, 공연일별 티켓 회차와 예매 시작 시각·발급 수량을 설정할 수 있습니다.
+
+| 기능 | 구현 내용 |
+|:---|:---|
+| **축제 기본정보** | 축제 이름·운영 기간·브랜딩 이미지와 홈 대표 이미지 관리 |
+| **티켓 운영 설정** | 티켓팅 ON/OFF, 회차별 공연일·예매 시작 시각·발급 수량 설정 |
+| **일정 연동** | 사용자 티켓 목록과 관리자 팔찌 배부 화면에 동일한 회차 정보 반영 |
+| **변경 보호** | 시작된 회차의 주요 정보 수정 제한, 발급 티켓이 있는 회차 삭제 시 영향 안내 |
+| **안내 화면 관리** | 티켓팅 미운영 안내와 발급 티켓의 배경 이미지 설정·미리보기·기본값 복원 |
+
+티켓팅을 꺼도 기존 회차와 발급 기록을 보존하며, 로그인·회원가입 등 계정 기능과 신규 예매 허용 여부를 분리했습니다.
+
+### 4.6 운영진 지정 및 권한 관리
+
+최고 관리자가 가입된 사용자를 조회해 운영진으로 지정하고 권한을 부여·회수할 수 있도록 구현했습니다. 일반 운영 관리와 티켓팅 관리 권한을 분리해 담당 업무에 필요한 메뉴를 이용하도록 구성했습니다.
+
+| 권한 | 관리 범위 |
+|:---|:---|
+| **일반 운영** | 축제 기본정보·테마·공지·광고·부스맵·타임테이블·번역 |
+| **티켓팅 운영** | 티켓 설정·회차·발급 및 취소·팔찌 배부·통계 |
+| **최고 관리자** | 전체 운영 기능과 운영진 권한 지정·회수, 최고 관리자 승격·강등 |
+
+화면의 메뉴 노출뿐 아니라 서버에서도 권한을 확인하고, 권한 변경 이력과 기존 세션의 무효화를 함께 처리합니다. 마지막 최고 관리자나 자기 자신의 권한을 잘못 회수하는 상황도 제한했습니다.
+
+### 4.7 포스터 기반 AI 테마 및 배경 추천
+
+축제 포스터와 로고를 등록한 뒤 대표색을 추출하고, 이를 바탕으로 AI가 추천한 색상 시안을 선택할 수 있도록 구현했습니다. 관리자는 홈·티켓·안내 화면의 미리보기를 확인하고 선택한 테마와 배경을 함께 적용할 수 있습니다.
+
+| 단계 | 기능 |
+|:---|:---|
+| **이미지 준비** | 공식 포스터·로고 등록, 기존 이미지 또는 포스터를 활용한 홈 대표 이미지 준비 |
+| **테마 추천** | 포스터 대표색 추출, 기준색 선택, 색상 시안 추천 및 팔레트 보정 |
+| **배경 추천** | 포스터에서 화면 용도에 맞는 가로·세로 영역을 추천하고 포스터를 잘라 배경 이미지 구성 |
+| **미리보기** | 사용자 화면에 적용될 테마, 티켓 카드, 티켓팅 안내, 내 정보 화면 확인 |
+| **전체 적용** | 선택한 테마·배경·홈 이미지 초안을 함께 반영하고, 충돌·실패 시 부분 적용 방지 |
+
+배경 추천은 등록한 포스터를 분석·가공하는 흐름입니다. 배경 이미지가 없거나 로딩에 실패하면 공식 포스터·기본 이미지로 대체하며, 화면 배경에 맞춰 로고와 글자의 가독성을 조정했습니다.
+
+### 4.8 공지·광고 통합 관리
+
+관리자가 긴급 공지, 일반 공지, 광고 배너를 한 페이지에서 관리할 수 있도록 화면을 통합했습니다. 한영 콘텐츠 확인·수정과 배너 관리를 같은 운영 흐름에서 처리할 수 있습니다.
+
+하반기 기능의 화면과 구현 기록: [티켓 설정](https://github.com/DKU-Dan-Zzan/Danzzan-FE/blob/01be4bedad63a321d13943724e06d45a124ba97e/docs/pr/danz-368/README.md) · [운영진 권한 관리](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/e5517ed2c89d1bb824aaf6e95d0448f8ea118729/docs/admin-staff-management.md) · [AI 테마·배경 및 통합 관리 화면](https://github.com/DKU-Dan-Zzan/Danzzan-FE/blob/01be4bedad63a321d13943724e06d45a124ba97e/docs/pr/DANZ-374/README.md).
 
 ---
 
