@@ -418,7 +418,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ### 2.1 졸업작품 시연 영상
 
-[![DANZZAN 졸업작품 시연 영상](https://img.youtube.com/vi/SN-cncHBgns/hqdefault.jpg)](https://youtu.be/SN-cncHBgns)
+[![DANZZAN 졸업작품 시연 영상](https://img.youtube.com/vi/SN-cncHBgns/maxresdefault.jpg)](https://youtu.be/SN-cncHBgns)
 
 [▶ 졸업작품 시연 영상 보기](https://youtu.be/SN-cncHBgns)
 
