@@ -572,15 +572,13 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 ### 5.2 사용자 데이터
 
 <table>
-<tr><td colspan="1" valign="top">
-<p>봄축제와 가을축제의 핵심 기능별 조회수입니다. 막대는 두 축제의 조회수를 누적해 표시했습니다.</p>
-<table><tr><th>기능</th><th>봄 축제</th><th>가을 축제</th><th>합계</th></tr><tr><td>타임테이블</td><td>8,146회</td><td>1,893회</td><td>10,039회</td></tr><tr><td>티켓 예매</td><td>7,356회</td><td>0회</td><td>7,356회</td></tr><tr><td>내 티켓</td><td>5,997회</td><td>0회</td><td>5,997회</td></tr><tr><td>부스맵</td><td>4,303회</td><td>1,555회</td><td>5,858회</td></tr><tr><td>공지사항</td><td>3,528회</td><td>1,249회</td><td>4,777회</td></tr></table>
-<p>가을축제는 티켓팅을 운영하지 않아 티켓 예매·내 티켓 조회수가 0회입니다.</p>
-<p>봄축제 기간(5/10–5/14) 총 누적 이벤트 수(클릭·스크롤 등): <strong>82,000+</strong></p>
-</td></tr>
 <tr>
-<td width="100%" align="center" valign="top">
-<a href="./architecture/spring-autumn-views.png"><img alt="봄·가을축제 핵심 기능별 조회수 비교" src="./architecture/spring-autumn-views.png" width="560"/></a>
+<td width="50%" align="center" valign="middle">
+<a href="./architecture/spring-autumn-views.png"><img alt="봄·가을축제 핵심 기능별 조회수 비교" src="./architecture/spring-autumn-views.png" width="440"/></a>
+</td>
+<td width="50%" valign="middle">
+<p>봄축제와 가을축제의 핵심 기능별 조회수입니다. 막대는 두 축제의 조회수를 누적해 표시했습니다.</p>
+<table><tr><th>기능</th><th>봄 축제</th><th>가을 축제</th><th>합계</th></tr><tr><td>타임테이블</td><td>8,146회</td><td>1,893회</td><td>10,039회
 </td>
 </tr>
 </table>
