@@ -79,6 +79,8 @@
 <details>
 <summary>강하늘의 PR·커밋 근거</summary>
 
+<blockquote>
+
 **백엔드**
 
 - **공지·광고 CRUD API:** [BE #20](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/20) · [BE #26](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/26)
@@ -98,6 +100,8 @@
 - **브랜딩 자산·관리자 설정 화면 통합:** [FE #113](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/113) · [FE #119](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/119)
 - **회차·이벤트 연동과 편집 제어:** [FE #119](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/119)
 - **GitHub Actions·스토리지 업로드·빌드 환경변수:** [FE #74](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/74) · [FE #77](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/77) · [FE #78](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/78)
+
+</blockquote>
 
 </details>
 
@@ -155,6 +159,8 @@
 <details>
 <summary>박지우의 PR·커밋 근거</summary>
 
+<blockquote>
+
 **백엔드**
 
 - **단국대 인증·가입 자격·JWT:** [BE #4](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/4) · [BE #35](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/35) · [BE #36](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/36) · [BE #40](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/40) · [BE #58](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/58) · [BE #62](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/62) · [BE #63](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/63)
@@ -188,6 +194,8 @@
 
 - **배포 구성·검증 보완:** [FE #109](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/109) · [fbda1b4b](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/fbda1b4b) · [BE #60](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/60) · [BE #69](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/69) · [BE #77](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/77)
 - **가을축제 배포:** 팀원 확인 내용에 근거.
+
+</blockquote>
 
 </details>
 
@@ -253,6 +261,8 @@
 <details>
 <summary>박주희의 PR·커밋 근거</summary>
 
+<blockquote>
+
 **백엔드**
 
 - **티켓팅·팔찌 지급·통계:** [fa99dd5](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/fa99dd5) · [2d46922](https://github.com/DKU-Dan-Zzan/Danzzan-BE/commit/2d46922)
@@ -294,6 +304,8 @@
 - **Azure VM·Docker·DB 이관·HTTPS:** [FE #124](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/124) · [BE #78](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/78)
 - **가을 NHN 배포:** 팀원 확인 내용에 근거.
 - **Azure 배포:** 팀원 확인 내용에 근거.
+
+</blockquote>
 
 </details>
 
@@ -341,6 +353,8 @@
 <details>
 <summary>조하은의 PR·커밋 근거</summary>
 
+<blockquote>
+
 **백엔드**
 
 - **홈·공연·부스맵:** [BE #3](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/3) · [BE #5](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/5) · [BE #12](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/12) · [BE #19](https://github.com/DKU-Dan-Zzan/Danzzan-BE/pull/19)
@@ -366,6 +380,8 @@
 - **인증 화면·저장 정책·광고 동작:** [FE #47](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/47) · [FE #50](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/50) · [FE #76](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/76)
 - **앱 통합·GA4 이벤트 수집:** [5aa5ee94](https://github.com/DKU-Dan-Zzan/Danzzan-FE/commit/5aa5ee94) · [FE #100](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/100) · [FE #101](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/101)
 - **AI 테마 추천·팔레트 검증·이미지 관리:** [FE #122](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/122)
+
+</blockquote>
 
 </details>
 
