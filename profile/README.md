@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./logo.png" alt="DANZZAN" width="260" />
+<img src="./collab-logo.jpg" alt="DANZZAN × NAVER Pay" width="640" />
 
 <br />
 
