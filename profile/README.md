@@ -48,6 +48,8 @@
 <details>
 <summary><strong>강하늘 — 상세역할 및 PR</strong></summary>
 
+<blockquote>
+
 [haneul-dev](https://github.com/haneul-dev) · 32230120
 
 #### 백엔드
@@ -99,10 +101,14 @@
 
 </details>
 
+</blockquote>
+
 </details>
 
 <details>
 <summary><strong>박지우 — 상세역할 및 PR</strong></summary>
+
+<blockquote>
 
 [jiwoo1105](https://github.com/jiwoo1105) · 32211862
 
@@ -185,10 +191,14 @@
 
 </details>
 
+</blockquote>
+
 </details>
 
 <details>
 <summary><strong>박주희 — 상세역할 및 PR</strong></summary>
+
+<blockquote>
 
 [juhee0223](https://github.com/juhee0223) · 32221902
 
@@ -287,10 +297,14 @@
 
 </details>
 
+</blockquote>
+
 </details>
 
 <details>
 <summary><strong>조하은 — 상세역할 및 PR</strong></summary>
+
+<blockquote>
 
 [johaeunn](https://github.com/johaeunn) · 32234364
 
@@ -354,6 +368,8 @@
 - **AI 테마 추천·팔레트 검증·이미지 관리:** [FE #122](https://github.com/DKU-Dan-Zzan/Danzzan-FE/pull/122)
 
 </details>
+
+</blockquote>
 
 </details>
 
