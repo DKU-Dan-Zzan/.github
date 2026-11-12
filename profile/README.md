@@ -426,14 +426,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 [▶ 졸업작품 시연 영상 보기](https://youtu.be/SN-cncHBgns)
 
-### 2.2 프로젝트 결과보고서 및 포스터
-
-| 자료 | 파일 |
-|---|---|
-| 프로젝트 결과보고서 | [PDF 보기](./docs/final-report.pdf) |
-| 졸업작품 포스터 | [PDF 보기](./docs/poster.pdf) · [이미지 보기](./docs/poster.png) |
-
-### 2.3 소스 코드 및 개발 문서
+### 2.2 소스 코드 및 개발 문서
 
 | 자료 | 링크 |
 |---|---|
@@ -442,13 +435,20 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | 프론트엔드 구조·개발 가이드 | [개발 문서](https://github.com/DKU-Dan-Zzan/Danzzan-FE/tree/main/docs/architecture) |
 | 티켓팅 부하 테스트·검증 | [검증 보고서](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/load-test-report.md) · [실행 가이드](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/ticket-queue-load-test-runbook.md) |
 
-### 2.4 기획·설계 자료
+### 2.3 기획·설계 자료
 
-| 자료 | 개요 | 미리보기 1 | 미리보기 2 |
+| 자료 | 개요 | 미리보기 1 | 미리보기 2 | 파일 |
+|---|---|:---:|:---:|:---:|
+| **와이어프레임** | 타임테이블·부스맵·관리자 화면의 초기 스케치와 화면 이동 흐름 | <a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes.png" alt="타임테이블 화면과 이동 흐름 스케치" width="220" /></a><br>타임테이블 · 1쪽 | <a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes-boothmap.png" alt="부스맵 조회·상세 화면 스케치" width="220" /></a><br>부스맵 · 2쪽 | <a href="./docs/wireframes.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a> |
+| **설계 보고서** | 기능 요구사항·사용자 흐름·화면 설계<br>데이터베이스·API·시스템 구성 | <a href="./docs/design-report.pdf"><img src="./docs/previews/design-report-requirements.png" alt="설계 보고서의 사용자 기능 요구사항 표" width="220" /></a><br>기능 요구사항 · 11쪽 | <a href="./docs/design-report.pdf"><img src="./docs/previews/design-report.png" alt="홈·타임테이블 와이어프레임과 구현 화면 비교" width="220" /></a><br>화면 설계·구현 비교 · 15쪽 | <a href="./docs/design-report.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a> |
+| **기획 발표** | 프로젝트 배경·문제 정의·차별성<br>서비스 구조·주요 기능·개발 계획 | <a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation.png" alt="사용자·웹 서비스·백엔드·관리자 서비스 구조도" width="220" /></a><br>서비스 구조 · 14쪽 | <a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation-features.png" alt="홈·타임테이블·부스맵·공지사항 주요 화면" width="220" /></a><br>주요 기능 · 15쪽 | <a href="./docs/planning-presentation.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a> |
+
+### 2.4 프로젝트 결과보고서 및 포스터
+
+| 자료 | 개요 | 미리보기 | 파일 |
 |---|---|:---:|:---:|
-| **와이어프레임**<br>[PDF 보기](./docs/wireframes.pdf) | 타임테이블·부스맵·관리자 화면의 초기 스케치와 화면 이동 흐름 | <a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes.png" alt="타임테이블 화면과 이동 흐름 스케치" width="260" /></a><br>타임테이블 · 1쪽 | <a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes-boothmap.png" alt="부스맵 조회·상세 화면 스케치" width="260" /></a><br>부스맵 · 2쪽 |
-| **설계 보고서**<br>[PDF 보기](./docs/design-report.pdf) | 기능 요구사항·사용자 흐름·화면 설계<br>데이터베이스·API·시스템 구성 | <a href="./docs/design-report.pdf"><img src="./docs/previews/design-report-requirements.png" alt="설계 보고서의 사용자 기능 요구사항 표" width="260" /></a><br>기능 요구사항 · 11쪽 | <a href="./docs/design-report.pdf"><img src="./docs/previews/design-report.png" alt="홈·타임테이블 와이어프레임과 구현 화면 비교" width="260" /></a><br>화면 설계·구현 비교 · 15쪽 |
-| **기획 발표**<br>[PDF 보기](./docs/planning-presentation.pdf) | 프로젝트 배경·문제 정의·차별성<br>서비스 구조·주요 기능·개발 계획 | <a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation.png" alt="사용자·웹 서비스·백엔드·관리자 서비스 구조도" width="260" /></a><br>서비스 구조 · 14쪽 | <a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation-features.png" alt="홈·타임테이블·부스맵·공지사항 주요 화면" width="260" /></a><br>주요 기능 · 15쪽 |
+| **프로젝트 결과보고서** | 기획·설계·구현 과정과 테스트·운영 결과를 정리한 최종 보고서 | <a href="./docs/final-report.pdf"><img src="./docs/previews/final-report.png" alt="프로젝트 결과보고서 표지" width="220" /></a> | <a href="./docs/final-report.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a> |
+| **졸업작품 포스터** | 서비스 구성·주요 기능·아키텍처·운영 성과 요약 | <a href="./docs/poster.pdf"><img src="./docs/previews/poster.png" alt="DANZZAN 졸업작품 포스터 전체 미리보기" width="220" /></a> | <a href="./docs/poster.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a><br><a href="./docs/poster.png"><img src="./docs/buttons/image.svg" alt="이미지 열기" width="112" height="34" /></a> |
 
 ---
 
