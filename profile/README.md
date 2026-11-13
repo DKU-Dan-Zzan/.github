@@ -36,6 +36,23 @@
 
 ---
 
+**목차**
+
+- [0. 팀소개](#team)
+- [1. 개발 배경 & 프로젝트 소개](#overview)
+- [2. 시연 영상 및 프로젝트 자료](#project-materials)
+- [3. 서비스 화면](#screens)
+- [4. 가을축제 — 브랜딩·번역·운영 관리 및 AI 테마](#autumn-festival)
+- [5. 기술 스택](#tech-stack)
+- [6. 아키텍처](#architecture)
+- [7. 협업 도구 및 기록](#collaboration)
+- [8. 실제 운영 결과](#results)
+- [9. 기대 효과 및 확장 계획](#future-plans)
+
+---
+
+<a name="team"></a>
+
 ## 0. 팀소개
 
 | 이름 | 핵심 기여 |
@@ -389,6 +406,10 @@
 
 </details>
 
+---
+
+<a name="overview"></a>
+
 ## 1. 개발 배경 & 프로젝트 소개
 
 공지는 인스타그램, 티켓은 오픈카톡, 부스 위치는 에브리타임 — 축제 정보는 늘 여러 채널에 흩어져 있었습니다.
@@ -413,6 +434,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 **공연, 부스, 티켓, 공지 전부 한 앱에서.**
 
 ---
+
+<a name="project-materials"></a>
 
 ## 2. 시연 영상 및 프로젝트 자료
 
@@ -481,6 +504,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
+<a name="screens"></a>
+
 ## 3. 서비스 화면
 
 > 봄축제 운영 버전의 화면입니다. 가을축제에서 추가·개선한 화면은 다음 섹션에서 소개합니다.
@@ -510,6 +535,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | <img src="./screenshots/admin/notice.png" width="350"> | <img src="./screenshots/admin/advertisement.png" width="350"> | <img src="./screenshots/admin/wristband.png" width="350"> |
 
 ---
+
+<a name="autumn-festival"></a>
 
 ## 4. 가을축제 — 브랜딩·번역·운영 관리 및 AI 테마
 
@@ -611,9 +638,96 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 5. 실제 운영 결과
+<a name="tech-stack"></a>
 
-### 5.1 티켓팅 운영 지표
+## 5. 기술 스택
+
+### 5.1 Frontend
+
+![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+
+### 5.2 Backend
+
+![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL_8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-FF4438?style=for-the-badge&logo=redis&logoColor=white)
+![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+
+### 5.3 Infra
+
+![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=for-the-badge&logo=icloud&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
+
+---
+
+<a name="architecture"></a>
+
+## 6. 아키텍처
+
+### 6.1 시스템 아키텍처
+
+<img src="./architecture/system-architecture.png" alt="System Architecture" width="800">
+
+### 6.2 서비스 아키텍처
+
+<img src="./architecture/service-architecture.png" alt="Service Architecture" width="800">
+
+오픈 순간 수천 명(최대 10000명까지 테스트)이 동시에 들어오는 상황을 고려해서 설계했습니다.
+
+---
+
+---
+
+<a name="collaboration"></a>
+
+## 7. 협업 도구 및 기록
+
+| 도구 | 활용 방식 |
+|---|---|
+| **Jira** | 기능별 작업을 이슈로 나누고 담당자·우선순위·일정을 관리.<br>스프린트 보드에서 해야 할 일·진행 중·검토 중·완료 상태를 공유. |
+| **Notion** | 요구사항·화면 기획·일정·참고 자료를 정리.<br>주간 회의, 총학생회 미팅, 기술 자문 및 스프린트 회고를 회의록으로 기록. |
+| **Slack** | 개발 이슈, 일정 변경, 배포·테스트 결과를 채널별로 공유. |
+| **GitHub** | 기능 단위 브랜치와 PR을 통해 코드 변경 사항을 공유하고 검토. |
+
+### 7.1 Jira — 스프린트 및 작업 관리
+
+기능별 작업을 이슈로 등록하고 스프린트 보드에서 담당자와 진행 상태를 확인했습니다.
+
+<p align="center">
+  <a href="./screenshots/collaboration/jira-sprint-board.png">
+    <img src="./screenshots/collaboration/jira-sprint-board.png" alt="Jira 스프린트 보드: 해야 할 일·진행 중·검토 중·완료 상태별 작업 관리" width="800" />
+  </a>
+</p>
+
+### 7.2 Notion — 회의록 및 의사결정 기록
+
+회의 유형·날짜·스프린트별로 회의록을 정리했습니다.<br>
+요구사항 조정, 와이어프레임·ERD·API 논의, 총학생회 미팅과 기술 자문 내용을 함께 기록했습니다.
+
+<p align="center">
+  <a href="./screenshots/collaboration/notion-meeting-notes.png">
+    <img src="./screenshots/collaboration/notion-meeting-notes.png" alt="Notion 회의록: 주간 회의·요구사항 논의·총학생회 미팅·기술 자문·스프린트 회고 기록" width="720" />
+  </a>
+</p>
+
+<sub>이미지를 클릭하면 원본 크기로 볼 수 있습니다. 출처: 설계 보고서 30–31쪽.</sub>
+
+[설계 보고서 PDF 보기](./docs/design-report.pdf)
+
+---
+
+<a name="results"></a>
+
+## 8. 실제 운영 결과
+
+### 8.1 티켓팅 운영 지표
 
 > 2026년 5월 7일 티켓팅 오픈 기준 실측 데이터
 
@@ -630,7 +744,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 <img src="./architecture/traffic.png" alt="Traffic" width="800">
 
-### 5.2 사용자 데이터
+### 8.2 사용자 데이터
 
 <table>
 <tr>
@@ -646,7 +760,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </tr>
 </table>
 
-### 5.3 사용자 피드백
+### 8.3 사용자 피드백
 
 | | |
 |:---:|:---:|
@@ -655,9 +769,11 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ---
 
-## 6. 기대 효과 및 확장 계획
+<a name="future-plans"></a>
 
-### 6.1 기대 효과
+## 9. 기대 효과 및 확장 계획
+
+### 9.1 기대 효과
 
 | | |
 |:---:|---|
@@ -665,89 +781,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | **암표·양도 원천 차단** | 네이버 페이스사인 얼굴 인증으로 입장 시 신원 재확인. 대리 입장과 티켓 양도를 구조적으로 차단 |
 | **사용자 편의성 향상** | 공연 정보, 예매, 부스 위치, 공지를 하나의 앱에서 제공. 채널을 옮겨 다니지 않아도 됨 |
 
-### 6.2 확장 계획
+### 9.2 확장 계획
 
 | | |
 |:---:|---|
 | **챗봇 / RAG 도입** | 공지, 위치, 티켓 수령 방법 등 자주 묻는 질문을 AI가 자동 응답. 운영진 문의 대응 부담 추가 감소 |
 | **네이버 페이스사인 정식 API 연동** | 현장 확인 시간 단축 및 외부인 접근 제한 강화 |
 | **교내 행사 전반으로 확장** | 체육대회, 학과 행사, 동아리 박람회 등으로 적용 범위 확대. 단국대 축제를 시작으로 지속적으로 보완해 교내 행사 전반에 사용 가능한 플랫폼으로 발전 |
-
----
-
-## 7. 기술 스택
-
-### 7.1 Frontend
-
-![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
-
-### 7.2 Backend
-
-![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL_8-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=for-the-badge&logo=redis&logoColor=white)
-![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-
-### 7.3 Infra
-
-![NHN Cloud](https://img.shields.io/badge/NHN_Cloud-003087?style=for-the-badge&logo=icloud&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![k6](https://img.shields.io/badge/k6-7D64FF?style=for-the-badge&logo=k6&logoColor=white)
-
----
-
-## 8. 아키텍처
-
-### 8.1 시스템 아키텍처
-
-<img src="./architecture/system-architecture.png" alt="System Architecture" width="800">
-
-### 8.2 서비스 아키텍처
-
-<img src="./architecture/service-architecture.png" alt="Service Architecture" width="800">
-
-오픈 순간 수천 명(최대 10000명까지 테스트)이 동시에 들어오는 상황을 고려해서 설계했습니다.
-
----
-
----
-
-## 9. 협업 도구 및 기록
-
-| 도구 | 활용 방식 |
-|---|---|
-| **Jira** | 기능별 작업을 이슈로 나누고 담당자·우선순위·일정을 관리.<br>스프린트 보드에서 해야 할 일·진행 중·검토 중·완료 상태를 공유. |
-| **Notion** | 요구사항·화면 기획·일정·참고 자료를 정리.<br>주간 회의, 총학생회 미팅, 기술 자문 및 스프린트 회고를 회의록으로 기록. |
-| **Slack** | 개발 이슈, 일정 변경, 배포·테스트 결과를 채널별로 공유. |
-| **GitHub** | 기능 단위 브랜치와 PR을 통해 코드 변경 사항을 공유하고 검토. |
-
-### 9.1 Jira — 스프린트 및 작업 관리
-
-기능별 작업을 이슈로 등록하고 스프린트 보드에서 담당자와 진행 상태를 확인했습니다.
-
-<p align="center">
-  <a href="./screenshots/collaboration/jira-sprint-board.png">
-    <img src="./screenshots/collaboration/jira-sprint-board.png" alt="Jira 스프린트 보드: 해야 할 일·진행 중·검토 중·완료 상태별 작업 관리" width="800" />
-  </a>
-</p>
-
-### 9.2 Notion — 회의록 및 의사결정 기록
-
-회의 유형·날짜·스프린트별로 회의록을 정리했습니다.<br>
-요구사항 조정, 와이어프레임·ERD·API 논의, 총학생회 미팅과 기술 자문 내용을 함께 기록했습니다.
-
-<p align="center">
-  <a href="./screenshots/collaboration/notion-meeting-notes.png">
-    <img src="./screenshots/collaboration/notion-meeting-notes.png" alt="Notion 회의록: 주간 회의·요구사항 논의·총학생회 미팅·기술 자문·스프린트 회고 기록" width="720" />
-  </a>
-</p>
-
-<sub>이미지를 클릭하면 원본 크기로 볼 수 있습니다. 출처: 설계 보고서 30–31쪽.</sub>
-
-[설계 보고서 PDF 보기](./docs/design-report.pdf)
