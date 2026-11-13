@@ -715,3 +715,39 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 오픈 순간 수천 명(최대 10000명까지 테스트)이 동시에 들어오는 상황을 고려해서 설계했습니다.
 
 ---
+
+---
+
+## 9. 협업 도구 및 기록
+
+| 도구 | 활용 방식 |
+|---|---|
+| **Jira** | 기능별 작업을 이슈로 나누고 담당자·우선순위·일정을 관리.<br>스프린트 보드에서 해야 할 일·진행 중·검토 중·완료 상태를 공유. |
+| **Notion** | 요구사항·화면 기획·일정·참고 자료를 정리.<br>주간 회의, 총학생회 미팅, 기술 자문 및 스프린트 회고를 회의록으로 기록. |
+| **Slack** | 개발 이슈, 일정 변경, 배포·테스트 결과를 채널별로 공유. |
+| **GitHub** | 기능 단위 브랜치와 PR을 통해 코드 변경 사항을 공유하고 검토. |
+
+### 9.1 Jira — 스프린트 및 작업 관리
+
+기능별 작업을 이슈로 등록하고 스프린트 보드에서 담당자와 진행 상태를 확인했습니다.
+
+<p align="center">
+  <a href="./screenshots/collaboration/jira-sprint-board.png">
+    <img src="./screenshots/collaboration/jira-sprint-board.png" alt="Jira 스프린트 보드: 해야 할 일·진행 중·검토 중·완료 상태별 작업 관리" width="800" />
+  </a>
+</p>
+
+### 9.2 Notion — 회의록 및 의사결정 기록
+
+회의 유형·날짜·스프린트별로 회의록을 정리했습니다.<br>
+요구사항 조정, 와이어프레임·ERD·API 논의, 총학생회 미팅과 기술 자문 내용을 함께 기록했습니다.
+
+<p align="center">
+  <a href="./screenshots/collaboration/notion-meeting-notes.png">
+    <img src="./screenshots/collaboration/notion-meeting-notes.png" alt="Notion 회의록: 주간 회의·요구사항 논의·총학생회 미팅·기술 자문·스프린트 회고 기록" width="720" />
+  </a>
+</p>
+
+<sub>이미지를 클릭하면 원본 크기로 볼 수 있습니다. 출처: 설계 보고서 30–31쪽.</sub>
+
+[설계 보고서 PDF 보기](./docs/design-report.pdf)
