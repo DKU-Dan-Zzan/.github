@@ -502,13 +502,28 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ### 2.1 졸업작품 시연 영상
 
-<p align="center">
-  <a href="https://youtu.be/SN-cncHBgns">
-    <img src="https://img.youtube.com/vi/SN-cncHBgns/maxresdefault.jpg" alt="DANZZAN 졸업작품 시연 영상" width="640" />
-  </a>
-</p>
-
-[▶ 졸업작품 시연 영상 보기](https://youtu.be/SN-cncHBgns)
+<table width="100%">
+<thead>
+<tr>
+  <th width="640">시연 영상 미리보기</th>
+  <th width="160" nowrap>영상 링크</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="center" valign="middle">
+    <a href="https://youtu.be/SN-cncHBgns">
+      <img src="https://img.youtube.com/vi/SN-cncHBgns/maxresdefault.jpg" alt="DANZZAN 졸업작품 시연 영상" width="640" />
+    </a>
+  </td>
+  <td align="center" valign="middle" nowrap>
+    <a href="https://youtu.be/SN-cncHBgns">
+      <img src="./docs/buttons/video.svg" alt="시연영상 보러가기" width="160" height="40" />
+    </a>
+  </td>
+</tr>
+</tbody>
+</table>
 
 ---
 
