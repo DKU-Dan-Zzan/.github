@@ -41,12 +41,12 @@
 - [0. 팀소개](#team)
 - [1. 개발 배경 & 프로젝트 소개](#overview)
 - [2. 시연 영상 및 프로젝트 자료](#project-materials)
-- [3. 서비스 화면](#screens)
-- [4. 가을축제 — 브랜딩·번역·운영 관리 및 AI 테마](#autumn-festival)
+- [3. 봄축제 운영 — 주요 서비스 화면](#screens)
+- [4. 가을축제 운영 — 기능 확장 및 개선](#autumn-festival)
 - [5. 기술 스택](#tech-stack)
 - [6. 아키텍처](#architecture)
 - [7. 협업 도구 및 기록](#collaboration)
-- [8. 실제 운영 결과](#results)
+- [8. 봄·가을축제 운영 결과](#results)
 - [9. 기대 효과 및 확장 계획](#future-plans)
 
 ---
@@ -439,6 +439,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ## 2. 시연 영상 및 프로젝트 자료
 
+<br>
+
 ### 2.1 졸업작품 시연 영상
 
 <p align="center">
@@ -449,6 +451,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 [▶ 졸업작품 시연 영상 보기](https://youtu.be/SN-cncHBgns)
 
+<br>
+
+---
+
 ### 2.2 소스 코드 및 개발 문서
 
 | 자료 | 링크 |
@@ -457,6 +463,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | 백엔드 소스 코드 | [Danzzan-BE](https://github.com/DKU-Dan-Zzan/Danzzan-BE) |
 | 프론트엔드 구조·개발 가이드 | [개발 문서](https://github.com/DKU-Dan-Zzan/Danzzan-FE/tree/main/docs/architecture) |
 | 티켓팅 부하 테스트·검증 | [검증 보고서](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/load-test-report.md) · [실행 가이드](https://github.com/DKU-Dan-Zzan/Danzzan-BE/blob/main/docs/ticket-queue-load-test-runbook.md) |
+
+<br>
+
+---
 
 ### 2.3 기획·설계 자료
 
@@ -495,6 +505,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </tbody>
 </table>
 
+<br>
+
+---
+
 ### 2.4 프로젝트 결과보고서 및 포스터
 
 | 자료 | 개요 | 미리보기 | 파일 |
@@ -506,9 +520,11 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 <a name="screens"></a>
 
-## 3. 서비스 화면
+## 3. 봄축제 운영 — 주요 서비스 화면
 
 > 봄축제 운영 버전의 화면입니다. 가을축제에서 추가·개선한 화면은 다음 섹션에서 소개합니다.
+
+<br>
 
 ### 3.1 사용자 화면
 
@@ -528,6 +544,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 |:---:|:---:|:---:|
 | <img src="./screenshots/user/signup1.png" width="230"> | <img src="./screenshots/user/signup2.png" width="230"> | <img src="./screenshots/user/signup3.png" width="230"> |
 
+<br>
+
+---
+
 ### 3.2 관리자 화면
 
 | 공지 관리 | 광고 등록 | 팔찌 배부 |
@@ -538,9 +558,11 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 <a name="autumn-festival"></a>
 
-## 4. 가을축제 — 브랜딩·번역·운영 관리 및 AI 테마
+## 4. 가을축제 운영 — 기능 확장 및 개선
 
 봄축제 운영 이후, 가을축제의 분위기를 담은 화면과 영어로 축제 정보를 확인할 수 있는 기능을 더해 서비스를 다시 운영했습니다.
+
+<br>
 
 ### 4.1 가을축제 고유 브랜딩 반영
 
@@ -550,6 +572,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 |:---:|:---:|:---:|
 | <img src="./screenshots/user/home.png" alt="기존 봄축제 홈 화면" width="230" /> | <img src="https://github.com/user-attachments/assets/89c7688c-1b72-4960-be86-b6ee16e5d7c4" alt="LEGEND 브랜딩을 반영한 가을축제 홈 화면" width="250" /> | <img src="https://github.com/user-attachments/assets/b2a582a1-a249-447b-be31-845f289f02e5" alt="가을축제 타임테이블 화면" width="260" /> |
 | 봄축제 운영 버전 | 가을축제 로고·포스터 반영 | 주요 화면에 브랜딩 적용 |
+
+<br>
+
+---
 
 ### 4.2 한국어·영어 전환 및 관리자 번역 관리
 
@@ -562,6 +588,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 <tr><td align="center"><a href="https://github.com/user-attachments/assets/f34e37c8-f589-47b5-b911-e459c68a7611"><img alt="관리자 페이지의 한국어 콘텐츠 입력란" src="https://github.com/user-attachments/assets/f34e37c8-f589-47b5-b911-e459c68a7611" width="280"/></a><br/><sub>관리자 화면</sub></td><td align="center"><a href="https://github.com/user-attachments/assets/c2ef91c2-d3bb-498a-ace3-037c127f274b"><img alt="번역 결과가 자동으로 채워진 영어 입력란" src="https://github.com/user-attachments/assets/c2ef91c2-d3bb-498a-ace3-037c127f274b" width="280"/></a><br/><sub>관리자 화면</sub></td></tr>
 </table>
 
+<br>
+
+---
+
 ### 4.3 축제 운영 방식에 따른 티켓팅·회원가입 안내
 
 가을축제는 공연 규모를 고려한 총학생회의 요청에 따라 티켓팅을 진행하지 않았습니다. 이에 티켓팅과 회원가입 화면에 각각 안내 문구를 표시할 수 있도록 구현했습니다. 안내는 사용자가 선택한 언어에 따라 한국어 또는 영어로 제공됩니다.
@@ -569,6 +599,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | 티켓팅 안내 · 한국어 | 티켓팅 안내 · 영어 | 회원가입 안내 · 한국어 | 회원가입 안내 · 영어 |
 |:---:|:---:|:---:|:---:|
 | <img src="https://github.com/user-attachments/assets/e27425b1-b006-43af-823b-18ed1b40ec3a" alt="가을축제 티켓팅 미운영 안내 한국어 화면" width="180" /> | <img src="https://github.com/user-attachments/assets/400df540-c9cb-4cb5-84f9-35ec0cc944df" alt="가을축제 티켓팅 미운영 안내 영어 화면" width="180" /> | <img src="https://github.com/user-attachments/assets/0029a7dc-ef80-4a8d-a430-a23a439e52c7" alt="가을축제 회원가입 안내 한국어 화면" width="180" /> | <img src="https://github.com/user-attachments/assets/cb7e1801-2503-44b0-adbc-2d1619b4e532" alt="가을축제 회원가입 안내 영어 화면" width="180" /> |
+
+<br>
+
+---
 
 ### 4.4 축제 기본정보와 티켓 운영 설정
 
@@ -588,6 +622,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </tr>
 </table>
 
+<br>
+
+---
+
 ### 4.5 운영진 지정 및 권한 관리
 
 <table>
@@ -602,6 +640,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </td>
 </tr>
 </table>
+
+<br>
+
+---
 
 ### 4.6 포스터 기반 AI 테마 및 배경 추천
 
@@ -620,6 +662,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </td>
 </tr>
 </table>
+
+<br>
+
+---
 
 ### 4.7 공지·광고 통합 관리
 
@@ -642,6 +688,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ## 5. 기술 스택
 
+<br>
+
 ### 5.1 Frontend
 
 ![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -649,6 +697,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+
+<br>
+
+---
 
 ### 5.2 Backend
 
@@ -658,6 +710,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 ![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+
+<br>
+
+---
 
 ### 5.3 Infra
 
@@ -671,9 +727,15 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ## 6. 아키텍처
 
+<br>
+
 ### 6.1 시스템 아키텍처
 
 <img src="./architecture/system-architecture.png" alt="System Architecture" width="800">
+
+<br>
+
+---
 
 ### 6.2 서비스 아키텍처
 
@@ -696,6 +758,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | **Slack** | 개발 이슈, 일정 변경, 배포·테스트 결과를 채널별로 공유. |
 | **GitHub** | 기능 단위 브랜치와 PR을 통해 코드 변경 사항을 공유하고 검토. |
 
+<br>
+
 ### 7.1 Jira — 스프린트 및 작업 관리
 
 기능별 작업을 이슈로 등록하고 스프린트 보드에서 담당자와 진행 상태를 확인했습니다.
@@ -705,6 +769,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
     <img src="./screenshots/collaboration/jira-sprint-board.png" alt="Jira 스프린트 보드: 해야 할 일·진행 중·검토 중·완료 상태별 작업 관리" width="800" />
   </a>
 </p>
+
+<br>
+
+---
 
 ### 7.2 Notion — 회의록 및 의사결정 기록
 
@@ -725,7 +793,9 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 <a name="results"></a>
 
-## 8. 실제 운영 결과
+## 8. 봄·가을축제 운영 결과
+
+<br>
 
 ### 8.1 티켓팅 운영 지표
 
@@ -744,6 +814,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 <img src="./architecture/traffic.png" alt="Traffic" width="800">
 
+<br>
+
+---
+
 ### 8.2 사용자 데이터
 
 <table>
@@ -760,6 +834,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </tr>
 </table>
 
+<br>
+
+---
+
 ### 8.3 사용자 피드백
 
 | | |
@@ -773,6 +851,8 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ## 9. 기대 효과 및 확장 계획
 
+<br>
+
 ### 9.1 기대 효과
 
 | | |
@@ -780,6 +860,10 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 | **운영진 업무 효율화** | 티켓 발급, 팔찌 수령, 공지 수정 등 반복 업무를 단일 플랫폼에서 처리. 채널별 중복 게시와 개별 문의 대응 부담 감소 |
 | **암표·양도 원천 차단** | 네이버 페이스사인 얼굴 인증으로 입장 시 신원 재확인. 대리 입장과 티켓 양도를 구조적으로 차단 |
 | **사용자 편의성 향상** | 공연 정보, 예매, 부스 위치, 공지를 하나의 앱에서 제공. 채널을 옮겨 다니지 않아도 됨 |
+
+<br>
+
+---
 
 ### 9.2 확장 계획
 
