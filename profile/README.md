@@ -464,37 +464,33 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ### 2.3 기획·설계 자료
 
-<table>
+<table width="100%">
 <thead>
 <tr>
-  <th width="130" nowrap>자료</th>
-  <th>개요</th>
-  <th>미리보기 1</th>
-  <th>미리보기 2</th>
-  <th>파일</th>
+  <th width="16%" nowrap>자료</th>
+  <th width="24%">개요</th>
+  <th width="44%">미리보기</th>
+  <th width="16%" nowrap>파일</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td nowrap><strong>와이어프레임</strong></td>
   <td>타임테이블·부스맵·관리자 화면의 초기 스케치와 화면 이동 흐름</td>
-  <td align="center"><a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes.png" alt="타임테이블 화면과 이동 흐름 스케치" width="220" /></a><br>타임테이블 · 1쪽</td>
-  <td align="center"><a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes-boothmap.png" alt="부스맵 조회·상세 화면 스케치" width="220" /></a><br>부스맵 · 2쪽</td>
-  <td align="center"><a href="./docs/wireframes.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td>
+  <td align="center"><a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes.png" alt="타임테이블 화면과 이동 흐름 스케치" width="170" /></a> <a href="./docs/wireframes.pdf"><img src="./docs/previews/wireframes-boothmap.png" alt="부스맵 조회·상세 화면 스케치" width="170" /></a><br>타임테이블 · 부스맵<br><sub>1쪽 · 2쪽</sub></td>
+  <td align="center" nowrap><a href="./docs/wireframes.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td>
 </tr>
 <tr>
   <td nowrap><strong>설계 보고서</strong></td>
   <td>기능 요구사항·사용자 흐름·화면 설계<br>데이터베이스·API·시스템 구성</td>
-  <td align="center"><a href="./docs/design-report.pdf"><img src="./docs/previews/design-report-requirements.png" alt="설계 보고서의 사용자 기능 요구사항 표" width="220" /></a><br>기능 요구사항 · 11쪽</td>
-  <td align="center"><a href="./docs/design-report.pdf"><img src="./docs/previews/design-report.png" alt="홈·타임테이블 와이어프레임과 구현 화면 비교" width="220" /></a><br>화면 설계·구현 비교 · 15쪽</td>
-  <td align="center"><a href="./docs/design-report.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td>
+  <td align="center"><a href="./docs/design-report.pdf"><img src="./docs/previews/design-report-requirements.png" alt="설계 보고서의 사용자 기능 요구사항 표" width="170" /></a> <a href="./docs/design-report.pdf"><img src="./docs/previews/design-report.png" alt="홈·타임테이블 와이어프레임과 구현 화면 비교" width="170" /></a><br>기능 요구사항 · 화면 설계·구현 비교<br><sub>11쪽 · 15쪽</sub></td>
+  <td align="center" nowrap><a href="./docs/design-report.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td>
 </tr>
 <tr>
   <td nowrap><strong>기획 발표</strong></td>
   <td>프로젝트 배경·문제 정의·차별성<br>서비스 구조·주요 기능·개발 계획</td>
-  <td align="center"><a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation.png" alt="사용자·웹 서비스·백엔드·관리자 서비스 구조도" width="220" /></a><br>서비스 구조 · 14쪽</td>
-  <td align="center"><a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation-features.png" alt="홈·타임테이블·부스맵·공지사항 주요 화면" width="220" /></a><br>주요 기능 · 15쪽</td>
-  <td align="center"><a href="./docs/planning-presentation.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td>
+  <td align="center"><a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation.png" alt="사용자·웹 서비스·백엔드·관리자 서비스 구조도" width="170" /></a> <a href="./docs/planning-presentation.pdf"><img src="./docs/previews/planning-presentation-features.png" alt="홈·타임테이블·부스맵·공지사항 주요 화면" width="170" /></a><br>서비스 구조 · 주요 기능<br><sub>14쪽 · 15쪽</sub></td>
+  <td align="center" nowrap><a href="./docs/planning-presentation.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -503,10 +499,30 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 
 ### 2.4 프로젝트 결과보고서 및 포스터
 
-| 자료 | 개요 | 미리보기 | 파일 |
-|---|---|:---:|:---:|
-| **프로젝트 결과보고서** | 기획·설계·구현 과정과 테스트·운영 결과를 정리한 최종 보고서 | <a href="./docs/final-report.pdf"><img src="./docs/previews/final-report.png" alt="프로젝트 결과보고서 표지" width="220" /></a> | <a href="./docs/final-report.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a> |
-| **졸업작품 포스터** | 서비스 구성·주요 기능·아키텍처·운영 성과 요약 | <a href="./docs/poster.pdf"><img src="./docs/previews/poster.png" alt="DANZZAN 졸업작품 포스터 전체 미리보기" width="220" /></a> | <a href="./docs/poster.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a><br><a href="./docs/poster.png"><img src="./docs/buttons/image.svg" alt="이미지 열기" width="112" height="34" /></a> |
+<table width="100%">
+<thead>
+<tr>
+  <th width="16%" nowrap>자료</th>
+  <th width="24%">개요</th>
+  <th width="44%">미리보기</th>
+  <th width="16%" nowrap>파일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td nowrap><strong>프로젝트<br>결과보고서</strong></td>
+  <td>기획·설계·구현 과정과 테스트·운영 결과를 정리한 최종 보고서</td>
+  <td align="center"><a href="./docs/final-report.pdf"><img src="./docs/previews/final-report.png" alt="프로젝트 결과보고서 표지" width="170" /></a><br>결과보고서 표지<br><sub>1쪽</sub></td>
+  <td align="center" nowrap><a href="./docs/final-report.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td>
+</tr>
+<tr>
+  <td nowrap><strong>졸업작품<br>포스터</strong></td>
+  <td>서비스 구성·주요 기능·아키텍처·운영 성과 요약</td>
+  <td align="center"><a href="./docs/poster.pdf"><img src="./docs/previews/poster.png" alt="DANZZAN 졸업작품 포스터 전체 미리보기" width="170" /></a><br>프로젝트 포스터<br><sub>1쪽</sub></td>
+  <td align="center" nowrap><a href="./docs/poster.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a><br><a href="./docs/poster.png"><img src="./docs/buttons/image.svg" alt="이미지 열기" width="112" height="34" /></a></td>
+</tr>
+</tbody>
+</table>
 
 ---
 
