@@ -2,19 +2,6 @@
 
 <img src="./collab-logo.jpg" alt="DANZZAN × NAVER Pay" width="640" />
 
-<br />
-
-[**Frontend Repository**](https://github.com/DKU-Dan-Zzan/Danzzan-FE)
-&nbsp;·&nbsp;
-[**Backend Repository**](https://github.com/DKU-Dan-Zzan/Danzzan-BE)
-
-**졸업작품 시연용 :** [https://danzzan.koreacentral.cloudapp.azure.com/](https://danzzan.koreacentral.cloudapp.azure.com/)
-
-**축제 운영 당시 주소** · `https://danfesta2026.yaaksok.com/`  
-<sub>2026 단국대학교 봄 축제 & 가을 축제 기간 실제 운영 · 축제 서비스 종료</sub>
-
-<br />
-
 # 단국 축제, 하나로 즐겨라
 
 **공연 · 부스 · 티켓 · 공지 — 단국대 봄 축제를 위해 직접 만들고, 실제로 운영한 서비스**
@@ -24,6 +11,14 @@
   <br />
   <sub>네이버 페이스사인 얼굴 인증 연동 · 티켓 양도·대리 입장 원천 차단</sub>
 </p>
+
+**졸업작품 시연 주소** · [https://danzzan.koreacentral.cloudapp.azure.com/](https://danzzan.koreacentral.cloudapp.azure.com/)<br />
+**축제 운영 당시 주소** · `https://danfesta2026.yaaksok.com/`<br />
+<sub>2026 단국대학교 봄 축제 & 가을 축제 기간 실제 운영 · 축제 서비스 종료</sub>
+
+[**Frontend Repository**](https://github.com/DKU-Dan-Zzan/Danzzan-FE)
+&nbsp;·&nbsp;
+[**Backend Repository**](https://github.com/DKU-Dan-Zzan/Danzzan-BE)
 
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
