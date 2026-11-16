@@ -40,7 +40,6 @@
 </tr></thead>
 <tbody>
 <tr><td>소스 코드</td><td><a href="https://github.com/DKU-Dan-Zzan/Danzzan-FE">프론트엔드</a> · <a href="https://github.com/DKU-Dan-Zzan/Danzzan-BE">백엔드</a></td></tr>
-<tr><td>실행 서비스</td><td><a href="https://danzzan.koreacentral.cloudapp.azure.com/">졸업작품 시연 사이트</a></td></tr>
 <tr><td>개발 문서</td><td><a href="./docs/design-report.pdf">설계 보고서 PDF</a> · <a href="https://github.com/DKU-Dan-Zzan/Danzzan-FE/tree/main/docs/architecture">프론트엔드 개발 가이드</a></td></tr>
 <tr><td>포스터</td><td><a href="./docs/poster.pdf">포스터 PDF</a></td></tr>
 <tr><td>프로젝트 결과보고서</td><td><a href="./docs/final-report.pdf">결과보고서 PDF</a></td></tr>
