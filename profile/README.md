@@ -42,7 +42,7 @@
 <tr><td>소스 코드</td><td><a href="https://github.com/DKU-Dan-Zzan/Danzzan-FE">프론트엔드</a> · <a href="https://github.com/DKU-Dan-Zzan/Danzzan-BE">백엔드</a></td></tr>
 <tr><td>개발 문서</td><td><a href="./docs/design-report.pdf">설계 보고서 PDF</a> · <a href="https://github.com/DKU-Dan-Zzan/Danzzan-FE/tree/main/docs/architecture">프론트엔드 개발 가이드</a></td></tr>
 <tr><td>포스터</td><td><a href="./docs/poster.pdf">포스터 PDF</a></td></tr>
-<tr><td>프로젝트 결과보고서</td><td><a href="./docs/final-report.pdf">결과보고서 PDF</a></td></tr>
+<tr><td>프로젝트 결과보고서</td><td><a href="https://github.com/DKU-Dan-Zzan/.github/blob/badfca989251c71f933b9ce4e2ba31e40dc936a3/profile/docs/final-report.pdf">결과보고서 PDF</a></td></tr>
 <tr><td>시연 영상</td><td><a href="https://youtu.be/SN-cncHBgns">YouTube 시연 영상</a></td></tr>
 </tbody>
 </table>
@@ -594,7 +594,7 @@ DANZZAN에서는 학생들이 공연 일정과 부스 위치를 확인하고, �
 </tr>
 </thead>
 <tbody>
-<tr><td nowrap><strong>프로젝트<br>결과보고서</strong></td><td>기획·설계·구현 과정과 테스트·운영 결과를 정리한 최종 보고서</td><td align="center" nowrap><a href="./docs/final-report.pdf"><img src="./docs/previews/final-report.png" alt="프로젝트 결과보고서 표지" width="170" /></a>&nbsp;<a href="./docs/final-report.pdf"><img src="./docs/previews/final-report-implementation.png" alt="결과보고서의 사용자 서비스 구현 화면과 티켓팅 처리 흐름" width="170" /></a><br>보고서 표지 · 주요 구현 화면</td><td align="center" nowrap><a href="./docs/final-report.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td></tr>
+<tr><td nowrap><strong>프로젝트<br>결과보고서</strong></td><td>기획·설계·구현 과정과 테스트·운영 결과를 정리한 최종 보고서</td><td align="center" nowrap><a href="https://github.com/DKU-Dan-Zzan/.github/blob/badfca989251c71f933b9ce4e2ba31e40dc936a3/profile/docs/final-report.pdf"><img src="./docs/previews/final-report.png" alt="프로젝트 결과보고서 표지" width="170" /></a>&nbsp;<a href="https://github.com/DKU-Dan-Zzan/.github/blob/badfca989251c71f933b9ce4e2ba31e40dc936a3/profile/docs/final-report.pdf"><img src="./docs/previews/final-report-implementation.png" alt="결과보고서의 사용자 서비스 구현 화면과 티켓팅 처리 흐름" width="170" /></a><br>보고서 표지 · 주요 구현 화면</td><td align="center" nowrap><a href="https://github.com/DKU-Dan-Zzan/.github/blob/badfca989251c71f933b9ce4e2ba31e40dc936a3/profile/docs/final-report.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a></td></tr>
 <tr><td nowrap><strong>졸업작품<br>포스터</strong></td><td>서비스 구성·주요 기능·아키텍처·운영 성과 요약</td><td align="center"><a href="./docs/poster.pdf"><img src="./docs/previews/poster.png" alt="DANZZAN 졸업작품 포스터 전체 미리보기" width="170" /></a><br>프로젝트 포스터</td><td align="center" nowrap><a href="./docs/poster.pdf"><img src="./docs/buttons/pdf.svg" alt="PDF 열기" width="112" height="34" /></a><br><a href="./docs/poster.png"><img src="./docs/buttons/image.svg" alt="이미지 열기" width="112" height="34" /></a></td></tr>
 </tbody>
 </table>
